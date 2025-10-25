@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Contact MGI — Miami</title>
+  <meta name="description" content="Contact Miami Global Investments Group for consulting, travel, or real estate.">
+  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css?v=9100" />
+  <script defer src="script.js?v=9100"></script>
+
+</head>
+<body>
+  
+<header class="nav-wrap">
+  <div class="nav container">
+    <a class="brand" href="index.html">
+      <img class="logo" src="assets/mgi-logo.svg" alt="MGI logo" />
+      <span>Miami Global Investments Group</span>
+    </a>
+    <nav>
+      <a href="consulting.html">Consulting</a>
+      <a href="travel.html">Travel</a>
+      <a href="real-estate.html">Real Estate</a>
+      <a href="about.html">About</a>
+      <a class="cta" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <section class="hero">
+    <img class="hero-img" src="assets/hero-contact.svg" alt="Contact hero illustration"/>
+    <div class="hero-overlay">
+      <h1>Contact Us</h1>
+      <p>Tell us what you need — we’ll reply fast.</p>
+    </div>
+  </section>
+
+  <section class="container contact">
+    <form id="contactForm" class="contact-card" novalidate>
+      <div class="row">
+        <label>Full Name* <input type="text" name="name" required /></label>
+        <label>Email* <input type="email" name="email" required /></label>
+      </div>
+      <div class="row">
+        <label>Phone <input type="tel" name="phone" /></label>
+        <label>Service
+          <select name="service">
+            <option value="Travel">Travel</option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="Consulting">Consulting</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+      </div>
+      <label>Message* <textarea name="message" rows="6" required placeholder="Tell us your dates/budget (Travel) or area/budget/beds (Real Estate), or business goal (Consulting)…"></textarea></label>
+      <button class="btn pill" type="submit" id="submitBtn">Send</button>
+      <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+      <a id="mailtoFallback" class="hidden" href="#">Open email app instead</a>
+    </form>
+
+    <div class="map">
+      <iframe title="MGI Miami" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=2125+Biscayne+Blvd,+Ste+204,+Miami+FL&output=embed"></iframe>
+    </div>
+  </section>
+  
+<footer class="footer">
+  <div class="container foot">
+    <p>© <span id="y"></span> Miami Global Investments Group LLC — Miami, FL • Build v9.1</p>
+    <p><strong>Email:</strong> <a href="mailto:Info@miamiglobalgroup.com">Info@miamiglobalgroup.com</a> •
+       <strong>Phone:</strong> +1 (305) 629-0491</p>
+  </div>
+</footer>
+
+</body>
+</html>

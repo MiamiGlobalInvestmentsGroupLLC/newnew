@@ -1,0 +1,65 @@
+:root{
+  --bg:#f7fafc; --paper:#ffffff; --ink:#0c1222; --muted:#5b6577;
+  --brand:#ff3ea5; --brand2:#12b3ff; --accent:#22c55e; --line:#e6e9ee;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto}
+a{color:var(--ink);text-decoration:none}
+.container{max-width:1160px;margin:auto;padding:0 20px}
+
+.nav-wrap{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.logo{height:34px}
+nav a{margin-left:16px;opacity:.9}
+nav a.cta{padding:8px 14px;border-radius:999px;background:linear-gradient(135deg,var(--brand),#ff72c3,var(--brand2));color:#fff}
+nav a:hover{opacity:1}
+
+.hero{position:relative;isolation:isolate;background:linear-gradient(180deg,#fff,#f0f7ff)}
+.hero-img{width:100%;height:52svh;object-fit:cover;display:block}
+.hero-overlay{position:absolute;inset:0;display:grid;place-content:center;text-align:center;padding:24px}
+.hero-overlay h1{font-size:clamp(30px,6vw,56px);margin:0 0 8px;text-shadow:0 1px 0 #fff}
+.hero-overlay p{margin:0 0 16px;color:var(--muted)}
+.hero-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:700}
+.pill{border-radius:999px;background:linear-gradient(135deg,var(--brand),#ff72c3 60%,var(--brand2));color:#fff}
+.outline{border:2px solid #d3e6ff;color:#0a3a63;background:#fff}
+.ghost{background:#fff;border:1px solid var(--line)}
+
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:28px 20px}
+.c-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 12px 28px -22px rgba(0,0,0,.28)}
+.c-card h3{margin:0 0 8px}
+.c-card .arrow{color:#0a6ad9}
+
+.two-col{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;padding:28px 20px}
+.bubble{background:#fff;color:var(--ink);border-radius:18px;padding:18px;box-shadow:0 35px 80px -60px rgba(0,0,0,.25);border:1px solid var(--line)}
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:24px 20px}
+.gallery figure{border-radius:16px;overflow:hidden;background:var(--paper);border:1px solid var(--line)}
+.gallery img{width:100%;height:220px;object-fit:cover;display:block}
+.gallery figcaption{padding:10px 12px;color:var(--muted)}
+
+.section{padding:24px 20px}
+.section h2{margin:0 0 8px}
+
+.contact{padding:24px 20px}
+.contact-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 12px 28px -22px rgba(0,0,0,.28)}
+.contact .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:grid;gap:6px;font-weight:600}
+input,select,textarea{background:#fff;color:var(--ink);border:1px solid #cfd7e3;border-radius:10px;padding:10px 12px;outline:none}
+input:focus,select:focus,textarea:focus{border-color:#0a6ad9;box-shadow:0 0 0 3px rgba(10,106,217,.12)}
+.form-msg{margin-top:10px;color:var(--muted)}
+.hidden{display:none}
+.map{margin-top:16px;border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+.map iframe{width:100%;height:300px;border:0}
+
+.footer{margin-top:40px;background:#fff;border-top:1px solid var(--line)}
+.foot{padding:16px 0;color:var(--muted);display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap}
+
+.about{padding:28px 20px}
+.about .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+.kpi{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;text-align:center}
+.kpi strong{display:block;font-size:22px}
+
+@media (max-width:980px){.cards-3{grid-template-columns:1fr}.two-col{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr} .hero-img{height:44svh} .about .kpis{grid-template-columns:1fr 1fr}}
+@media (max-width:580px){.gallery{grid-template-columns:1fr} .contact .row{grid-template-columns:1fr}}
