@@ -94,5 +94,22 @@
     if (y) y.textContent = new Date().getFullYear();
   })();
 </script>
+  <!-- WhatsApp Floating Button + Welcome Bubble -->
+<a href="https://wa.me/13056290491" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+  <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp chat icon">
+</a>
+
+<div class="wa-bubble" id="waBubble">
+  💬 Need help? <strong>Chat with us on WhatsApp</strong>
+</div>
+
+<script>
+  // Bubble auto-hide after 10s or on click
+  const bubble = document.getElementById('waBubble');
+  if(bubble){
+    setTimeout(()=>bubble.classList.add('hide'),10000);
+    bubble.addEventListener('click',()=>bubble.classList.add('hide'));
+  }
+</script>
 </body>
 </html>
