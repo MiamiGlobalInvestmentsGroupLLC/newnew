@@ -1,71 +1,98 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>MGI Real Estate — Miami Luxury</title>
-  <meta name="description" content="Condos, villas, penthouses; off-market options; investor-friendly flows.">
-  
+  <title>MGI Real Estate — Investor-Friendly Wholesaling in Miami</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="styles.css?v=9100" />
-  <script defer src="script.js?v=9100"></script>
 
+  <!-- SEO -->
+  <meta name="description" content="Investor intake & opportunity matching, transaction facilitation, and due diligence assistance for Miami off-market opportunities. We are not real estate brokers.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.miamiglobalgroup.com/real-estate.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MGI Real Estate — Investor-Friendly Wholesaling in Miami">
+  <meta property="og:description" content="How we work: Investor Intake & Opportunity Matching, Transaction Facilitation, Due Diligence Assistance. Not a brokerage.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.miamiglobalgroup.com/assets/hero-realestate.jpg">
+
+  <link rel="stylesheet" href="styles.css?v=9101" />
+  <script defer src="script.js?v=9101"></script>
 </head>
 <body>
-  
-<header class="nav-wrap">
+<header class="nav-wrap" role="banner">
   <div class="nav container">
-    <a class="brand" href="index.html">
-      <img class="logo" src="assets/mgi-logo.jpg" alt="MGI logo" />
+    <a class="brand" href="index.html" aria-label="MGI Home">
+      <img class="logo" src="assets/mgi-logo.jpg" alt="Miami Global Investments Group logo" />
       <span>Miami Global Investments Group</span>
     </a>
-    <nav>
+    <nav aria-label="Primary">
       <a href="consulting.html">Consulting</a>
       <a href="travel.html">Travel</a>
-      <a href="real-estate.html">Real Estate</a>
+      <a href="real-estate.html" aria-current="page">Real Estate</a>
       <a href="about.html">About</a>
       <a class="cta" href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
+<main id="main-content">
+  <!-- Hero -->
   <section class="hero">
-    <img class="hero-img" src="assets/hero-realestate.jpg" alt="Real Estate hero illustration"/>
+    <img class="hero-img" src="assets/hero-realestate.jpg" alt="Miami skyline with waterfront properties"/>
     <div class="hero-overlay">
       <h1>MGI Real Estate</h1>
-      <p>Waterfront villas, skyline penthouses, and investor-ready condos.</p>
+      <p>Waterfront villas, skyline penthouses, and investor-ready opportunities.</p>
     </div>
   </section>
 
-  <section class="container gallery">
+  <!-- Gallery -->
+  <section class="container gallery" aria-labelledby="gallery-title">
+    <h2 id="gallery-title" class="visually-hidden">Featured Property Types</h2>
     <figure>
-      <img src="assets/re-condo.jpg" alt="Bayfront condo graphic"/>
+      <img src="assets/re-condo.jpg" alt="Modern bayfront condo exterior"/>
       <figcaption>Bayfront Condo</figcaption>
     </figure>
     <figure>
-      <img src="assets/re-villa.jpg" alt="Waterfront villa graphic"/>
+      <img src="assets/re-villa.jpg" alt="Luxury waterfront villa with dock"/>
       <figcaption>Waterfront Villa</figcaption>
     </figure>
     <figure>
-      <img src="assets/re-penthouse.jpg" alt="Penthouse skyline graphic"/>
+      <img src="assets/re-penthouse.jpg" alt="Penthouse overlooking Miami skyline"/>
       <figcaption>Skyline Penthouse</figcaption>
     </figure>
   </section>
 
-  <section class="container section">
-    <h2>How we work</h2>
+  <!-- How We Work (compliant wording) -->
+  <section class="container section" aria-labelledby="hww">
+    <h2 id="hww">How We Work</h2>
     <ul class="check">
-      <li>Investor criteria intake & targeted deal sourcing</li>
-      <li>Assignment / double-close friendly workflows</li>
-      <li>Introductions and initial due-diligence support</li>
+      <li><strong>Investor Intake &amp; Opportunity Matching</strong> — We gather your goals, locations, and budget, then match you with off-market or investment-ready opportunities that fit your strategy.</li>
+      <li><strong>Transaction Facilitation &amp; Coordination Support</strong> — We streamline communications, organize documents, and coordinate among parties to keep deal flow efficient. We do not represent buyers or sellers as brokers.</li>
+      <li><strong>Due Diligence Assistance &amp; Closing Preparation</strong> — We help review available information and connect you with trusted title companies, attorneys, and other licensed professionals for closing.</li>
     </ul>
-    <a class="btn pill" href="contact.html">Share your criteria</a>
+    <a class="btn pill" href="contact.html" aria-label="Share your investment criteria via the contact page">Share your criteria</a>
   </section>
-  <div class="map">
-      <iframe title="MGI Miami" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=2125+Biscayne+Blvd,+Ste+204,+Miami+FL&output=embed"></iframe>
-    </div>
+
+  <!-- Map -->
+  <section class="map" aria-labelledby="map-title">
+    <h2 id="map-title" class="visually-hidden">Our Miami Location</h2>
+    <iframe
+      title="MGI Miami Office on Google Maps"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=2125+Biscayne+Blvd,+Ste+204,+Miami+FL&output=embed">
+    </iframe>
   </section>
-<footer class="footer">
+
+  <!-- Legal Disclaimer -->
+  <section class="container section" aria-labelledby="legal">
+    <h2 id="legal">Legal Disclaimer</h2>
+    <p><strong>Miami Global Investments Group LLC</strong> operates as a private investment and consulting company. We are <strong>not</strong> licensed real estate brokers or agents. All property transactions are conducted through independent, verified, and licensed third-party professionals when required by law. Any references to opportunities are for informational purposes only and are subject to independent verification, market conditions, and availability.</p>
+  </section>
+</main>
+
+<footer class="footer" role="contentinfo">
   <div class="container foot">
     <p>© <span id="y"></span> Miami Global Investments Group LLC — Miami, FL • </p>
     <p><strong>Email:</strong> <a href="mailto:Info@miamiglobalgroup.com">Info@miamiglobalgroup.com</a> •
@@ -73,5 +100,9 @@
   </div>
 </footer>
 
+<script>
+  // Year auto-fill (kept for convenience)
+  (function(){ var y = document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); }})();
+</script>
 </body>
 </html>
