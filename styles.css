@@ -406,3 +406,20 @@ body{padding-bottom:calc(80px + env(safe-area-inset-bottom, 0px))}
   text-decoration: none;
   opacity: 0.9;
 }
+/* ===== MGI Unified Background (matches button gradient) ===== */
+body {
+  background: linear-gradient(180deg, #fff6fb 0%, #f0f9ff 100%);
+  /*  #fff6fb = وردي فاتح جداً    #f0f9ff = أزرق فاتح جداً  */
+  color: var(--ink);
+}
+
+/* لتثبيت الخلفية وتخليها فخمة شوي */
+html {
+  background: #f0f9ff; /* fallback */
+  background-attachment: fixed;
+}
+
+/* لو بدك صفحات أقسام (travel / real estate / consulting) تاخد نفس الطابع */
+.hero {
+  background: linear-gradient(180deg, #ffffff 0%, #f8faff 40%, #f0f9ff 100%);
+}
