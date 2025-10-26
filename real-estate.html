@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>MGI Real Estate — Investor-Friendly Wholesaling in Miami</title>
   <meta charset="utf-8" />
+  <title>MGI Real Estate — Investor-Friendly Wholesaling in Miami</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <!-- SEO -->
@@ -14,16 +14,17 @@
   <meta property="og:title" content="MGI Real Estate — Investor-Friendly Wholesaling in Miami">
   <meta property="og:description" content="How we work: Investor Intake & Opportunity Matching, Transaction Facilitation, Due Diligence Assistance. Not a brokerage.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.miamiglobalgroup.com/real-estate.html">
   <meta property="og:image" content="https://www.miamiglobalgroup.com/assets/hero-realestate.jpg">
 
-  <link rel="stylesheet" href="styles.css?v=9101" />
-  <script defer src="script.js?v=9101"></script>
+  <link rel="stylesheet" href="styles.css?v=9102" />
+  <script defer src="script.js?v=9102"></script>
 </head>
 <body>
 <header class="nav-wrap" role="banner">
   <div class="nav container">
     <a class="brand" href="index.html" aria-label="MGI Home">
-      <img class="logo" src="assets/mgi-logo.jpg" alt="Miami Global Investments Group logo" />
+      <img class="logo" src="assets/mgi-logo.jpg" alt="Miami Global Investments Group logo">
       <span>Miami Global Investments Group</span>
     </a>
     <nav aria-label="Primary">
@@ -39,7 +40,7 @@
 <main id="main-content">
   <!-- Hero -->
   <section class="hero">
-    <img class="hero-img" src="assets/hero-realestate.jpg" alt="Miami skyline with waterfront properties"/>
+    <img class="hero-img" src="assets/hero-realestate.jpg" alt="Miami skyline with waterfront properties">
     <div class="hero-overlay">
       <h1>MGI Real Estate</h1>
       <p>Waterfront villas, skyline penthouses, and investor-ready opportunities.</p>
@@ -50,15 +51,15 @@
   <section class="container gallery" aria-labelledby="gallery-title">
     <h2 id="gallery-title" class="visually-hidden">Featured Property Types</h2>
     <figure>
-      <img src="assets/re-condo.jpg" alt="Modern bayfront condo exterior"/>
+      <img src="assets/re-condo.jpg" alt="Modern bayfront condo exterior" loading="lazy" decoding="async" width="1200" height="800">
       <figcaption>Bayfront Condo</figcaption>
     </figure>
     <figure>
-      <img src="assets/re-villa.jpg" alt="Luxury waterfront villa with dock"/>
+      <img src="assets/re-villa.jpg" alt="Luxury waterfront villa with dock" loading="lazy" decoding="async" width="1200" height="800">
       <figcaption>Waterfront Villa</figcaption>
     </figure>
     <figure>
-      <img src="assets/re-penthouse.jpg" alt="Penthouse overlooking Miami skyline"/>
+      <img src="assets/re-penthouse.jpg" alt="Penthouse overlooking Miami skyline" loading="lazy" decoding="async" width="1200" height="800">
       <figcaption>Skyline Penthouse</figcaption>
     </figure>
   </section>
@@ -96,13 +97,16 @@
   <div class="container foot">
     <p>© <span id="y"></span> Miami Global Investments Group LLC — Miami, FL • </p>
     <p><strong>Email:</strong> <a href="mailto:Info@miamiglobalgroup.com">Info@miamiglobalgroup.com</a> •
-       <strong>Phone:</strong> +1 (305) 629-0491</p>
+       <strong>Phone:</strong> <a href="tel:+13056290491">+1 (305) 629-0491</a></p>
   </div>
 </footer>
 
 <script>
-  // Year auto-fill (kept for convenience)
-  (function(){ var y = document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); }})();
+  // Fill current year
+  (function () {
+    var y = document.getElementById('y');
+    if (y) y.textContent = new Date().getFullYear();
+  })();
 </script>
 </body>
 </html>
