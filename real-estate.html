@@ -1,21 +1,57 @@
-<!doctype html> <html lang="en"> <head> <title>MGI Real Estate Wholesaling — Miami Luxury</title> <meta name="description" content="Condos, villas, penthouses; off-market options; investor-friendly flows."> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width,initial-scale=1" /> <link rel="stylesheet" href="styles.css?v=9100" /> <script defer src="script.js?v=9100"></script> </head> <body> <header class="nav-wrap"> <div class="nav container"> <a class="brand" href="index.html"> <img class="logo" src="assets/mgi-logo.jpg" alt="MGI logo" /> <span>Miami Global Investments Group</span> </a> <nav> <a href="consulting.html">Consulting</a> <a href="travel.html">Travel</a> <a href="real-estate.html">Real Estate</a> <a href="about.html">About</a> <a class="cta" href="contact.html">Contact</a> </nav> </div> </header> <section class="hero"> <img class="hero-img" src="assets/hero-realestate.jpg" alt="Real Estate hero illustration"/> <div class="hero-overlay"> <h1>MGI Real Estate</h1> <p>Waterfront villas, skyline penthouses, and investor-ready condos.</p> </div> </section> <section class="container gallery"> <figure> <img src="assets/re-condo.jpg" alt="Bayfront condo graphic"/> <figcaption>Bayfront Condo</figcaption> </figure> <figure> <img src="assets/re-villa.jpg" alt="Waterfront villa graphic"/> <figcaption>Waterfront Villa</figcaption> </figure> <figure> <img src="assets/re-penthouse.jpg" alt="Penthouse skyline graphic"/> <figcaption>Skyline Penthouse</figcaption> </figure> </section>
-  <section class="container gallery" aria-labelledby="gallery-title">
-    <h2 id="gallery-title" class="visually-hidden">Featured Property Types</h2>
+<!doctype html>
+<html lang="en">
+<head>
+  <title>MGI Real Estate Wholesaling — Miami Luxury</title>
+  <meta name="description" content="Condos, villas, penthouses; off-market options; investor-friendly flows.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css?v=9100" />
+  <script defer src="script.js?v=9100"></script>
+</head>
+<body>
+<header class="nav-wrap">
+  <div class="nav container">
+    <a class="brand" href="index.html">
+      <img class="logo" src="assets/mgi-logo.jpg" alt="MGI logo" />
+      <span>Miami Global Investments Group</span>
+    </a>
+    <nav>
+      <a href="consulting.html">Consulting</a>
+      <a href="travel.html">Travel</a>
+      <a href="real-estate.html" aria-current="page">Real Estate</a>
+      <a href="about.html">About</a>
+      <a class="cta" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <!-- Hero -->
+  <section class="hero">
+    <img class="hero-img" src="assets/hero-realestate.jpg" alt="Real Estate hero illustration"/>
+    <div class="hero-overlay">
+      <h1>MGI Real Estate</h1>
+      <p>Waterfront villas, skyline penthouses, and investor-ready condos.</p>
+    </div>
+  </section>
+
+  <!-- Gallery (keep first only) -->
+  <section class="container gallery">
     <figure>
-      <img src="assets/re-condo.jpg" alt="Modern bayfront condo exterior" loading="lazy" decoding="async" width="1200" height="800">
+      <img src="assets/re-condo.jpg" alt="Bayfront condo graphic"/>
       <figcaption>Bayfront Condo</figcaption>
     </figure>
     <figure>
-      <img src="assets/re-villa.jpg" alt="Luxury waterfront villa with dock" loading="lazy" decoding="async" width="1200" height="800">
+      <img src="assets/re-villa.jpg" alt="Waterfront villa graphic"/>
       <figcaption>Waterfront Villa</figcaption>
     </figure>
     <figure>
-      <img src="assets/re-penthouse.jpg" alt="Penthouse overlooking Miami skyline" loading="lazy" decoding="async" width="1200" height="800">
+      <img src="assets/re-penthouse.jpg" alt="Penthouse skyline graphic"/>
       <figcaption>Skyline Penthouse</figcaption>
     </figure>
   </section>
 
-  <!-- How We Work (compliant wording) -->
+  <!-- How We Work -->
   <section class="container section" aria-labelledby="hww">
     <h2 id="hww">How We Work</h2>
     <ul class="check">
@@ -53,7 +89,6 @@
 </footer>
 
 <script>
-  // Fill current year
   (function () {
     var y = document.getElementById('y');
     if (y) y.textContent = new Date().getFullYear();
