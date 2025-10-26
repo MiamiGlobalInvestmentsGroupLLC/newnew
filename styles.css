@@ -423,3 +423,11 @@ html {
 .hero {
   background: linear-gradient(180deg, #ffffff 0%, #f8faff 40%, #f0f9ff 100%);
 }
+/* === Force the site background to the pastel gradient === */
+html, body {
+  background: linear-gradient(180deg, #fff6fb 0%, #f0f9ff 100%) !important;
+}
+
+.hero {
+  background: linear-gradient(180deg, #ffffff 0%, #f8faff 40%, #f0f9ff 100%) !important;
+}
