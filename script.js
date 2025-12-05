@@ -35,3 +35,24 @@ if (form) {
     } finally { submitBtn.disabled = false; }
   });
 }
+
+// Soft reveal animations
+const animated = document.querySelectorAll('[data-animate]');
+if (animated.length) {
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (prefersReduced || !('IntersectionObserver' in window)) {
+    animated.forEach((el) => el.classList.add('in'));
+  } else {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    animated.forEach((el) => observer.observe(el));
+  }
+}
