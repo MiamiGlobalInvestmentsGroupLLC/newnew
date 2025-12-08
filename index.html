@@ -1,91 +1,323 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>MGI — Miami Experiences & Investments</title>
-  <meta name="description" content="MGI: Miami consulting, premium travel, and luxury real estate wholesaling. Bright, modern, and clean.">
-  
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="styles.css?v=9100" />
-  <script defer src="script.js?v=9100"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MGI Dispatch | 5% Truck Dispatch for Texas & Florida Owner Operators</title>
+  <meta name="description" content="MGI Dispatch books loads, negotiates rates, and handles paperwork for owner operators across Texas and Florida for just 5% per load. No weekly fees or contracts." />
 
+  <meta property="og:title" content="MGI Dispatch | 5% Truck Dispatch in TX & FL" />
+  <meta property="og:description" content="Owner-operator focused dispatching with better rates, less empty miles, and paperwork handled for only 5% per load." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://miamiglobalgroup.com/" />
+  <meta property="og:image" content="assets/mgi-dispatch-preview.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  
-<header class="nav-wrap">
-  <div class="nav container">
-    <a class="brand" href="index.html">
-      <img class="logo" src="assets/mgi-logo.jpg" alt="MGI logo" />
-      <span>Miami Global Investments Group</span>
-    </a>
-    <nav>
-      <a href="consulting.html">Consulting</a>
-      <a href="travel.html">Travel</a>
-      <a href="real-estate.html">Real Estate Wholesaling</a>
-      <a href="about.html">About</a>
-      <a class="cta" href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+  <header class="top-bar">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="MGI Dispatch home">
+        <span class="brand-mark">MGI</span>
+        <div class="brand-text">
+          <strong>MGI Dispatch</strong>
+          <small>Miami Global Investments Group LLC</small>
+        </div>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <section class="hero">
-    <img class="hero-img" src="assets/hero-home.jpg" alt="Miami skyline illustration"/>
-    <div class="hero-overlay">
-      <h1>Miami Experiences & Investments</h1>
-      <p>Bright, modern pages for Consulting, Travel, and Real Estate Wholesaling.</p>
-      <div class="hero-actions">
-        <a class="btn pill" href="travel.html">Explore Travel</a>
-        <a class="btn outline" href="real-estate.html">See Real Estate Wholesaling</a>
-        <a class="btn ghost" href="consulting.html">Business Consulting</a>
+  <main id="top">
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Texas & Florida owner operators</p>
+          <h1>Only 5% commission per load. No weekly fees. No contracts.</h1>
+          <p class="lead">MGI Dispatch books your best loads, negotiates rates, and handles the paperwork so you stay rolling and profitable across TX and FL.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Get loads now</a>
+            <a class="btn ghost" href="#contact">Request a callback</a>
+          </div>
+          <div class="contact-pills" aria-label="Contact information">
+            <a class="pill" href="tel:+13056290491">📞 Call Matt: (305) 629-0491</a>
+            <a class="pill" href="mailto:Matt@miamiglobalgroup.com">✉️ Matt@miamiglobalgroup.com</a>
+          </div>
+          <div class="hero-badges" aria-label="Highlights">
+            <span class="badge">TX & FL specialists</span>
+            <span class="badge warm">Owner operator friendly</span>
+            <span class="badge">Paperwork handled</span>
+          </div>
+        </div>
+        <div class="hero-card" role="presentation">
+          <div class="stat">5%</div>
+          <p class="stat-label">Flat commission per load</p>
+          <ul class="hero-list">
+            <li>Priority lanes in Texas & Florida</li>
+            <li>Dedicated dispatcher for your truck</li>
+            <li>Broker packets & carrier setup handled</li>
+            <li>Fewer empty miles with smart routing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trust">
+      <div class="container section-heading">
+        <p class="eyebrow">Why carriers choose us</p>
+        <h2>Trusted, profitable dispatching that keeps you moving</h2>
+      </div>
+      <div class="container cards-grid">
+        <article class="card">
+          <h3>Better rates, less downtime</h3>
+          <p>We negotiate harder so you haul high-paying loads and avoid sitting empty between runs.</p>
+        </article>
+        <article class="card">
+          <h3>Paperwork handled</h3>
+          <p>Broker packets, carrier setup, and invoicing support are all covered so you can focus on driving.</p>
+        </article>
+        <article class="card">
+          <h3>No weekly fees</h3>
+          <p>Only 5% per load—no subscriptions, no hidden add-ons, and no long-term contracts.</p>
+        </article>
+        <article class="card">
+          <h3>Regional experts</h3>
+          <p>We specialize in Texas and Florida freight, pairing you with the most reliable brokers and lanes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container section-heading">
+        <p class="eyebrow">Dispatch & back office</p>
+        <h2>Services built for owner operators</h2>
+      </div>
+      <div class="container cards-grid cards-grid-3">
+        <article class="card icon-card">
+          <div class="icon" aria-hidden="true">📦</div>
+          <h3>Load booking & rate negotiation</h3>
+          <p>We hunt premium loads daily, negotiate top rates, and confirm details fast so you never miss an opportunity.</p>
+        </article>
+        <article class="card icon-card">
+          <div class="icon" aria-hidden="true">📝</div>
+          <h3>Broker packets & carrier setup</h3>
+          <p>All onboarding paperwork is handled for you—COI requests, W-9, references, and safety packets.</p>
+        </article>
+        <article class="card icon-card">
+          <div class="icon" aria-hidden="true">💼</div>
+          <h3>Paperwork & invoicing support</h3>
+          <p>We organize rate cons, PODs, and invoices so you get paid quickly and keep your compliance tight.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="process">
+      <div class="container section-heading">
+        <p class="eyebrow">Simple onboarding</p>
+        <h2>How it works</h2>
+      </div>
+      <div class="container steps">
+        <article class="step">
+          <div class="step-number">1</div>
+          <div>
+            <h3>Contact Matt</h3>
+            <p>Tell us about your equipment, preferred lanes, and how soon you want to start.</p>
+          </div>
+        </article>
+        <article class="step">
+          <div class="step-number">2</div>
+          <div>
+            <h3>Sign dispatch agreement</h3>
+            <p>We keep it straightforward—no long-term lock-ins or surprise fees.</p>
+          </div>
+        </article>
+        <article class="step">
+          <div class="step-number">3</div>
+          <div>
+            <h3>We start booking loads</h3>
+            <p>Your dedicated dispatcher lines up profitable loads that fit your schedule.</p>
+          </div>
+        </article>
+        <article class="step">
+          <div class="step-number">4</div>
+          <div>
+            <h3>You pay 5% per load only</h3>
+            <p>Keep more of every mile—no weekly fees, ever.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container section-heading">
+        <p class="eyebrow">Transparent pricing</p>
+        <h2>One plan, zero surprises</h2>
+      </div>
+      <div class="container pricing">
+        <div class="pricing-card">
+          <p class="eyebrow">All-in service</p>
+          <h3>5% per load</h3>
+          <ul>
+            <li>Dedicated dispatcher</li>
+            <li>Load search, booking & rate negotiation</li>
+            <li>Broker packets and carrier setup</li>
+            <li>Paperwork & invoicing support</li>
+            <li>No setup fees, no contracts</li>
+          </ul>
+          <div class="pricing-actions">
+            <a class="btn" href="#contact">Start dispatching</a>
+            <a class="btn ghost" href="#faq">See FAQs</a>
+          </div>
+          <p class="note">We keep it simple: you only pay when you haul.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="testimonials">
+      <div class="container section-heading">
+        <p class="eyebrow">Driver feedback</p>
+        <h2>Owner operators stay with us for the consistency</h2>
+      </div>
+      <div class="container testimonials">
+        <article class="testimonial">
+          <p>“MGI Dispatch keeps my reefer booked back-to-back. Rates are strong and they handle the headaches so I don’t have to.”</p>
+          <h3>— Carlos M., Houston</h3>
+        </article>
+        <article class="testimonial">
+          <p>“Reliable communication, clean paperwork, and the 5% fee is the best deal I’ve found. I stopped worrying about empty miles.”</p>
+          <h3>— Jasmine R., Miami</h3>
+        </article>
+        <article class="testimonial">
+          <p>“They know the Texas and Florida lanes cold. I’m never chasing brokers anymore—they already have the relationships.”</p>
+          <h3>— Andre T., Dallas</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container section-heading">
+        <p class="eyebrow">Common questions</p>
+        <h2>FAQ</h2>
+      </div>
+      <div class="container faq">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is included in the 5% commission?</button>
+          <div class="faq-answer" hidden>
+            <p>Load search, booking, rate negotiation, broker packets, carrier setup, and paperwork support are all included. There are no weekly platform fees or contracts.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Do you require a long-term agreement?</button>
+          <div class="faq-answer" hidden>
+            <p>No. We work month-to-month. You only pay when you haul a load we book.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Which states do you cover?</button>
+          <div class="faq-answer" hidden>
+            <p>We specialize in Texas and Florida lanes, including intrastate and regional routes that keep you close to home.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can you handle my broker packets and onboarding?</button>
+          <div class="faq-answer" hidden>
+            <p>Yes. We complete broker packets, COI requests, safety questionnaires, and carrier setup so you can get booked faster.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What equipment types do you support?</button>
+          <div class="faq-answer" hidden>
+            <p>We dispatch dry van, reefer, flatbed, step deck, and power-only. Tell us your equipment and preferred lanes when you reach out.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How soon can I start?</button>
+          <div class="faq-answer" hidden>
+            <p>Most carriers start within one business day after we receive your documents and signed dispatch agreement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="contact">
+      <div class="container section-heading">
+        <p class="eyebrow">Talk with Matt</p>
+        <h2>Ready for better loads?</h2>
+      </div>
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h3>Reach out</h3>
+          <p>Email <a href="mailto:Matt@miamiglobalgroup.com">Matt@miamiglobalgroup.com</a> or call <a href="tel:+13056290491">(305) 629-0491</a>. Share your equipment type and preferred lanes to get started.</p>
+          <ul class="contact-list">
+            <li><strong>Company:</strong> Miami Global Investments Group LLC</li>
+            <li><strong>Dispatcher:</strong> Matt</li>
+            <li><strong>Coverage:</strong> Texas & Florida</li>
+          </ul>
+          <div class="mini-badges">
+            <span>Owner-operator focused</span>
+            <span>Back office included</span>
+            <span>Fast onboarding</span>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" aria-label="Contact form">
+          <div class="row">
+            <label for="name">Name *</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+          </div>
+          <div class="row">
+            <label for="company">Company name</label>
+            <input id="company" name="company" type="text" placeholder="Carrier or LLC" />
+          </div>
+          <div class="row">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="row">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(XXX) XXX-XXXX" />
+          </div>
+          <div class="row">
+            <label for="equipment">Equipment type</label>
+            <input id="equipment" name="equipment" type="text" placeholder="Dry van, reefer, flatbed..." />
+          </div>
+          <div class="row">
+            <label for="lanes">Preferred lanes or states</label>
+            <input id="lanes" name="lanes" type="text" placeholder="e.g., Dallas to Houston, Miami to Orlando" />
+          </div>
+          <div class="row">
+            <label for="message">Notes</label>
+            <textarea id="message" name="message" rows="3" placeholder="Anything else we should know"></textarea>
+          </div>
+          <button class="btn" id="submitBtn" type="submit">Send</button>
+          <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Miami Global Investments Group LLC</strong>
+        <p>MGI Dispatch provides dispatching and back-office support services. We are not a motor carrier.</p>
+        <p class="muted">© <span id="y"></span> All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Back to top</a>
+        <a href="mailto:Matt@miamiglobalgroup.com">Email</a>
+        <a href="https://wa.me/13056290491" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
-  </section>
-
-  <section class="container cards-3">
-    <article class="c-card">
-      <h3>Business Consulting</h3>
-      <p>Market entry, company formation, banking/EIN guidance, SOPs, go-to-market playbooks.</p>
-      <a class="arrow" href="consulting.html">Learn more →</a>
-    </article>
-    <article class="c-card">
-      <h3>Travel</h3>
-      <p>Agent-only rates, VIP perks, fast quotes, and meticulous confirmations — worldwide.</p>
-      <a class="arrow" href="travel.html">Plan a trip →</a>
-    </article>
-    <article class="c-card">
-      <h3>Real Estate</h3>
-      <p>Waterfront villas, skyline penthouses, and investor-ready condos in Miami.</p>
-      <a class="arrow" href="real-estate.html">Discover listings →</a>
-    </article>
-  </section>
-  <div class="map">
-      <iframe title="MGI Miami" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=2125+Biscayne+Blvd,+Ste+204,+Miami+FL&output=embed"></iframe>
-    </div>
-  </section>
-<footer class="footer">
-  <div class="container foot">
-    <p>© <span id="y"></span> Miami Global Investments Group LLC — Miami, FL • </p>
-    <p><strong>Email:</strong> <a href="mailto:Info@miamiglobalgroup.com">Info@miamiglobalgroup.com</a> •
-       <strong>Phone:</strong> +1 (305) 629-0491</p>
-  </div>
-</footer>
-<!-- WhatsApp Floating Button + Welcome Bubble -->
-<a href="https://wa.me/13056290491" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
-  <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp chat icon">
-</a>
-
-<div class="wa-bubble" id="waBubble">
-  💬 Need help? <strong>Chat with us on WhatsApp</strong>
-</div>
-
-<script>
-  // Bubble auto-hide after 10s or on click
-  const bubble = document.getElementById('waBubble');
-  if(bubble){
-    setTimeout(()=>bubble.classList.add('hide'),10000);
-    bubble.addEventListener('click',()=>bubble.classList.add('hide'));
-  }
-</script>
+  </footer>
 </body>
 </html>
