@@ -1,37 +1,77 @@
-// Set year
-document.querySelectorAll('#y').forEach(el => el.textContent = new Date().getFullYear());
-// Contact form handler
-const form = document.getElementById('contactForm');
-if (form) {
-  const formMsg = document.getElementById('formMsg');
-  const submitBtn = document.getElementById('submitBtn');
-  const mailtoFallback = document.getElementById('mailtoFallback');
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    formMsg.textContent='';
-    submitBtn.disabled = true;
-    const data = Object.fromEntries(new FormData(form).entries());
-    if (!data.name || !data.email || !data.message) {
-      formMsg.textContent = 'Please fill the required fields (*)';
-      submitBtn.disabled = false; return;
-    }
-    try {
-      const res = await fetch('api/contact', {
-        method:'POST', headers:{'Content-Type':'application/json'},
-        body: JSON.stringify(data)
+(function () {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    navLinks.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
       });
-      if(!res.ok) throw new Error('Network error');
-      await res.json();
-      formMsg.textContent = 'Thanks! We’ll get back to you very soon.';
-      form.reset();
-    } catch(err){
-      formMsg.textContent = 'Couldn’t send via server. Use your email app:';
-      mailtoFallback.classList.remove('hidden');
-      const subject = encodeURIComponent('New Inquiry — MGI Website');
-      const body = encodeURIComponent(
-        `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || ''}\nService: ${data.service || ''}\n\nMessage:\n${data.message}`
-      );
-      mailtoFallback.href = `mailto:Info@miamiglobalgroup.com?subject=${subject}&body=${body}`;
-    } finally { submitBtn.disabled = false; }
+    });
+  }
+
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach((item) => {
+    item.addEventListener('click', () => {
+      const expanded = item.getAttribute('aria-expanded') === 'true';
+      const panel = item.nextElementSibling;
+      if (!panel) return;
+
+      item.setAttribute('aria-expanded', String(!expanded));
+      if (expanded) {
+        panel.hidden = true;
+        item.querySelector('.faq-icon')?.classList.remove('open');
+      } else {
+        panel.hidden = false;
+        item.querySelector('.faq-icon')?.classList.add('open');
+      }
+    });
   });
-}
+
+  const animated = document.querySelectorAll('.animate');
+  if (animated.length) {
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      animated.forEach((el) => observer.observe(el));
+    } else {
+      animated.forEach((el) => el.classList.add('in-view'));
+    }
+  }
+
+  // Contact form mailto handler (static-friendly)
+  const contactForm = document.querySelector('.contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(contactForm);
+      const entries = Array.from(formData.entries());
+      const body = entries
+        .map(([key, value]) => `${key}: ${value}`)
+        .join('\n');
+
+      const mailtoHref = `mailto:motazob@gmail.com?subject=${encodeURIComponent(
+        'New dispatch inquiry'
+      )}&body=${encodeURIComponent(body)}`;
+
+      window.location.href = mailtoHref;
+    });
+  }
+})();
