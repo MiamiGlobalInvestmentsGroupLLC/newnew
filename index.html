@@ -1,91 +1,554 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>MGI — Miami Experiences & Investments</title>
-  <meta name="description" content="MGI: Miami consulting, premium travel, and luxury real estate wholesaling. Bright, modern, and clean.">
-  
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="styles.css?v=9100" />
-  <script defer src="script.js?v=9100"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MGI Dispatch | Ultra-Luxury Global Dispatch & Premium Driver Travel</title>
+  <meta
+    name="description"
+    content="MGI Dispatch delivers global-grade truck dispatch, back office, and premium driver travel services from its Miami HQ with transparent 5% commission pricing."
+  />
+  <meta property="og:title" content="MGI Dispatch | Ultra-Luxury Global Dispatch" />
+  <meta
+    property="og:description"
+    content="Global dispatch, lane optimization, back office support, and premium travel packages for fleets and owner operators across the U.S."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://miamiglobalgroup.com/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1504274066651-8d31a536b11a?w=1200&auto=format&fit=crop&q=80" />
+  <meta name="theme-color" content="#0ce5d6" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  
-<header class="nav-wrap">
-  <div class="nav container">
-    <a class="brand" href="index.html">
-      <img class="logo" src="assets/mgi-logo.jpg" alt="MGI logo" />
-      <span>Miami Global Investments Group</span>
-    </a>
-    <nav>
-      <a href="consulting.html">Consulting</a>
-      <a href="travel.html">Travel</a>
-      <a href="real-estate.html">Real Estate Wholesaling</a>
-      <a href="about.html">About</a>
-      <a class="cta" href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="top-bar">
+    <div class="container nav">
+      <a class="brand" href="#hero" aria-label="MGI Dispatch home">
+        <div class="brand-mark" aria-hidden="true"><span>MGI</span></div>
+        <div class="brand-text">
+          <strong>MGI Dispatch</strong>
+          <small class="brand-subtitle">MIAMI GLOBAL INVESTMENTS GROUP LLC</small>
+        </div>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#coverage">Network</a>
+        <a href="#services">Services</a>
+        <a href="#value">Why MGI</a>
+        <a href="#process">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#travel">Travel</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#hq">Miami HQ</a>
+        <a class="btn btn-small" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <section class="hero">
-    <img class="hero-img" src="assets/hero-home.jpg" alt="Miami skyline illustration"/>
-    <div class="hero-overlay">
-      <h1>Miami Experiences & Investments</h1>
-      <p>Bright, modern pages for Consulting, Travel, and Real Estate Wholesaling.</p>
-      <div class="hero-actions">
-        <a class="btn pill" href="travel.html">Explore Travel</a>
-        <a class="btn outline" href="real-estate.html">See Real Estate Wholesaling</a>
-        <a class="btn ghost" href="consulting.html">Business Consulting</a>
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-overlay"></div>
+        <img
+          src="https://images.unsplash.com/photo-1500048993953-d23a436266cf?w=1600&auto=format&fit=crop&q=80"
+          alt="Premium semi-truck driving under night lights"
+          loading="lazy"
+        />
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Ultra-Luxury Global Dispatch · Miami HQ</p>
+          <h1>Global Dispatch. Premium Support. Miami HQ.</h1>
+          <p class="lead">
+            MGI Dispatch blends enterprise-grade logistics, lane optimization, and concierge-level travel services for
+            fleets and owner operators across all 50 states.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Talk to Dispatch Sales</a>
+            <a class="btn ghost" href="#contact">Request a Callback</a>
+          </div>
+          <div class="contact-pills" aria-label="Contact information">
+            <span class="pill">Dispatch Sales Team</span>
+            <a class="pill" href="mailto:Matt@miamiglobalgroup.com">Matt@miamiglobalgroup.com</a>
+            <a class="pill" href="mailto:info@miamiglobalgroup.com">info@miamiglobalgroup.com</a>
+            <a class="pill" href="tel:+13056290491">+1 (305) 629-0491</a>
+          </div>
+          <div class="hero-badges" aria-label="Highlights">
+            <span class="badge">Nationwide coverage</span>
+            <span class="badge warm">5% commission · no weekly fees</span>
+            <span class="badge">Back office included</span>
+            <span class="badge warm">Premium travel concierge</span>
+          </div>
+        </div>
+        <div class="hero-visual card-glow">
+          <div class="hero-panel">
+            <p class="eyebrow">Performance dashboard</p>
+            <h3>Enterprise-grade dispatch for modern fleets</h3>
+            <ul class="hero-list">
+              <li>Real-time load strategy across U.S. lanes</li>
+              <li>Dedicated dispatch pods for your fleet</li>
+              <li>Broker packets, compliance, and invoicing</li>
+              <li>Driver travel concierge and hotel curation</li>
+            </ul>
+            <div class="stat-row">
+              <div>
+                <p class="stat">5%</p>
+                <p class="stat-label">Transparent commission</p>
+              </div>
+              <div>
+                <p class="stat">50</p>
+                <p class="stat-label">States covered</p>
+              </div>
+              <div>
+                <p class="stat">24/7</p>
+                <p class="stat-label">Dispatch oversight</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coverage Section -->
+    <section class="section" id="coverage">
+      <div class="container section-heading">
+        <p class="eyebrow">Nationwide network</p>
+        <h2>Enterprise coverage across all 50 states</h2>
+        <p class="section-lead">
+          Miami-headquartered with coast-to-coast reach and a global-ready mindset. We optimize lanes, reduce empty miles,
+          and position your assets where demand is strongest.
+        </p>
+      </div>
+      <div class="container coverage-grid">
+        <div class="coverage-card card-glass">
+          <h3>Strategic U.S. grid</h3>
+          <p>Balanced mix of spot and contract freight with data-backed routing through key metros and ports.</p>
+          <div class="coverage-tags">
+            <span class="tag">Port-to-interior</span>
+            <span class="tag">Coast-to-coast</span>
+            <span class="tag">Border crossings</span>
+          </div>
+        </div>
+        <div class="coverage-visual card-glow">
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600&auto=format&fit=crop&q=80"
+            alt="Digital world map with glowing logistics network"
+            loading="lazy"
+          />
+          <div class="network-badges">
+            <span>48K+ annual lane scans</span>
+            <span>24/7 dispatch oversight</span>
+            <span>Global expansion ready</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section alt" id="services">
+      <div class="container section-heading">
+        <p class="eyebrow">Enterprise services</p>
+        <h2>Dispatch & logistics paired with premium travel</h2>
+      </div>
+      <div class="container service-columns">
+        <div class="service-group">
+          <h3>Dispatch & Logistics</h3>
+          <div class="cards-grid cards-grid-2">
+            <article class="card icon-card">
+              <div class="icon" aria-hidden="true">🌐</div>
+              <h4>Global & nationwide dispatch</h4>
+              <p>Enterprise-level coverage with dedicated pods managing live loads, detentions, and recovery plans.</p>
+            </article>
+            <article class="card icon-card">
+              <div class="icon" aria-hidden="true">📊</div>
+              <h4>Load booking & lane optimization</h4>
+              <p>Rate negotiation backed by data, minimizing empty miles and maximizing revenue per truck.</p>
+            </article>
+            <article class="card icon-card">
+              <div class="icon" aria-hidden="true">🗂️</div>
+              <h4>Back office & compliance</h4>
+              <p>Broker packets, carrier setup, invoicing, paperwork, and COI coordination handled end-to-end.</p>
+            </article>
+            <article class="card icon-card">
+              <div class="icon" aria-hidden="true">🔒</div>
+              <h4>Risk & reliability</h4>
+              <p>Safety-first dispatching with vetted brokers and transparent communication for fleets and owners.</p>
+            </article>
+          </div>
+        </div>
+        <div class="service-group">
+          <h3>Driver Travel & Hospitality</h3>
+          <div class="cards-grid cards-grid-2">
+            <article class="card icon-card">
+              <div class="icon" aria-hidden="true">🏨</div>
+              <h4>Luxury hotels on the road</h4>
+              <p>Curated premium stays near key corridors to elevate rest and recovery for drivers and teams.</p>
+            </article>
+            <article class="card icon-card">
+              <div class="icon" aria-hidden="true">🧘</div>
+              <h4>Recovery & wellness</h4>
+              <p>Rest stop packages, wellness add-ons, and concierge support for revitalized, ready-to-roll drivers.</p>
+            </article>
+            <article class="card icon-card">
+              <div class="icon" aria-hidden="true">🛎️</div>
+              <h4>Premium travel concierge</h4>
+              <p>Itineraries, late arrivals, and on-the-fly adjustments managed like a luxury hospitality desk.</p>
+            </article>
+            <article class="card icon-card">
+              <div class="icon" aria-hidden="true">✈️</div>
+              <h4>Global expansion ready</h4>
+              <p>International-ready coordination for cross-border movements and future global networks.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="section" id="value">
+      <div class="container section-heading">
+        <p class="eyebrow">Luxury value proposition</p>
+        <h2>Why fleets and owners trust MGI</h2>
+      </div>
+      <div class="container cards-grid cards-grid-3">
+        <article class="card value-card">
+          <h3>Global-level professionalism</h3>
+          <p>Executive-grade communication, structured reporting, and 24/7 availability from Miami HQ.</p>
+        </article>
+        <article class="card value-card">
+          <h3>5% transparent commission</h3>
+          <p>Simple model with no weekly fees and no contracts—aligned to your revenue, not ours.</p>
+        </article>
+        <article class="card value-card">
+          <h3>Owner-operator & fleet friendly</h3>
+          <p>Personalized pod support whether you run one truck or a nationwide fleet.</p>
+        </article>
+        <article class="card value-card">
+          <h3>Back office excellence</h3>
+          <p>Carrier packets, compliance, invoicing, and paperwork managed with precision.</p>
+        </article>
+        <article class="card value-card">
+          <h3>Premium hotel curation</h3>
+          <p>Luxury travel planning that keeps drivers rested, safe, and on-time.</p>
+        </article>
+        <article class="card value-card">
+          <h3>Miami vantage point</h3>
+          <p>Strategic access to port traffic, Latin American trade lanes, and U.S. freight corridors.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section alt" id="process">
+      <div class="container section-heading">
+        <p class="eyebrow">Enterprise timeline</p>
+        <h2>How it works</h2>
+      </div>
+      <div class="container steps">
+        <article class="step card-glass">
+          <div class="step-number">1</div>
+          <div>
+            <h3>Contact Dispatch Sales Team</h3>
+            <p>Share your fleet profile, equipment, and preferred markets.</p>
+          </div>
+        </article>
+        <article class="step card-glass">
+          <div class="step-number">2</div>
+          <div>
+            <h3>Strategize lanes & coverage</h3>
+            <p>We map optimal lanes, seasonality, and broker mix to match your goals.</p>
+          </div>
+        </article>
+        <article class="step card-glass">
+          <div class="step-number">3</div>
+          <div>
+            <h3>Sign dispatch agreement</h3>
+            <p>Clear terms, 5% commission per load, no weekly fees, no long-term lock-ins.</p>
+          </div>
+        </article>
+        <article class="step card-glass">
+          <div class="step-number">4</div>
+          <div>
+            <h3>Load booking & back office</h3>
+            <p>We negotiate, book, and execute while managing paperwork and compliance.</p>
+          </div>
+        </article>
+        <article class="step card-glass">
+          <div class="step-number">5</div>
+          <div>
+            <h3>Travel coordination (optional)</h3>
+            <p>Luxury hotel and recovery planning for drivers and teams on the road.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section" id="pricing">
+      <div class="container section-heading">
+        <p class="eyebrow">Transparent pricing</p>
+        <h2>Enterprise dispatch, one simple commission</h2>
+      </div>
+      <div class="container pricing">
+        <div class="pricing-card card-glow">
+          <p class="eyebrow">All-inclusive dispatch</p>
+          <h3>5% per load</h3>
+          <ul>
+            <li>Dedicated dispatch pod</li>
+            <li>Load search, booking, and rate negotiation</li>
+            <li>Broker packets, carrier setup, compliance</li>
+            <li>Paperwork, invoicing, and COI support</li>
+            <li>Optional driver travel coordination</li>
+            <li>No weekly fees. No contracts.</li>
+          </ul>
+          <div class="pricing-actions">
+            <a class="btn" href="#contact">Start with MGI</a>
+            <a class="btn ghost" href="#faq">View FAQs</a>
+          </div>
+          <p class="note">Aligned to your revenue—pay only when you haul.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Premium Travel Packages Section -->
+    <section class="section alt" id="travel">
+      <div class="container section-heading">
+        <p class="eyebrow">Premium driver travel</p>
+        <h2>Curated luxury experiences for drivers on the move</h2>
+        <p class="section-lead">Hotels, rest, and recovery packages designed to keep your teams refreshed and ready.</p>
+      </div>
+      <div class="container travel-grid">
+        <article class="card travel-card">
+          <img
+            src="https://images.unsplash.com/photo-1439130490301-25e322d88054?w=1600&auto=format&fit=crop&q=80"
+            alt="Luxury hotel lounge with elegant seating"
+            loading="lazy"
+          />
+          <div class="travel-content">
+            <h3>Signature hotel collection</h3>
+            <p>Premium stays near critical freight corridors with flexible check-ins for late arrivals.</p>
+            <span class="tag">Concierge check-in</span>
+            <span class="tag">Wellness add-ons</span>
+          </div>
+        </article>
+        <article class="card travel-card">
+          <img
+            src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1600&auto=format&fit=crop&q=80"
+            alt="Spa-style recovery room with ambient lighting"
+            loading="lazy"
+          />
+          <div class="travel-content">
+            <h3>Recovery & wellness</h3>
+            <p>Curated rest stops, spa access, and revitalizing packages for long-haul resilience.</p>
+            <span class="tag">Recovery suites</span>
+            <span class="tag">24/7 support</span>
+          </div>
+        </article>
+        <article class="card travel-card">
+          <img
+            src="https://images.unsplash.com/photo-1506976785307-8732e854ad89?w=1600&auto=format&fit=crop&q=80"
+            alt="Miami skyline glowing at night"
+            loading="lazy"
+          />
+          <div class="travel-content">
+            <h3>Miami vantage</h3>
+            <p>Experience the Biscayne Boulevard energy with tailored itineraries and hospitality partners.</p>
+            <span class="tag">Biscayne Blvd</span>
+            <span class="tag">Luxury concierge</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials">
+      <div class="container section-heading">
+        <p class="eyebrow">Trusted by modern fleets</p>
+        <h2>What partners say</h2>
+      </div>
+      <div class="container testimonials">
+        <article class="testimonial card-glass">
+          <p class="quote">“MGI feels like a global control tower. Our drivers get rest, our loads move faster, and the reporting is boardroom-ready.”</p>
+          <p class="author">— A. Patel, COO, National Flatbed Fleet</p>
+        </article>
+        <article class="testimonial card-glass">
+          <p class="quote">“Five percent for this level of service is unmatched. Dispatch pods respond instantly and keep us ahead of market swings.”</p>
+          <p class="author">— L. Ramirez, Owner Operator</p>
+        </article>
+        <article class="testimonial card-glass">
+          <p class="quote">“The travel concierge changed our driver retention. Premium hotels and recovery planning make a real difference.”</p>
+          <p class="author">— C. Nguyen, Director of Operations</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Miami HQ Section -->
+    <section class="section alt" id="hq">
+      <div class="container section-heading">
+        <p class="eyebrow">Miami headquarters</p>
+        <h2>2125 Biscayne Blvd, Ste 204 · Miami, FL 33137</h2>
+        <p class="section-lead">At the intersection of global trade lanes and luxury hospitality, serving fleets nationwide.</p>
+      </div>
+      <div class="container hq-grid">
+        <div class="card card-glass hq-details">
+          <h3>MGI Dispatch · Miami Global Investments Group LLC</h3>
+          <p>World-class dispatch control with Miami's energy, bridging U.S. freight corridors and international routes.</p>
+          <div class="coverage-tags">
+            <span class="tag">Port access</span>
+            <span class="tag">Global-ready</span>
+            <span class="tag">Hospitality capital</span>
+          </div>
+          <div class="hq-contact">
+            <p><strong>Dispatch Sales Team</strong></p>
+            <p><a href="mailto:Matt@miamiglobalgroup.com">Matt@miamiglobalgroup.com</a></p>
+            <p><a href="mailto:info@miamiglobalgroup.com">info@miamiglobalgroup.com</a></p>
+            <p><a href="tel:+13056290491">+1 (305) 629-0491</a></p>
+          </div>
+        </div>
+        <div class="map card-glow" aria-label="Google Map of Miami HQ">
+          <iframe
+            title="MGI Dispatch Miami Headquarters"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.673568160506!2d-80.19179052394536!3d25.799960108186505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b68015d16bd5%3A0xa3a5a0fdb59bd4cb!2s2125%20Biscayne%20Blvd%20Ste%20204%2C%20Miami%2C%20FL%2033137%2C%20USA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+      <div class="container section-heading">
+        <p class="eyebrow">FAQ</p>
+        <h2>Answers for carriers and fleets</h2>
+      </div>
+      <div class="container faq">
+        <button class="faq-item" aria-expanded="false">
+          <span>What is your commission model?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel" hidden>
+          <p>We operate at a transparent 5% commission per load. No weekly fees, setup costs, or long-term contracts.</p>
+        </div>
+
+        <button class="faq-item" aria-expanded="false">
+          <span>Do you cover all 50 states?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel" hidden>
+          <p>Yes. Our dispatch pods manage freight nationwide with particular expertise in port markets and high-density corridors.</p>
+        </div>
+
+        <button class="faq-item" aria-expanded="false">
+          <span>Can you handle broker packets and compliance?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel" hidden>
+          <p>We manage broker packets, carrier setup, COIs, invoicing, and compliance paperwork end-to-end.</p>
+        </div>
+
+        <button class="faq-item" aria-expanded="false">
+          <span>Is travel coordination required?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel" hidden>
+          <p>No. Travel and hotel coordination is optional. You can add it for select lanes, drivers, or the entire fleet.</p>
+        </div>
+
+        <button class="faq-item" aria-expanded="false">
+          <span>How fast can onboarding start?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel" hidden>
+          <p>Most fleets begin within days after equipment review and agreement. We prioritize rapid deployment and clear communication.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section alt" id="contact">
+      <div class="container section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Speak with the Dispatch Sales Team</h2>
+        <p class="section-lead">Let us tailor a dispatch and travel program for your fleet or owner-operator business.</p>
+      </div>
+      <div class="container contact-grid">
+        <div class="contact-info card-glass">
+          <h3>Direct lines</h3>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:Matt@miamiglobalgroup.com">Matt@miamiglobalgroup.com</a></li>
+            <li><strong>Email:</strong> <a href="mailto:info@miamiglobalgroup.com">info@miamiglobalgroup.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+13056290491">+1 (305) 629-0491</a></li>
+          </ul>
+          <p>We operate nationwide with Miami-based leadership, ready for global expansion.</p>
+        </div>
+        <form class="contact-form card-glow" action="#" method="post">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+          </div>
+          <div class="form-row">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" placeholder="Company or carrier name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="+1 (305) 629-0491" required />
+          </div>
+          <div class="form-row">
+            <label for="equipment">Equipment type</label>
+            <input id="equipment" name="equipment" type="text" placeholder="Dry van, reefer, flatbed, etc." />
+          </div>
+          <div class="form-row">
+            <label for="fleet">Fleet size</label>
+            <input id="fleet" name="fleet" type="number" min="1" placeholder="Number of trucks" />
+          </div>
+          <div class="form-row">
+            <label for="lanes">Preferred lanes or states</label>
+            <textarea id="lanes" name="lanes" rows="3" placeholder="Example: Southeast, Texas triangle, Midwest to Florida"></textarea>
+          </div>
+          <div class="form-row checkbox-row">
+            <input id="travel" name="travel" type="checkbox" />
+            <label for="travel">Interested in premium travel packages</label>
+          </div>
+          <button type="submit" class="btn">Submit inquiry</button>
+          <p class="note">We typically respond within one business day.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>MGI Dispatch</strong>
+        <p>Miami Global Investments Group LLC · Ultra-Luxury Global Dispatch & Premium Driver Travel Services.</p>
+      </div>
+      <div>
+        <p class="footer-legal">MGI Dispatch provides dispatch, back office, and travel coordination services and is not a motor carrier.</p>
+        <div class="socials" aria-label="Social links">
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
       </div>
     </div>
-  </section>
-
-  <section class="container cards-3">
-    <article class="c-card">
-      <h3>Business Consulting</h3>
-      <p>Market entry, company formation, banking/EIN guidance, SOPs, go-to-market playbooks.</p>
-      <a class="arrow" href="consulting.html">Learn more →</a>
-    </article>
-    <article class="c-card">
-      <h3>Travel</h3>
-      <p>Agent-only rates, VIP perks, fast quotes, and meticulous confirmations — worldwide.</p>
-      <a class="arrow" href="travel.html">Plan a trip →</a>
-    </article>
-    <article class="c-card">
-      <h3>Real Estate</h3>
-      <p>Waterfront villas, skyline penthouses, and investor-ready condos in Miami.</p>
-      <a class="arrow" href="real-estate.html">Discover listings →</a>
-    </article>
-  </section>
-  <div class="map">
-      <iframe title="MGI Miami" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=2125+Biscayne+Blvd,+Ste+204,+Miami+FL&output=embed"></iframe>
-    </div>
-  </section>
-<footer class="footer">
-  <div class="container foot">
-    <p>© <span id="y"></span> Miami Global Investments Group LLC — Miami, FL • </p>
-    <p><strong>Email:</strong> <a href="mailto:Info@miamiglobalgroup.com">Info@miamiglobalgroup.com</a> •
-       <strong>Phone:</strong> +1 (305) 629-0491</p>
-  </div>
-</footer>
-<!-- WhatsApp Floating Button + Welcome Bubble -->
-<a href="https://wa.me/13056290491" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
-  <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp chat icon">
-</a>
-
-<div class="wa-bubble" id="waBubble">
-  💬 Need help? <strong>Chat with us on WhatsApp</strong>
-</div>
-
-<script>
-  // Bubble auto-hide after 10s or on click
-  const bubble = document.getElementById('waBubble');
-  if(bubble){
-    setTimeout(()=>bubble.classList.add('hide'),10000);
-    bubble.addEventListener('click',()=>bubble.classList.add('hide'));
-  }
-</script>
+  </footer>
 </body>
 </html>
