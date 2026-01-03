@@ -1,91 +1,934 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>MGI — Miami Experiences & Investments</title>
-  <meta name="description" content="MGI: Miami consulting, premium travel, and luxury real estate wholesaling. Bright, modern, and clean.">
-  
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="styles.css?v=9100" />
-  <script defer src="script.js?v=9100"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MGI | Miami Global Investments Group LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ocean: #1c8ea0;
+      --deep-ocean: #127586;
+      --sunset: #f48c64;
+      --coral: #f7b48b;
+      --gold: #f8c15b;
+      --navy: #1c2c3a;
+      --text: #2c3a4b;
+      --muted: #66768b;
+      --light: #f8fafc;
+      --white: #ffffff;
+      --shadow: 0 18px 45px rgba(15, 37, 58, 0.12);
+    }
 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1200px, 92%);
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(2rem, 3.2vw, 2.8rem);
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 20px;
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 720px;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 26px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      box-shadow: 0 12px 24px rgba(24, 52, 75, 0.12);
+    }
+
+    .btn-primary {
+      background: linear-gradient(120deg, var(--sunset), var(--gold));
+      color: var(--navy);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--navy);
+      border: 1px solid rgba(28, 44, 58, 0.2);
+      box-shadow: none;
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      box-shadow: none;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px) scale(1.01);
+      box-shadow: 0 16px 32px rgba(24, 52, 75, 0.18);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.18);
+      color: var(--white);
+      font-size: 0.85rem;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(28, 44, 58, 0.08);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+
+    .logo {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--navy);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      color: var(--navy);
+      font-size: 0.95rem;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(120deg, var(--sunset), var(--gold));
+      transition: width 0.2s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .nav-toggle span {
+      width: 24px;
+      height: 2px;
+      background: var(--navy);
+    }
+
+    .hero {
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      background: radial-gradient(circle at 10% 20%, rgba(248, 193, 91, 0.35), transparent 55%),
+        radial-gradient(circle at 90% 20%, rgba(244, 140, 100, 0.4), transparent 60%),
+        linear-gradient(135deg, #fef4e8 0%, #dff6f9 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -120px;
+      bottom: -120px;
+      width: 380px;
+      height: 380px;
+      background: linear-gradient(160deg, rgba(28, 142, 160, 0.24), rgba(18, 117, 134, 0.1));
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(2.6rem, 4.6vw, 3.6rem);
+      color: var(--navy);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.08rem;
+      margin-bottom: 26px;
+      max-width: 560px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-bullets {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      color: var(--navy);
+      font-weight: 600;
+    }
+
+    .hero-bullets li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero-bullets span {
+      width: 10px;
+      height: 10px;
+      background: linear-gradient(120deg, var(--ocean), var(--sunset));
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .trust-strip {
+      background: var(--light);
+      padding: 40px 0;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .trust-card {
+      background: var(--white);
+      padding: 22px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      align-items: start;
+    }
+
+    .highlight-box {
+      background: linear-gradient(150deg, rgba(28, 142, 160, 0.08), rgba(244, 140, 100, 0.15));
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+    }
+
+    .highlight-box h4 {
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 12px;
+    }
+
+    .highlight-box ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .highlight-box li::before {
+      content: "✓";
+      color: var(--ocean);
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid rgba(28, 44, 58, 0.06);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(15, 37, 58, 0.16);
+    }
+
+    .card h3 {
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 12px;
+      color: var(--navy);
+    }
+
+    .pricing-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pricing-card .price {
+      font-size: 2rem;
+      color: var(--ocean);
+      font-weight: 700;
+      margin-bottom: 12px;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .pricing-card ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+      color: var(--muted);
+    }
+
+    .pricing-card ul li::before {
+      content: "•";
+      color: var(--sunset);
+      margin-right: 8px;
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .step {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 22px;
+      border-left: 4px solid var(--sunset);
+      box-shadow: var(--shadow);
+    }
+
+    .step span {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .step h4 {
+      font-family: "Montserrat", sans-serif;
+      margin: 10px 0;
+      color: var(--navy);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      align-items: start;
+    }
+
+    .why-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      color: var(--navy);
+      font-weight: 600;
+    }
+
+    .why-list li::before {
+      content: "◆";
+      color: var(--ocean);
+      margin-right: 8px;
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .testimonial-card::before {
+      content: "“";
+      font-size: 3rem;
+      color: rgba(244, 140, 100, 0.3);
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+
+    .cta-band {
+      background: linear-gradient(120deg, rgba(28, 142, 160, 0.9), rgba(244, 140, 100, 0.92));
+      color: var(--white);
+      padding: 70px 0;
+      text-align: center;
+    }
+
+    .cta-band p {
+      margin: 12px 0 24px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      align-items: start;
+    }
+
+    .contact-details {
+      background: var(--light);
+      padding: 24px;
+      border-radius: 18px;
+    }
+
+    .contact-details p {
+      margin-bottom: 12px;
+      color: var(--muted);
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(28, 44, 58, 0.15);
+      font-family: inherit;
+      font-size: 0.95rem;
+      background: var(--white);
+    }
+
+    .contact-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .map-card {
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: var(--white);
+    }
+
+    footer {
+      padding: 40px 0;
+      background: var(--navy);
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    .floating-widget {
+      position: fixed;
+      right: 20px;
+      bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 1000;
+    }
+
+    .floating-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--white);
+      display: grid;
+      place-items: center;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(28, 44, 58, 0.12);
+      position: relative;
+      transition: transform 0.2s ease;
+    }
+
+    .floating-btn:hover {
+      transform: translateY(-4px);
+    }
+
+    .floating-btn span {
+      font-size: 1.2rem;
+    }
+
+    .tooltip {
+      position: absolute;
+      right: 64px;
+      background: var(--navy);
+      color: var(--white);
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .floating-btn:hover .tooltip {
+      opacity: 1;
+    }
+
+    @media (max-width: 900px) {
+      .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 4%;
+        background: var(--white);
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px 24px;
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+        display: none;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .nav-toggle {
+        display: flex;
+      }
+
+      .hero {
+        padding-top: 60px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-actions,
+      .hero-cta-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .floating-widget {
+        right: 12px;
+        bottom: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-  
-<header class="nav-wrap">
-  <div class="nav container">
-    <a class="brand" href="index.html">
-      <img class="logo" src="assets/mgi-logo.jpg" alt="MGI logo" />
-      <span>Miami Global Investments Group</span>
-    </a>
-    <nav>
-      <a href="consulting.html">Consulting</a>
-      <a href="travel.html">Travel</a>
-      <a href="real-estate.html">Real Estate Wholesaling</a>
-      <a href="about.html">About</a>
-      <a class="cta" href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+  <header>
+    <div class="container nav">
+      <div class="logo">MGI | Miami Global Investments Group LLC</div>
+      <nav>
+        <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation" role="button" tabindex="0">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#packages">Packages</a>
+          <a href="#process">Process</a>
+          <a href="#why">Why MGI</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-  <section class="hero">
-    <img class="hero-img" src="assets/hero-home.jpg" alt="Miami skyline illustration"/>
-    <div class="hero-overlay">
-      <h1>Miami Experiences & Investments</h1>
-      <p>Bright, modern pages for Consulting, Travel, and Real Estate Wholesaling.</p>
-      <div class="hero-actions">
-        <a class="btn pill" href="travel.html">Explore Travel</a>
-        <a class="btn outline" href="real-estate.html">See Real Estate Wholesaling</a>
-        <a class="btn ghost" href="consulting.html">Business Consulting</a>
+  <section class="hero" id="top">
+    <div class="container hero-content">
+      <div>
+        <div class="pill">Miami, Florida • Boutique Advisory</div>
+        <h1>Specialized Commercial Lending &amp; Credit Advisory</h1>
+        <p>We help SMEs, investors, and lenders structure bank-ready deals, optimize risk, and unlock smarter financing solutions.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Schedule a Free Consultation</a>
+          <a class="btn btn-secondary" href="#packages">View Service Packages</a>
+        </div>
+        <div class="hero-cta-row">
+          <a class="btn btn-outline" href="tel:+13056290491">Call Now</a>
+          <a class="btn btn-outline" href="https://wa.me/13056290491" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+      <div>
+        <ul class="hero-bullets">
+          <li><span></span>Commercial lending &amp; credit structuring</li>
+          <li><span></span>SME &amp; middle-market financing advisory</li>
+          <li><span></span>Bank-ready proposals, risk &amp; compliance support</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="container cards-3">
-    <article class="c-card">
-      <h3>Business Consulting</h3>
-      <p>Market entry, company formation, banking/EIN guidance, SOPs, go-to-market playbooks.</p>
-      <a class="arrow" href="consulting.html">Learn more →</a>
-    </article>
-    <article class="c-card">
-      <h3>Travel</h3>
-      <p>Agent-only rates, VIP perks, fast quotes, and meticulous confirmations — worldwide.</p>
-      <a class="arrow" href="travel.html">Plan a trip →</a>
-    </article>
-    <article class="c-card">
-      <h3>Real Estate</h3>
-      <p>Waterfront villas, skyline penthouses, and investor-ready condos in Miami.</p>
-      <a class="arrow" href="real-estate.html">Discover listings →</a>
-    </article>
-  </section>
-  <div class="map">
-      <iframe title="MGI Miami" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=2125+Biscayne+Blvd,+Ste+204,+Miami+FL&output=embed"></iframe>
+  <section class="trust-strip">
+    <div class="container trust-grid">
+      <div class="trust-card">Experience in U.S. and international commercial banking</div>
+      <div class="trust-card">Expertise in OCC, FDIC, CFPB, BSA/AML &amp; KYC frameworks</div>
+      <div class="trust-card">SME &amp; middle-market lending, underwriting &amp; portfolio management</div>
     </div>
   </section>
-<footer class="footer">
-  <div class="container foot">
-    <p>© <span id="y"></span> Miami Global Investments Group LLC — Miami, FL • </p>
-    <p><strong>Email:</strong> <a href="mailto:Info@miamiglobalgroup.com">Info@miamiglobalgroup.com</a> •
-       <strong>Phone:</strong> +1 (305) 629-0491</p>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Miami Global Investments Group LLC</h2>
+      <p class="section-subtitle">MGI is a boutique advisory firm based in Miami, Florida. We specialize in commercial lending, credit structuring, SME banking advisory, and risk/compliance support grounded in real-world banking experience.</p>
+      <div class="about-grid">
+        <div>
+          <p>Our advisory work is shaped by hands-on underwriting, portfolio growth, financial analysis, collateral review, and regulatory frameworks including OCC, FDIC, CFPB, BSA/AML, KYC, and Fair Lending. We bridge the gap between business owners and lenders with strategy that is practical, credible, and lender-ready.</p>
+          <p>Whether you are preparing your first bank financing request or managing a complex lending portfolio, we deliver insights that improve credit outcomes and drive responsible growth.</p>
+        </div>
+        <div class="highlight-box">
+          <h4>What we bring:</h4>
+          <ul>
+            <li>Deep domain expertise in commercial and SME lending</li>
+            <li>Credibility with banks and lenders – we speak their language</li>
+            <li>Practical, implementation-focused advisory</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title">What We Do</h2>
+      <p class="section-subtitle">Comprehensive advisory services designed to make credit decisions clearer, faster, and more confident for SMEs and lenders.</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Financing Package Preparation</h3>
+          <p>Financial modeling, projections, covenant review, and risk mitigants to prepare lending packages that bankers can approve.</p>
+        </div>
+        <div class="card">
+          <h3>SME &amp; Middle-Market Debt Advisory</h3>
+          <p>Support in structuring facilities, negotiating terms, and coordinating with suitable lenders.</p>
+        </div>
+        <div class="card">
+          <h3>Credit Policy &amp; Underwriting Improvement</h3>
+          <p>Advisory for banks and lenders to refine credit policies, scoring, and underwriting workflows.</p>
+        </div>
+        <div class="card">
+          <h3>Portfolio Quality &amp; Risk Diagnostics</h3>
+          <p>Deep-dive portfolio reviews to identify concentrations, early-warning signals, and risk optimization opportunities.</p>
+        </div>
+        <div class="card">
+          <h3>Regulatory &amp; Documentation Readiness</h3>
+          <p>BSA/AML, KYC, and documentation reviews to keep your financing processes compliant and credit-ready.</p>
+        </div>
+        <div class="card">
+          <h3>Feasibility Studies &amp; Investment Evaluation</h3>
+          <p>Feasibility analysis, cash flow assessment, and risk-adjusted views for new projects and investments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="packages">
+    <div class="container">
+      <h2 class="section-title">Advisory Packages</h2>
+      <p class="section-subtitle">We offer transparent, fixed-fee and custom packages designed for different stages of growth.</p>
+      <div class="card-grid">
+        <div class="card pricing-card">
+          <h3>Starter Credit Readiness</h3>
+          <div class="price">From $1,500</div>
+          <p><strong>Ideal for:</strong> Small businesses preparing for their first bank financing request.</p>
+          <ul>
+            <li>Review of financial statements &amp; basic projections</li>
+            <li>High-level risk &amp; documentation review</li>
+            <li>Bank-ready executive summary and key ratios</li>
+            <li>One feedback round on lender comments</li>
+          </ul>
+        </div>
+        <div class="card pricing-card">
+          <h3>Growth Financing Advisory</h3>
+          <div class="price">From $3,500</div>
+          <p><strong>Ideal for:</strong> Growing SMEs and middle-market companies seeking larger or more complex facilities.</p>
+          <ul>
+            <li>Detailed financial modeling and scenario analysis</li>
+            <li>Structuring recommendations (tenor, collateral, covenants)</li>
+            <li>Support in positioning the request with multiple lenders</li>
+            <li>Up to two advisory calls to prepare for lender meetings</li>
+          </ul>
+        </div>
+        <div class="card pricing-card">
+          <h3>Institutional &amp; Lender Solutions</h3>
+          <div class="price">Custom</div>
+          <p><strong>Ideal for:</strong> Banks, MFIs, and investors seeking portfolio, policy, or risk advisory.</p>
+          <ul>
+            <li>Credit policy and underwriting framework review</li>
+            <li>Portfolio diagnostics and risk segmentation</li>
+            <li>BSA/AML/KYC workflow recommendations</li>
+            <li>Training and workshop options for teams</li>
+          </ul>
+        </div>
+      </div>
+      <p class="section-subtitle" style="margin-top: 28px;">Pricing is indicative and depends on scope and complexity. Contact us for a custom quote tailored to your needs.</p>
+    </div>
+  </section>
+
+  <section class="section" id="process">
+    <div class="container">
+      <h2 class="section-title">How Our Advisory Process Works</h2>
+      <div class="process-steps">
+        <div class="step">
+          <span>Step 1</span>
+          <h4>Discovery</h4>
+          <p>We start with a consultation to understand your goals, timeline, and key constraints.</p>
+        </div>
+        <div class="step">
+          <span>Step 2</span>
+          <h4>Deep Dive &amp; Analysis</h4>
+          <p>We review your financials, documentation, and risk profile, then build or refine your financing or risk strategy.</p>
+        </div>
+        <div class="step">
+          <span>Step 3</span>
+          <h4>Structuring &amp; Preparation</h4>
+          <p>We prepare bank-ready materials, refine deal terms, and support you in getting ready for lender discussions.</p>
+        </div>
+        <div class="step">
+          <span>Step 4</span>
+          <h4>Support &amp; Follow-Through</h4>
+          <p>We provide ongoing support through lender feedback, clarifications, and any required refinements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="why">
+    <div class="container">
+      <h2 class="section-title">Why MGI?</h2>
+      <div class="why-grid">
+        <div>
+          <ul class="why-list">
+            <li>Real commercial banking experience – not just theory.</li>
+            <li>Fluent in lender language, risk, and regulation.</li>
+            <li>Focused on SMEs, investors, and lenders – not generic consulting.</li>
+            <li>Hands-on, practical, and confidential advisory.</li>
+            <li>Ability to support U.S. and international clients.</li>
+          </ul>
+        </div>
+        <div class="highlight-box">
+          <h4>MGI Advantage</h4>
+          <p>MGI combines front-line underwriting, portfolio management, and regulatory knowledge to bridge the gap between business owners and lenders. We help deals get done – responsibly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">Client Feedback</h2>
+      <div class="card-grid">
+        <div class="testimonial-card">
+          <p>“MGI transformed our financing package and helped us secure growth capital on better terms.”</p>
+          <p><strong>— Daniela R., Logistics Founder</strong></p>
+        </div>
+        <div class="testimonial-card">
+          <p>“Their understanding of both SME realities and bank risk expectations is rare and incredibly valuable.”</p>
+          <p><strong>— Michael T., CFO</strong></p>
+        </div>
+        <div class="testimonial-card">
+          <p>“We relied on MGI for portfolio diagnostics and left with a clear, compliant path forward.”</p>
+          <p><strong>— Ana G., Lending Director</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2 class="section-title" style="color: var(--white);">Ready to discuss your financing or credit strategy?</h2>
+      <p>Whether you’re an SME, investor, or lender, we can help you structure smarter, bank-ready solutions.</p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-primary" href="#contact">Book a Consultation</a>
+        <a class="btn btn-secondary" href="https://wa.me/13056290491" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact &amp; Location</h2>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-details">
+            <p><strong>Miami Global Investments Group LLC</strong></p>
+            <p>Phone: <a href="tel:+13056290491">+1 (305) 629-0491</a></p>
+            <p>WhatsApp: <a href="https://wa.me/13056290491" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+            <!-- Update EMAIL address below as needed -->
+            <p>Email: <a href="mailto:info@miamigi.com">info@miamigi.com</a></p>
+            <p>Address: 2125 Biscayne Blvd, Ste 204<br />Miami, FL 33137</p>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="company" placeholder="Company (optional)" />
+            <select name="interest" required>
+              <option value="">What are you looking for?</option>
+              <option>Financing Advisory</option>
+              <option>Lender/Risk Advisory</option>
+              <option>Feasibility / Investment Evaluation</option>
+              <option>Other</option>
+            </select>
+            <textarea name="message" placeholder="Message"></textarea>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+        </div>
+        <div>
+          <div class="map-card">
+            <!-- Update MAP iframe src below as needed -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=YOUR_MIAMI_MAP_EMBED_CODE_HERE"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <p class="section-subtitle" style="margin-top: 16px;">Based in Miami’s Biscayne Corridor – serving clients across Florida, the U.S., and internationally.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Miami Global Investments Group LLC. All rights reserved.</p>
+      <p>Miami Global Investments Group LLC – Commercial Lending &amp; Credit Advisory.</p>
+      <!-- Update REGISTRATION link URL below as needed -->
+      <p><a href="https://example.com/mgi-registration" target="_blank" rel="noopener">View Registration / Corporate Details</a></p>
+    </div>
+  </footer>
+
+  <div class="floating-widget">
+    <a class="floating-btn" href="tel:+13056290491" aria-label="Call MGI">
+      <span>📞</span>
+      <span class="tooltip">Call MGI</span>
+    </a>
+    <a class="floating-btn" href="https://wa.me/13056290491" target="_blank" rel="noopener" aria-label="WhatsApp MGI">
+      <span>💬</span>
+      <span class="tooltip">WhatsApp MGI</span>
+    </a>
   </div>
-</footer>
-<!-- WhatsApp Floating Button + Welcome Bubble -->
-<a href="https://wa.me/13056290491" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
-  <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp chat icon">
-</a>
 
-<div class="wa-bubble" id="waBubble">
-  💬 Need help? <strong>Chat with us on WhatsApp</strong>
-</div>
+  <script>
+    const navToggle = document.getElementById("navToggle");
+    const navLinks = document.getElementById("navLinks");
 
-<script>
-  // Bubble auto-hide after 10s or on click
-  const bubble = document.getElementById('waBubble');
-  if(bubble){
-    setTimeout(()=>bubble.classList.add('hide'),10000);
-    bubble.addEventListener('click',()=>bubble.classList.add('hide'));
-  }
-</script>
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+
+    navToggle.addEventListener("keypress", (event) => {
+      if (event.key === "Enter") {
+        navLinks.classList.toggle("show");
+      }
+    });
+
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+      });
+    });
+
+    document.getElementById("contactForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+      alert("Thank you – we’ll get back to you shortly.");
+      event.target.reset();
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
