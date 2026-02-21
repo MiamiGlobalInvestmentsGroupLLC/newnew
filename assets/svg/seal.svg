@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="MGI seal">
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#C6A75E" stroke-width="4"/>
+  <circle cx="60" cy="60" r="42" fill="none" stroke="#0B1C2D" stroke-width="2"/>
+  <text x="60" y="66" text-anchor="middle" font-family="serif" font-size="22" fill="#0B1C2D">MGI</text>
+</svg>
