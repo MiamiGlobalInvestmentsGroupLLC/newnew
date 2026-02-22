@@ -3,7 +3,7 @@
 
   function getLabels(lang) {
     return lang === 'ar'
-      ? { days: 'يوم', hours: 'ساعة', minutes: 'دقيقة', seconds: 'ثانية', ended: 'انتهى العرض' }
+      ? { days: 'يوم', hours: 'ساعة', minutes: 'دقيقة', seconds: 'ثانية', ended: 'انتهت فترة السعر التشجيعي' }
       : { days: 'Days', hours: 'Hours', minutes: 'Minutes', seconds: 'Seconds', ended: 'Offer Ended' };
   }
 
@@ -26,7 +26,7 @@
   }
 
   function updatePrices(isExpired, lang) {
-    const label = lang === 'ar' ? 'السعر الأساسي' : 'Regular price';
+    const label = lang === 'ar' ? 'الرسوم الأساسية' : 'Regular Price';
     document.querySelectorAll('[data-price-block]').forEach((block) => {
       const current = block.querySelector('[data-price-current]');
       const original = block.querySelector('[data-price-original]');
@@ -35,7 +35,7 @@
       if (isExpired) {
         current.textContent = '$350';
         original.textContent = '';
-        ended.textContent = lang === 'ar' ? 'انتهى العرض' : 'Offer Ended';
+        ended.textContent = lang === 'ar' ? 'انتهت فترة السعر التشجيعي' : 'Offer Ended';
         ended.hidden = false;
       } else {
         current.textContent = '$125';

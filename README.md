@@ -9,6 +9,8 @@
   about.html
   faq.html
   contact.html
+  register.html
+  pay.html
   /assets
     /css/styles.css
     /js/main.js

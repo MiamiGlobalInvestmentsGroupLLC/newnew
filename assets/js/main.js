@@ -15,10 +15,28 @@
     const update = () => {
       const lang = window.SiteI18n ? window.SiteI18n.getLang() : 'en';
       const msg = lang === 'ar'
-        ? 'مرحباً، أنا مهتم ببرامج الشهادات التنفيذية في البنوك والتمويل. ممكن إرسال التفاصيل والجدول؟'
+        ? 'مرحباً، أرغب في الاستفسار عن برامج الشهادات التنفيذية في البنوك والتمويل. يرجى تزويدي بالتفاصيل والجدول الزمني.'
         : 'Hello, I’m interested in your Executive Banking & Finance certification programs. Please share details and schedule.';
       link.href = `https://wa.me/13056290491?text=${encodeURIComponent(msg)}`;
       link.setAttribute('aria-label', lang === 'ar' ? 'تواصل عبر واتساب' : 'Chat on WhatsApp');
+    };
+    update();
+    document.addEventListener('languageChanged', update);
+  }
+
+  function initLocalScheduleHint() {
+    const node = document.querySelector('[data-local-time]');
+    if (!node) return;
+    const update = () => {
+      const lang = window.SiteI18n ? window.SiteI18n.getLang() : 'en';
+      const start = new Date('2026-03-25T14:30:00-04:00');
+      const end = new Date('2026-03-25T16:30:00-04:00');
+      const fmt = new Intl.DateTimeFormat(undefined, { hour: 'numeric', minute: '2-digit' });
+      const zone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Local time';
+      const text = `${fmt.format(start)} – ${fmt.format(end)}`;
+      node.textContent = lang === 'ar'
+        ? `التوقيت المحلي الحالي (${zone}): ${text}`
+        : `Your detected local schedule (${zone}): ${text}`;
     };
     update();
     document.addEventListener('languageChanged', update);
@@ -46,6 +64,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     initNav();
     initWhatsapp();
+    initLocalScheduleHint();
     initYear();
     initContactForm();
   });

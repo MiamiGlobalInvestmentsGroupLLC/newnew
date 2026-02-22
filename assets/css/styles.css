@@ -19,7 +19,7 @@ body {
   background: var(--bg);
   line-height: 1.6;
 }
-body.ar { font-family: 'Cairo', sans-serif; }
+body.ar { font-family: 'Cairo', sans-serif; line-height: 1.85; letter-spacing: normal; }
 h1, h2, h3, h4 {
   margin: 0 0 0.6rem;
   line-height: 1.2;
@@ -264,3 +264,8 @@ textarea { min-height: 120px; }
   height: 360px;
   border: 0;
 }
+
+
+.ramadan-card { margin-top: 1rem; border-inline-start: 4px solid var(--gold); }
+.price-strip { margin: 1rem 0; }
+.schedule-grid p { margin: 0.25rem 0; }
