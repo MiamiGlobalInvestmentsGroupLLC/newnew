@@ -269,3 +269,46 @@ textarea { min-height: 120px; }
 .ramadan-card { margin-top: 1rem; border-inline-start: 4px solid var(--gold); }
 .price-strip { margin: 1rem 0; }
 .schedule-grid p { margin: 0.25rem 0; }
+
+.programs-hero { margin-bottom: 1rem; }
+.giveaway-box {
+  margin: 1rem 0;
+  border: 2px solid rgba(198, 167, 94, 0.55);
+  box-shadow: 0 0 0 3px rgba(198, 167, 94, 0.12), var(--shadow);
+}
+.giveaway-head { display: flex; align-items: center; gap: 0.6rem; }
+.gift-icon { font-size: 1.6rem; animation: bounce 1.2s infinite; }
+@keyframes bounce { 0%,100% { transform: translateY(0);} 50% { transform: translateY(-8px);} }
+
+.course-category { margin-top: 1.25rem; padding: 1rem; border-radius: var(--radius); border: 1px solid var(--border); }
+.course-category h2 { font-size: 1.2rem; margin-bottom: 0.8rem; }
+.cat-icon { color: var(--gold); margin-inline-end: 0.35rem; }
+.premium-card { transition: transform .25s ease, box-shadow .25s ease; }
+.premium-card:hover { transform: translateY(-4px); box-shadow: 0 20px 34px rgba(11,28,45,.12); }
+.price-pill {
+  margin: 0.75rem 0;
+  display: inline-block;
+  background: #f7f0dc;
+  border: 1px solid #e8d39a;
+  color: #6f5314;
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-weight: 700;
+}
+.course-meta { margin: 0.5rem 0; padding-inline-start: 1.2rem; }
+.giveaway-strip {
+  margin: 0.65rem 0;
+  border-radius: 8px;
+  background: #eef4fb;
+  border: 1px solid #d4deec;
+  padding: 0.45rem 0.6rem;
+}
+.disclaimer { font-size: .86rem; color: #6f2121; margin-top: .55rem; }
+
+.cat-business { background: #f8fbff; }
+.cat-funding { background: #f9fbf7; }
+.cat-marketing { background: #fff9f5; }
+.cat-international { background: #f7f7ff; }
+.cat-banking { background: #f4f9f9; }
+.cat-productivity { background: #faf7ff; }
+.cat-wellness { background: #f8fdf7; }

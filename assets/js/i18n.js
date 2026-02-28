@@ -25,7 +25,9 @@
 
   window.SiteI18n = {
     getLang() {
-      return localStorage.getItem('siteLang') === 'ar' ? 'ar' : 'en';
+      const stored = localStorage.getItem('siteLang');
+      if (stored === 'ar' || stored === 'en') return stored;
+      return (navigator.language || '').toLowerCase().startsWith('ar') ? 'ar' : 'en';
     },
     setLanguage: applyBilingual,
     t(key) {
