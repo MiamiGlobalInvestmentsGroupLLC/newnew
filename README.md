@@ -12,15 +12,19 @@
   register.html
   pay.html
   verify.html
+  admin-add-certificate.html
   /assets
     /css/styles.css
+    /css/admin-add-certificate.css
     /js/main.js
     /js/i18n.js
     /js/countdown.js
     /js/programs.js
     /js/programs-page.js
     /js/verify.js
+    /js/admin-add-certificate.js
     /data/certificates.json
+    /vendor/qrcode.min.js
     /svg/miami-skyline.svg
     /svg/seal.svg
     /svg/whatsapp.svg
