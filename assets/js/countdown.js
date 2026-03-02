@@ -38,8 +38,9 @@
         ended.textContent = lang === 'ar' ? 'انتهت فترة السعر التشجيعي' : 'Offer Ended';
         ended.hidden = false;
       } else {
-        current.textContent = '$125';
+        current.textContent = '$60';
         original.textContent = `${label}: $350`;
+        
         ended.hidden = true;
       }
     });

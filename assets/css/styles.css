@@ -312,3 +312,13 @@ textarea { min-height: 120px; }
 .cat-banking { background: #f4f9f9; }
 .cat-productivity { background: #faf7ff; }
 .cat-wellness { background: #f8fdf7; }
+
+.verify-panel { margin-bottom: 1rem; }
+.verify-form-row { display: grid; grid-template-columns: 1fr auto; gap: .6rem; }
+.verify-top { margin-bottom: .6rem; }
+.status-badge { display:inline-block; padding:.35rem .65rem; border-radius:999px; font-weight:700; font-size:.82rem; }
+.status-valid { background:#eaf8ef; color:#1f7d3f; border:1px solid #bfe6cc; }
+.status-revoked { background:#fdeeee; color:#a12d2d; border:1px solid #efc5c5; }
+.status-missing { background:#f2f4f7; color:#495a6b; border:1px solid #d9e0e8; }
+.verify-actions { display:flex; flex-wrap:wrap; gap:.5rem; margin:.7rem 0; }
+.qrcode-wrap { margin-top:.75rem; }

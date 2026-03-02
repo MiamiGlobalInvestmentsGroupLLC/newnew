@@ -1,5 +1,5 @@
 (function () {
-  const STRIPE_CHECKOUT_URL = 'PASTE_YOUR_STRIPE_LINK_HERE';
+  const STRIPE_CHECKOUT_URL = 'https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02';
   const OFFER_DEADLINE = new Date('2026-04-15T23:59:00+03:00').getTime();
 
   function getLang() {
@@ -55,9 +55,7 @@
   }
 
   function applyStripeLinks() {
-    document.querySelectorAll('a[href="PASTE_YOUR_STRIPE_LINK_HERE"]').forEach((a) => {
-      a.href = STRIPE_CHECKOUT_URL;
-    });
+    document.querySelectorAll('.program-card a.btn').forEach((a) => { a.href = STRIPE_CHECKOUT_URL; });
   }
 
   function tick() {

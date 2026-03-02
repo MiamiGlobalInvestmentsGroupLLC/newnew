@@ -11,12 +11,16 @@
   contact.html
   register.html
   pay.html
+  verify.html
   /assets
     /css/styles.css
     /js/main.js
     /js/i18n.js
     /js/countdown.js
     /js/programs.js
+    /js/programs-page.js
+    /js/verify.js
+    /data/certificates.json
     /svg/miami-skyline.svg
     /svg/seal.svg
     /svg/whatsapp.svg
