@@ -322,3 +322,19 @@ textarea { min-height: 120px; }
 .status-missing { background:#f2f4f7; color:#495a6b; border:1px solid #d9e0e8; }
 .verify-actions { display:flex; flex-wrap:wrap; gap:.5rem; margin:.7rem 0; }
 .qrcode-wrap { margin-top:.75rem; }
+
+
+.advisory-hero {
+  background: linear-gradient(135deg, #f9fbff 0%, #eef4fb 55%, #f8f2df 100%);
+  padding-top: 2.4rem;
+  padding-bottom: 2.2rem;
+}
+.advisory-hero-card { border: 1px solid #d9e2ee; }
+.professional-strip {
+  margin: 0.65rem 0;
+  border-radius: 8px;
+  background: #f2f6fb;
+  border: 1px solid #d7e0ec;
+  padding: 0.45rem 0.6rem;
+  color: #16314a;
+}
