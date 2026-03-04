@@ -1,0 +1,62 @@
+[
+  {
+    "serial": "MGI-2026-000001",
+    "fullName": "Omar Khaled",
+    "courseEn": "Commercial Credit Essentials",
+    "courseAr": "أساسيات الائتمان التجاري",
+    "issueDate": "2026-02-15",
+    "status": "valid",
+    "notesEn": "Certificate issued after full attendance and assessment completion.",
+    "notesAr": "تم إصدار الشهادة بعد استكمال الحضور والتقييم النهائي."
+  },
+  {
+    "serial": "MGI-2026-000002",
+    "fullName": "Lina Haddad",
+    "courseEn": "Premium Brand Positioning",
+    "courseAr": "التموضع الاحترافي للعلامة",
+    "issueDate": "2026-02-22",
+    "status": "valid",
+    "notesEn": "Active and verifiable in MGI registry.",
+    "notesAr": "الشهادة فعّالة وقابلة للتحقق ضمن سجل MGI."
+  },
+  {
+    "serial": "MGI-2026-000003",
+    "fullName": "Yousef Nassar",
+    "courseEn": "Smart Capital Structuring",
+    "courseAr": "هيكلة رأس المال بذكاء",
+    "issueDate": "2026-03-01",
+    "status": "revoked",
+    "notesEn": "Revoked due to formal administrative request.",
+    "notesAr": "تم إلغاء الشهادة بناءً على طلب إداري رسمي."
+  },
+  {
+    "serial": "MGI-2026-000004",
+    "fullName": "Sara Al-Masri",
+    "courseEn": "Cross-Border Market Entry",
+    "courseAr": "دخول الأسواق الدولية",
+    "issueDate": "2026-03-08",
+    "status": "valid",
+    "notesEn": "Certificate verified and in good standing.",
+    "notesAr": "تم التحقق من الشهادة وهي بحالة سارية."
+  },
+  {
+    "serial": "MGI-2026-000005",
+    "fullName": "Hassan Alali",
+    "courseEn": "Executive Productivity Systems",
+    "courseAr": "أنظمة إنتاجية تنفيذية",
+    "issueDate": "2026-03-10",
+    "status": "valid",
+    "notesEn": "Issued under Education & Professional Development division.",
+    "notesAr": "صادرة ضمن قسم التعليم والتطوير المهني."
+  },
+  {
+    "serial": "MGI-2026-000006",
+    "fullName": "Mariam Tarek",
+    "courseEn": "Performance Nutrition Blueprint",
+    "courseAr": "خارطة التغذية للأداء",
+    "issueDate": "2026-03-12",
+    "status": "revoked",
+    "notesEn": "Revoked after identity mismatch review.",
+    "notesAr": "أُلغيت الشهادة بعد مراجعة تطابق الهوية."
+  }
+]
