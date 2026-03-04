@@ -1,91 +1,131 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <title>MGI — Miami Experiences & Investments</title>
-  <meta name="description" content="MGI: Miami consulting, premium travel, and luxury real estate wholesaling. Bright, modern, and clean.">
-  
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="styles.css?v=9100" />
-  <script defer src="script.js?v=9100"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MGI Education | Executive Professional Programs</title>
+  <meta name="description" content="Ultra-premium executive professional programs across business, banking, finance, wellness, and more by Miami Global Investments Group LLC.">
+  <meta property="og:title" content="MGI Education | Executive Professional Programs">
+  <meta property="og:description" content="Miami-based bilingual executive programs in business, banking, finance, wellness, and modern professional tracks.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/svg/seal.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  
-<header class="nav-wrap">
-  <div class="nav container">
-    <a class="brand" href="index.html">
-      <img class="logo" src="assets/mgi-logo.jpg" alt="MGI logo" />
-      <span>Miami Global Investments Group</span>
-    </a>
-    <nav>
-      <a href="consulting.html">Consulting</a>
-      <a href="travel.html">Travel</a>
-      <a href="real-estate.html">Real Estate Wholesaling</a>
-      <a href="about.html">About</a>
-      <a class="cta" href="contact.html">Contact</a>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand"><img src="assets/svg/seal.svg" class="seal" alt="MGI seal"><span data-en="MGI Education" data-ar="MGI للتعليم"></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" data-en="Home" data-ar="الرئيسية"></a></li>
+        <li><a href="programs.html" data-en="Programs" data-ar="البرامج"></a></li>
+        <li><a href="about.html" data-en="About" data-ar="من نحن"></a></li>
+        <li><a href="faq.html" data-en="FAQ" data-ar="الأسئلة الشائعة"></a></li>
+        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا"></a></li>
+        <li><a href="verify.html" data-en="Verify Certificate" data-ar="تحقق من الشهادة"></a></li>
+      </ul>
     </nav>
+    <div class="lang-toggle" role="group" aria-label="Language switcher">
+      <button class="active" data-lang="en">EN</button><button data-lang="ar">AR</button>
+    </div>
   </div>
 </header>
 
-  <section class="hero">
-    <img class="hero-img" src="assets/hero-home.jpg" alt="Miami skyline illustration"/>
-    <div class="hero-overlay">
-      <h1>Miami Experiences & Investments</h1>
-      <p>Bright, modern pages for Consulting, Travel, and Real Estate Wholesaling.</p>
-      <div class="hero-actions">
-        <a class="btn pill" href="travel.html">Explore Travel</a>
-        <a class="btn outline" href="real-estate.html">See Real Estate Wholesaling</a>
-        <a class="btn ghost" href="consulting.html">Business Consulting</a>
+<main id="main">
+  <section class="hero hero-convert">
+    <div class="hero-overlay"></div>
+    <div class="container hero-grid hero-grid-single">
+      <div class="hero-copy-wrap">
+        <span id="hero-badge" class="hero-badge"></span>
+        <h1 id="hero-title"></h1>
+        <p id="hero-subtitle" class="hero-subtitle"></p>
+        <p id="hero-cred" class="hero-cred"></p>
+        <div class="cta-group hero-cta">
+          <a id="hero-cta-primary" class="btn btn-primary" href="programs.html"></a>
+          <a id="hero-cta-secondary" class="btn btn-secondary" href="pay.html"></a>
+        </div>
+      </div>
+      <aside class="card" data-price-block>
+        <p class="badge" data-en="Limited-Time Offer – $60" data-ar="عرض لفترة محدودة – 60$"></p>
+        <div class="price-row">
+          <span class="price-current" data-price-current>$60</span>
+          <span class="price-original" data-price-original>Regular Price: $350 starting April 2026</span>
+        </div>
+        <p class="offer-ended" data-offer-ended hidden>Offer Ended</p>
+        <div class="countdown" data-countdown></div>
+        <p class="muted" data-en="Live executive cohorts with practical implementation and direct instructor support." data-ar="دفعات تنفيذية مباشرة مع تطبيق عملي ودعم مباشر من المدرب."></p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 data-en="Why professionals choose MGI Education" data-ar="أسباب اختيار MGI للتعليم"></h2>
+      <div class="grid-3">
+        <article class="card"><h3 data-en="Official signed & stamped certificate" data-ar="شهادة رسمية مختومة وموقعة"></h3></article>
+        <article class="card"><h3 data-en="Printed certificate delivered to your home (complimentary shipping)" data-ar="تسليم الشهادة المطبوعة إلى مقر إقامتكم (شحن مجاني)"></h3></article>
+        <article class="card"><h3 data-en="Live classes + direct instructor access" data-ar="محاضرات مباشرة مع إتاحة التواصل المباشر مع المدرب"></h3></article>
       </div>
     </div>
   </section>
 
-  <section class="container cards-3">
-    <article class="c-card">
-      <h3>Business Consulting</h3>
-      <p>Market entry, company formation, banking/EIN guidance, SOPs, go-to-market playbooks.</p>
-      <a class="arrow" href="consulting.html">Learn more →</a>
-    </article>
-    <article class="c-card">
-      <h3>Travel</h3>
-      <p>Agent-only rates, VIP perks, fast quotes, and meticulous confirmations — worldwide.</p>
-      <a class="arrow" href="travel.html">Plan a trip →</a>
-    </article>
-    <article class="c-card">
-      <h3>Real Estate</h3>
-      <p>Waterfront villas, skyline penthouses, and investor-ready condos in Miami.</p>
-      <a class="arrow" href="real-estate.html">Discover listings →</a>
-    </article>
-  </section>
-  <div class="map">
-      <iframe title="MGI Miami" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=2125+Biscayne+Blvd,+Ste+204,+Miami+FL&output=embed"></iframe>
+  <section class="section">
+    <div class="container">
+      <h2 data-en="Participant Testimonials" data-ar="آراء المشاركين"></h2>
+      <div class="grid-2">
+        <article class="card"><p data-en="The curriculum was practical and directly relevant to my corporate credit responsibilities." data-ar="كان المحتوى التدريبي عملياً ومرتبطاً بشكل مباشر بمهامي في الائتمان المؤسسي."></p><p class="muted">— Senior Credit Analyst</p></article>
+        <article class="card"><p data-en="The live sessions and instructor access helped me apply risk frameworks immediately at work." data-ar="أسهمت المحاضرات المباشرة وإمكانية التواصل مع المدرب في تطبيق أطر إدارة المخاطر مباشرة في العمل."></p><p class="muted">— Portfolio Manager</p></article>
+        <article class="card"><p data-en="A refined bilingual learning experience with clear structure and measurable outcomes." data-ar="تجربة تعليمية ثنائية اللغة بأسلوب مؤسسي واضح ومخرجات قابلة للقياس."></p><p class="muted">— Banking Operations Lead</p></article>
+        <article class="card"><p data-en="The program strengthened my strategic communication and decision quality in banking projects." data-ar="عزّز البرنامج جودة اتخاذ القرار ومهارات التواصل الاستراتيجي في المشاريع المصرفية."></p><p class="muted">— FinTech Product Specialist</p></article>
+      </div>
     </div>
   </section>
-<footer class="footer">
-  <div class="container foot">
-    <p>© <span id="y"></span> Miami Global Investments Group LLC — Miami, FL • </p>
-    <p><strong>Email:</strong> <a href="mailto:Info@miamiglobalgroup.com">Info@miamiglobalgroup.com</a> •
-       <strong>Phone:</strong> +1 (305) 629-0491</p>
+
+  <section class="section section-soft">
+    <div class="container grid-3">
+      <article class="card feature-card">
+        <h3 data-en="Executive Learning Experience" data-ar="تجربة تعليمية تنفيذية"></h3>
+        <p data-en="Luxury-modern visual curriculum design with practical banking outcomes." data-ar="تصميم أكاديمي حديث بمخرجات عملية قابلة للتطبيق في القطاع المصرفي والمالي."></p>
+      </article>
+      <article class="card feature-card">
+        <h3 data-en="Bilingual Delivery" data-ar="تقديم ثنائي اللغة"></h3>
+        <p data-en="All core information is available in English and Arabic with smooth RTL support." data-ar="تتوفر جميع المعلومات الأساسية باللغتين العربية والإنجليزية مع دعم متكامل للاتجاه من اليمين إلى اليسار."></p>
+      </article>
+      <article class="card feature-card">
+        <h3 data-en="Career-Ready Frameworks" data-ar="أطر مهنية جاهزة للتطبيق"></h3>
+        <p data-en="Focused on decision quality, analysis discipline, and strategy communication." data-ar="يرتكز المحتوى على جودة القرار، وانضباط التحليل، والتواصل الاستراتيجي."></p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 data-en="Miami Location" data-ar="موقع ميامي"></h2>
+      <p class="muted" data-en="2125 Biscayne Blvd, Miami, Florida 33137" data-ar="2125 Biscayne Blvd, Miami, Florida 33137"></p>
+      <div class="map-wrap">
+        <iframe title="MGI Miami location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=2125+Biscayne+Blvd+Miami+FL+33137&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p data-en="Miami Global Investments Group LLC • Education & Professional Development Division" data-ar="Miami Global Investments Group LLC • قسم التعليم والتطوير المهني"></p>
+    <p><a href="mailto:info@miamiglobalgroup.com">info@miamiglobalgroup.com</a></p>
+    <p>© <span id="year"></span></p>
   </div>
 </footer>
-<!-- WhatsApp Floating Button + Welcome Bubble -->
-<a href="https://wa.me/13056290491" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
-  <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp chat icon">
-</a>
-
-<div class="wa-bubble" id="waBubble">
-  💬 Need help? <strong>Chat with us on WhatsApp</strong>
-</div>
-
-<script>
-  // Bubble auto-hide after 10s or on click
-  const bubble = document.getElementById('waBubble');
-  if(bubble){
-    setTimeout(()=>bubble.classList.add('hide'),10000);
-    bubble.addEventListener('click',()=>bubble.classList.add('hide'));
-  }
-</script>
+<img src="assets/svg/seal.svg" class="watermark-seal" alt="">
+<a id="whatsapp-float" class="whatsapp-float" href="https://wa.me/13056290491" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><img src="assets/svg/whatsapp.svg" alt=""></a>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/countdown.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/hero-variants.js"></script>
 </body>
 </html>
