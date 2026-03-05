@@ -1,37 +1,38 @@
-// Set year
-document.querySelectorAll('#y').forEach(el => el.textContent = new Date().getFullYear());
-// Contact form handler
-const form = document.getElementById('contactForm');
-if (form) {
-  const formMsg = document.getElementById('formMsg');
-  const submitBtn = document.getElementById('submitBtn');
-  const mailtoFallback = document.getElementById('mailtoFallback');
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    formMsg.textContent='';
-    submitBtn.disabled = true;
-    const data = Object.fromEntries(new FormData(form).entries());
-    if (!data.name || !data.email || !data.message) {
-      formMsg.textContent = 'Please fill the required fields (*)';
-      submitBtn.disabled = false; return;
-    }
-    try {
-      const res = await fetch('api/contact', {
-        method:'POST', headers:{'Content-Type':'application/json'},
-        body: JSON.stringify(data)
-      });
-      if(!res.ok) throw new Error('Network error');
-      await res.json();
-      formMsg.textContent = 'Thanks! We’ll get back to you very soon.';
-      form.reset();
-    } catch(err){
-      formMsg.textContent = 'Couldn’t send via server. Use your email app:';
-      mailtoFallback.classList.remove('hidden');
-      const subject = encodeURIComponent('New Inquiry — MGI Website');
-      const body = encodeURIComponent(
-        `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || ''}\nService: ${data.service || ''}\n\nMessage:\n${data.message}`
-      );
-      mailtoFallback.href = `mailto:Info@miamiglobalgroup.com?subject=${subject}&body=${body}`;
-    } finally { submitBtn.disabled = false; }
+// Set current year in footer
+(function setYear(){
+  document.querySelectorAll('#y').forEach(el => { el.textContent = new Date().getFullYear(); });
+})();
+
+// Mobile nav toggle
+(function mobileNav(){
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  if (!toggle || !links) return;
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('open');
   });
-}
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+})();
+
+// Simple contact form handler (client-side only)
+(function contactForm(){
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+  const msg = document.getElementById('formMsg');
+  const btn = document.getElementById('submitBtn');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!btn || !msg) return;
+    const data = Object.fromEntries(new FormData(form).entries());
+    if (!data.name || !data.email) {
+      msg.textContent = 'Please provide your name and email so our Dispatch Sales Team can respond.';
+      return;
+    }
+    btn.disabled = true;
+    msg.textContent = 'Thank you. Our Dispatch Sales Team will reach out shortly.';
+    setTimeout(() => {
+      btn.disabled = false;
+      form.reset();
+    }, 1500);
+  });
+})();
