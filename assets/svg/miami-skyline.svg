@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" role="img" aria-label="Miami skyline watermark">
+  <g fill="#0B1C2D">
+    <rect x="0" y="210" width="1200" height="30"/>
+    <rect x="40" y="140" width="80" height="70"/>
+    <rect x="130" y="120" width="110" height="90"/>
+    <rect x="260" y="90" width="80" height="120"/>
+    <rect x="360" y="130" width="95" height="80"/>
+    <rect x="480" y="75" width="130" height="135"/>
+    <rect x="640" y="120" width="80" height="90"/>
+    <rect x="740" y="85" width="95" height="125"/>
+    <rect x="855" y="140" width="75" height="70"/>
+    <rect x="950" y="95" width="120" height="115"/>
+    <rect x="1090" y="135" width="70" height="75"/>
+    <polygon points="295,90 300,40 305,90"/>
+    <polygon points="790,85 797,35 804,85"/>
+  </g>
+</svg>

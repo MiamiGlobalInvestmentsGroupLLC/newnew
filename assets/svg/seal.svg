@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Corporate seal watermark">
+  <circle cx="160" cy="160" r="150" fill="none" stroke="#C6A75E" stroke-width="8"/>
+  <circle cx="160" cy="160" r="122" fill="none" stroke="#C6A75E" stroke-width="4" stroke-dasharray="4 8"/>
+  <text x="160" y="120" text-anchor="middle" fill="#0B1C2D" font-size="20" font-family="serif">MIAMI GLOBAL</text>
+  <text x="160" y="150" text-anchor="middle" fill="#0B1C2D" font-size="18" font-family="serif">INVESTMENTS GROUP</text>
+  <text x="160" y="180" text-anchor="middle" fill="#0B1C2D" font-size="16" font-family="serif">LLC</text>
+  <text x="160" y="215" text-anchor="middle" fill="#C6A75E" font-size="14" font-family="serif">EST. MIAMI, FL</text>
+</svg>

@@ -1,93 +1,100 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-  <title>Contact MGI — Miami</title>
-  <meta name="description" content="Contact Miami Global Investments Group for consulting, travel, or real estate.">
-  
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="styles.css?v=9100" />
-  <script defer src="script.js?v=9100"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | MGI Education Division</title>
+  <meta name="description" content="Contact Miami Global Investments Group LLC Education Division." />
+  <meta property="og:title" content="Contact MGI" />
+  <meta property="og:description" content="Phone, WhatsApp, and email support for enrollment and program information." />
+  <link rel="icon" type="image/svg+xml" href="assets/svg/seal.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  
-<header class="nav-wrap">
-  <div class="nav container">
-    <a class="brand" href="index.html">
-      <img class="logo" src="assets/mgi-logo.jpg" alt="MGI logo" />
-      <span>Miami Global Investments Group</span>
-    </a>
-    <nav>
-      <a href="consulting.html">Consulting</a>
-      <a href="travel.html">Travel</a>
-      <a href="real-estate.html">Real Estate</a>
-      <a href="about.html">About</a>
-      <a class="cta" href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-  <section class="hero">
-    <img class="hero-img" src="assets/hero-contact.jpg" alt="Contact hero illustration"/>
-    <div class="hero-overlay">
-      <h1>Contact Us</h1>
-      <p>Tell us what you need — we’ll reply fast.</p>
-    </div>
-  </section>
-
-  <section class="container contact">
-    <form id="contactForm" class="contact-card" novalidate>
-      <div class="row">
-        <label>Full Name* <input type="text" name="name" required /></label>
-        <label>Email* <input type="email" name="email" required /></label>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <strong>Miami Global Investments Group LLC</strong>
+        <span data-i18n="brand_tag">Education & Professional Development Division</span>
+      </a>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group" aria-label="Language switcher">
+          <button type="button" data-lang-switch="en" class="active">EN</button>
+          <button type="button" data-lang-switch="ar">AR</button>
+        </div>
+        <button class="menu-btn" data-nav-toggle aria-label="Toggle navigation"><span></span></button>
       </div>
-      <div class="row">
-        <label>Phone <input type="tel" name="phone" /></label>
-        <label>Service
-          <select name="service">
-            <option value="Travel">Travel</option>
-            <option value="Real Estate">Real Estate</option>
-            <option value="Consulting">Consulting</option>
-            <option value="Other">Other</option>
-          </select>
-        </label>
-      </div>
-      <label>Message* <textarea name="message" rows="6" required placeholder="Tell us your dates/budget (Travel) or area/budget/beds (Real Estate), or business goal (Consulting)…"></textarea></label>
-      <button class="btn pill" type="submit" id="submitBtn">Send</button>
-      <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
-      <a id="mailtoFallback" class="hidden" href="#">Open email app instead</a>
-    </form>
-
-    <div class="map">
-      <iframe title="MGI Miami" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=2125+Biscayne+Blvd,+Ste+204,+Miami+FL&output=embed"></iframe>
+      <nav class="nav-links" data-nav-links>
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="programs.html" data-i18n="nav_programs">Programs</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
     </div>
-  </section>
-  
-<footer class="footer">
-  <div class="container foot">
-    <p>© <span id="y"></span> Miami Global Investments Group LLC — Miami, FL •</p>
-    <p><strong>Email:</strong> <a href="mailto:Info@miamiglobalgroup.com">Info@miamiglobalgroup.com</a> •
-       <strong>Phone:</strong> +1 (305) 629-0491</p>
-  </div>
-</footer>
-<!-- WhatsApp Floating Button + Welcome Bubble -->
-<a href="https://wa.me/13056290491" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
-  <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp chat icon">
-</a>
+  </header>
 
-<div class="wa-bubble" id="waBubble">
-  💬 Need help? <strong>Chat with us on WhatsApp</strong>
-</div>
+  <main class="section">
+    <div class="container">
+      <h1 data-i18n="contact_page_title">Contact Us</h1>
+      <p class="section-intro" data-i18n="contact_page_intro">Connect with our team for enrollment support, schedule details, or corporate group requests.</p>
+      <div class="contact-grid">
+        <section class="card">
+          <p><strong data-i18n="contact_phone_label">Phone</strong>: <a href="tel:+13056290491">+1 (305) 629-0491</a></p>
+          <p><strong data-i18n="contact_whatsapp_label">WhatsApp</strong>: <a href="https://wa.me/13056290491" target="_blank" rel="noopener">+1 (305) 629-0491</a></p>
+          <p><strong data-i18n="contact_email_label">Email</strong>: <a href="mailto:info@miamigi.com">info@miamigi.com</a></p>
+          <p><strong data-i18n="contact_address_label">Address</strong>: <span data-i18n="contact_address">Miami, Florida, United States</span></p>
+        </section>
 
-<script>
-  // Bubble auto-hide after 10s or on click
-  const bubble = document.getElementById('waBubble');
-  if(bubble){
-    setTimeout(()=>bubble.classList.add('hide'),10000);
-    bubble.addEventListener('click',()=>bubble.classList.add('hide'));
-  }
-</script>
+        <section class="card">
+          <form class="contact-form" data-contact-form>
+            <div>
+              <label for="name" data-i18n="form_name">Full Name</label>
+              <input id="name" name="name" required data-i18n-placeholder="form_name" placeholder="Full Name" />
+            </div>
+            <div>
+              <label for="email" data-i18n="form_email">Email Address</label>
+              <input id="email" type="email" name="email" required data-i18n-placeholder="form_email" placeholder="Email Address" />
+            </div>
+            <div>
+              <label for="program" data-i18n="form_program">Program of Interest</label>
+              <select id="program" name="program" required>
+                <option value="">--</option>
+                <option>Professional Commercial Banker (PCB)</option>
+                <option>Executive Commercial Banking Strategist (ECBS)</option>
+                <option>Certified Corporate & Commercial Credit Executive (CCCE)</option>
+                <option>Advanced Portfolio & Risk Management Leader (APRML)</option>
+                <option>Digital & FinTech Banking Strategist (DFBS)</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" data-i18n="form_message">Message</label>
+              <textarea id="message" name="message" required data-i18n-placeholder="form_message" placeholder="Message"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit" data-i18n="form_submit">Send Inquiry</button>
+            <small><span data-i18n="form_mailto">Or use your email app</span>: <a href="mailto:info@miamigi.com">info@miamigi.com</a></small>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <strong data-i18n="footer_line">Miami Global Investments Group LLC — Education & Professional Development Division</strong>
+      <span>© <span data-year></span> Miami Global Investments Group LLC. <span data-i18n="footer_rights">All rights reserved.</span></span>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" data-whatsapp-float href="https://wa.me/13056290491" target="_blank" rel="noopener" aria-label="Chat with MGI on WhatsApp">
+    <img src="assets/svg/whatsapp.svg" alt="" />
+    <span class="sr-only">WhatsApp</span>
+  </a>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
