@@ -1,29 +1,31 @@
 import { readFile } from 'node:fs/promises';
-import { getCertificate } from './certificate-store.js';
+import { getCertificate, getCertificateBySerial, normalizeName, normalizeLastName, normalizeSerial } from './certificate-store.js';
 
-function normalizeSerial(value) {
-  return String(value || '').trim().toUpperCase();
-}
-
-function normalizeLastName(value) {
-  return String(value || '').trim().toLowerCase();
-}
-
-function extractLastName(record) {
+function extractRecordLastName(record) {
   if (record.lastName) return normalizeLastName(record.lastName);
-  const fullName = String(record.fullName || '').trim();
+  const fullName = normalizeName(record.fullName || '');
   if (!fullName) return '';
   return normalizeLastName(fullName.split(/\s+/).at(-1));
 }
 
-async function findInSeedData(serial, lastName) {
+function namesMatch(record, enteredName) {
+  const wanted = normalizeName(enteredName);
+  if (!wanted) return false;
+
+  const recordLastName = extractRecordLastName(record);
+  if (recordLastName && recordLastName === normalizeLastName(wanted)) return true;
+
+  const recordFullName = normalizeName(record.fullName || '');
+  return Boolean(recordFullName && recordFullName === wanted);
+}
+
+async function findInSeedData(serial, enteredName) {
   try {
     const raw = await readFile(new URL('../assets/data/certificates.json', import.meta.url), 'utf8');
     const rows = JSON.parse(raw);
     const wantedSerial = normalizeSerial(serial);
-    const wantedLastName = normalizeLastName(lastName);
-    return rows.find((row) => normalizeSerial(row.serial) === wantedSerial && extractLastName(row) === wantedLastName) || null;
-  } catch (error) {
+    return rows.find((row) => normalizeSerial(row.serial) === wantedSerial && namesMatch(row, enteredName)) || null;
+  } catch {
     return null;
   }
 }
@@ -34,17 +36,24 @@ export default async function handler(req, res) {
   }
 
   const serial = req.query?.serial;
-  const lastName = req.query?.lastName;
+  const enteredName = req.query?.lastName || req.query?.name;
 
-  if (!serial || !lastName) {
-    return res.status(400).json({ found: false, error: 'Missing serial or lastName query parameter' });
+  if (!serial || !enteredName) {
+    return res.status(400).json({ found: false, error: 'Missing serial or lastName/name query parameter' });
   }
 
   try {
-    let certificate = await getCertificate(serial, lastName);
+    let certificate = await getCertificate(serial, enteredName);
 
     if (!certificate) {
-      certificate = await findInSeedData(serial, lastName);
+      const bySerial = await getCertificateBySerial(serial);
+      if (bySerial && namesMatch(bySerial, enteredName)) {
+        certificate = bySerial;
+      }
+    }
+
+    if (!certificate) {
+      certificate = await findInSeedData(serial, enteredName);
     }
 
     if (!certificate) {

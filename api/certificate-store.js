@@ -11,8 +11,15 @@ function normalizeSerial(value) {
   return String(value || '').trim().toUpperCase();
 }
 
+function normalizeName(value) {
+  return String(value || '')
+    .normalize('NFC')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function normalizeLastName(value) {
-  return String(value || '').trim().toLowerCase();
+  return normalizeName(value).toLowerCase();
 }
 
 function isValidSerialFormat(value) {
@@ -42,9 +49,7 @@ async function kvCommand(command, args = []) {
   const path = [command, ...args.map((arg) => encodeURIComponent(String(arg)))].join('/');
   const response = await fetch(`${cfg.baseUrl}/${path}`, {
     method: 'POST',
-    headers: {
-      Authorization: `Bearer ${cfg.token}`
-    }
+    headers: { Authorization: `Bearer ${cfg.token}` }
   });
 
   if (!response.ok) {
@@ -71,7 +76,6 @@ function lookupKey(serial, lastName) {
 function counterKey(year) {
   return `mgi:cert:counter:${year}`;
 }
-
 
 function isProductionRuntime() {
   return process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production';
@@ -147,17 +151,15 @@ async function addCertificate(data) {
 
   if (customSerial) {
     const reserved = await reserveSerial(customSerial);
-    if (!reserved) {
-      throw new Error('Custom serial already exists');
-    }
+    if (!reserved) throw new Error('Custom serial already exists');
   } else {
     serial = await generateSerial(year);
   }
 
   const certificate = {
     serial,
-    fullName: data.fullName,
-    lastName: data.lastName,
+    fullName: normalizeName(data.fullName),
+    lastName: normalizeName(data.lastName),
     courseEn: data.courseEn,
     courseAr: data.courseAr,
     issueDate: data.issueDate,
@@ -171,6 +173,24 @@ async function addCertificate(data) {
   return certificate;
 }
 
+async function getCertificateBySerial(serial) {
+  ensureStorageModeAllowed();
+  const normalizedSerial = normalizeSerial(serial);
+  if (!normalizedSerial) return null;
+
+  if (hasPersistentKv()) {
+    const raw = await kvCommand('get', [serialDataKey(normalizedSerial)]);
+    if (!raw) return null;
+    try {
+      return JSON.parse(raw);
+    } catch {
+      return null;
+    }
+  }
+
+  return memoryStore.certificates.get(normalizedSerial) || null;
+}
+
 async function getCertificate(serial, lastName) {
   ensureStorageModeAllowed();
   const normalizedSerial = normalizeSerial(serial);
@@ -180,15 +200,7 @@ async function getCertificate(serial, lastName) {
   if (hasPersistentKv()) {
     const lookedUpSerial = await kvCommand('get', [lookupKey(normalizedSerial, normalizedLastName)]);
     if (!lookedUpSerial) return null;
-
-    const raw = await kvCommand('get', [serialDataKey(lookedUpSerial)]);
-    if (!raw) return null;
-
-    try {
-      return JSON.parse(raw);
-    } catch (error) {
-      return null;
-    }
+    return getCertificateBySerial(lookedUpSerial);
   }
 
   const serialFromLookup = memoryStore.lookups.get(lookupKey(normalizedSerial, normalizedLastName));
@@ -196,4 +208,4 @@ async function getCertificate(serial, lastName) {
   return memoryStore.certificates.get(normalizeSerial(serialFromLookup)) || null;
 }
 
-export { addCertificate, getCertificate, isValidSerialFormat };
+export { addCertificate, getCertificate, getCertificateBySerial, isValidSerialFormat, normalizeName, normalizeLastName, normalizeSerial };
