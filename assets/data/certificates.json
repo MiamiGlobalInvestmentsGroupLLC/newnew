@@ -58,5 +58,105 @@
     "status": "revoked",
     "notesEn": "Revoked after identity mismatch review.",
     "notesAr": "أُلغيت الشهادة بعد مراجعة تطابق الهوية."
+  },
+  {
+    "serial": "MGI-2026-000007",
+    "fullName": "أحمد العتيبي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-24",
+    "status": "valid",
+    "notesEn": "Demo certificate record added for verification testing.",
+    "notesAr": "سجل شهادة تجريبي تمت إضافته لاختبارات التحقق."
+  },
+  {
+    "serial": "MGI-2026-000008",
+    "fullName": "سارة القحطاني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-24",
+    "status": "valid",
+    "notesEn": "Demo certificate record added for verification testing.",
+    "notesAr": "سجل شهادة تجريبي تمت إضافته لاختبارات التحقق."
+  },
+  {
+    "serial": "MGI-2026-000009",
+    "fullName": "خالد الشمري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-24",
+    "status": "valid",
+    "notesEn": "Demo certificate record added for verification testing.",
+    "notesAr": "سجل شهادة تجريبي تمت إضافته لاختبارات التحقق."
+  },
+  {
+    "serial": "MGI-2026-000010",
+    "fullName": "نورة الحربي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-24",
+    "status": "valid",
+    "notesEn": "Demo certificate record added for verification testing.",
+    "notesAr": "سجل شهادة تجريبي تمت إضافته لاختبارات التحقق."
+  },
+  {
+    "serial": "MGI-2026-000011",
+    "fullName": "عبدالله الزهراني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-24",
+    "status": "valid",
+    "notesEn": "Demo certificate record added for verification testing.",
+    "notesAr": "سجل شهادة تجريبي تمت إضافته لاختبارات التحقق."
+  },
+  {
+    "serial": "MGI-2026-000012",
+    "fullName": "ريم الدوسري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-24",
+    "status": "valid",
+    "notesEn": "Demo certificate record added for verification testing.",
+    "notesAr": "سجل شهادة تجريبي تمت إضافته لاختبارات التحقق."
+  },
+  {
+    "serial": "MGI-2026-000013",
+    "fullName": "فيصل العنزي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-24",
+    "status": "valid",
+    "notesEn": "Demo certificate record added for verification testing.",
+    "notesAr": "سجل شهادة تجريبي تمت إضافته لاختبارات التحقق."
+  },
+  {
+    "serial": "MGI-2026-000014",
+    "fullName": "هند المطيري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-24",
+    "status": "valid",
+    "notesEn": "Demo certificate record added for verification testing.",
+    "notesAr": "سجل شهادة تجريبي تمت إضافته لاختبارات التحقق."
+  },
+  {
+    "serial": "MGI-2026-000015",
+    "fullName": "يوسف الغامدي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-24",
+    "status": "valid",
+    "notesEn": "Demo certificate record added for verification testing.",
+    "notesAr": "سجل شهادة تجريبي تمت إضافته لاختبارات التحقق."
+  },
+  {
+    "serial": "MGI-2026-000016",
+    "fullName": "ليان السبيعي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-24",
+    "status": "valid",
+    "notesEn": "Demo certificate record added for verification testing.",
+    "notesAr": "سجل شهادة تجريبي تمت إضافته لاختبارات التحقق."
   }
 ]
