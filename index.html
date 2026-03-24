@@ -1,91 +1,134 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-  <title>MGI — Miami Experiences & Investments</title>
-  <meta name="description" content="MGI: Miami consulting, premium travel, and luxury real estate wholesaling. Bright, modern, and clean.">
-  
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="styles.css?v=9100" />
-  <script defer src="script.js?v=9100"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MGI Education Division | Executive Banking & Finance Programs</title>
+  <meta name="description" content="Miami Global Investments Group LLC — premium executive banking and finance certification programs with bilingual support." />
+  <meta property="og:title" content="MGI Education Division" />
+  <meta property="og:description" content="Executive Banking & Finance certifications by Miami Global Investments Group LLC." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="./index.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/svg/seal.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  
-<header class="nav-wrap">
-  <div class="nav container">
-    <a class="brand" href="index.html">
-      <img class="logo" src="assets/mgi-logo.jpg" alt="MGI logo" />
-      <span>Miami Global Investments Group</span>
-    </a>
-    <nav>
-      <a href="consulting.html">Consulting</a>
-      <a href="travel.html">Travel</a>
-      <a href="real-estate.html">Real Estate Wholesaling</a>
-      <a href="about.html">About</a>
-      <a class="cta" href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-  <section class="hero">
-    <img class="hero-img" src="assets/hero-home.jpg" alt="Miami skyline illustration"/>
-    <div class="hero-overlay">
-      <h1>Miami Experiences & Investments</h1>
-      <p>Bright, modern pages for Consulting, Travel, and Real Estate Wholesaling.</p>
-      <div class="hero-actions">
-        <a class="btn pill" href="travel.html">Explore Travel</a>
-        <a class="btn outline" href="real-estate.html">See Real Estate Wholesaling</a>
-        <a class="btn ghost" href="consulting.html">Business Consulting</a>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <strong>Miami Global Investments Group LLC</strong>
+        <span data-i18n="brand_tag">Education & Professional Development Division</span>
+      </a>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group" aria-label="Language switcher">
+          <button type="button" data-lang-switch="en" class="active">EN</button>
+          <button type="button" data-lang-switch="ar">AR</button>
+        </div>
+        <button class="menu-btn" data-nav-toggle aria-label="Toggle navigation"><span></span></button>
       </div>
+      <nav class="nav-links" data-nav-links>
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="programs.html" data-i18n="nav_programs">Programs</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <section class="container cards-3">
-    <article class="c-card">
-      <h3>Business Consulting</h3>
-      <p>Market entry, company formation, banking/EIN guidance, SOPs, go-to-market playbooks.</p>
-      <a class="arrow" href="consulting.html">Learn more →</a>
-    </article>
-    <article class="c-card">
-      <h3>Travel</h3>
-      <p>Agent-only rates, VIP perks, fast quotes, and meticulous confirmations — worldwide.</p>
-      <a class="arrow" href="travel.html">Plan a trip →</a>
-    </article>
-    <article class="c-card">
-      <h3>Real Estate</h3>
-      <p>Waterfront villas, skyline penthouses, and investor-ready condos in Miami.</p>
-      <a class="arrow" href="real-estate.html">Discover listings →</a>
-    </article>
-  </section>
-  <div class="map">
-      <iframe title="MGI Miami" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=2125+Biscayne+Blvd,+Ste+204,+Miami+FL&output=embed"></iframe>
+  <main>
+    <section class="hero">
+      <img class="watermark skyline" src="assets/svg/miami-skyline.svg" alt="" />
+      <img class="watermark seal" src="assets/svg/seal.svg" alt="" />
+      <div class="container hero-grid">
+        <div>
+          <p class="badge" data-i18n="trust_us_registered">U.S. Registered Company • Miami, Florida</p>
+          <h1 data-i18n="hero_title">Executive Banking & Finance Certifications for Modern Leaders</h1>
+          <p class="lead" data-i18n="hero_sub">Miami Global Investments Group LLC delivers premium, practical professional programs designed for bankers, credit specialists, and finance decision-makers.</p>
+          <ul class="highlights">
+            <li data-i18n="hero_high_1">Official signed & stamped certificate</li>
+            <li data-i18n="hero_high_2">Printed certificate delivered to your home (complimentary shipping)</li>
+            <li data-i18n="hero_high_3">Corporate-grade curriculum with practical application</li>
+          </ul>
+          <p style="margin-top:16px;">
+            <a class="btn btn-primary" href="programs.html" data-i18n="view_programs">View Programs</a>
+          </p>
+        </div>
+        <aside class="card price-box">
+          <h3 data-i18n="promo_title">Encouragement Discount</h3>
+          <div class="price-row">
+            <span class="price-current" data-price-current>$125 USD</span>
+            <span class="price-old">$350 USD</span>
+          </div>
+          <p class="promo-note" data-promo-note data-i18n="promo_note_active">Promo price available before April 1, 2026 (Miami time).</p>
+          <p class="promo-note" data-i18n="old_price_note">Regular price: $350 USD starting April 2026</p>
+          <p data-i18n="countdown_label">Price change in</p>
+          <div class="countdown" data-countdown>
+            <span class="item"><span class="value" data-d>00</span><span class="label" data-lbl-days>Days</span></span>
+            <span class="item"><span class="value" data-h>00</span><span class="label" data-lbl-hours>Hours</span></span>
+            <span class="item"><span class="value" data-m>00</span><span class="label" data-lbl-minutes>Minutes</span></span>
+            <span class="item"><span class="value" data-s>00</span><span class="label" data-lbl-seconds>Seconds</span></span>
+          </div>
+          <p class="offer-ended" data-offer-ended style="display:none;">Offer Ended</p>
+          <p style="margin-top:16px;">
+            <a class="btn btn-primary" href="https://buy.stripe.com/6oU00jd9V6F0dts4SxbfO00" target="_blank" rel="noopener" data-i18n="pay_now">Pay Now</a>
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Trust strip">
+      <div class="container">
+        <h2 data-i18n="trust_title">Why Professionals Choose MGI</h2>
+        <div class="trust-items">
+          <article data-i18n="trust_1">Boutique U.S.-registered firm with an executive standards approach</article>
+          <article data-i18n="trust_2">Bilingual support and international participant accessibility</article>
+          <article data-i18n="trust_3">Focused, practical modules aligned with commercial banking realities</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-grid">
+        <article>
+          <h2 data-i18n="programs_intro_title">Program Portfolio</h2>
+          <p class="section-intro" data-i18n="programs_intro">Five premium certificates built for professionals seeking immediate executive impact.</p>
+          <p><a class="btn btn-secondary" href="programs.html" data-i18n="view_programs">View Programs</a></p>
+        </article>
+        <article>
+          <h2 data-i18n="about_title">About the Division</h2>
+          <p class="section-intro" data-i18n="about_text">MGI's Education & Professional Development Division was created to bridge practical banking realities with executive learning. Our programs are structured for busy professionals who need depth, clarity, and credibility.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card" style="text-align:center;">
+        <h2 data-i18n="cta_title">Ready to reserve your seat?</h2>
+        <p class="section-intro" style="margin-inline:auto;" data-i18n="cta_sub">Secure the encouragement discount now and receive your learning schedule promptly.</p>
+        <a class="btn btn-primary" href="https://buy.stripe.com/6oU00jd9V6F0dts4SxbfO00" target="_blank" rel="noopener" data-i18n="pay_now">Pay Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <strong data-i18n="footer_line">Miami Global Investments Group LLC — Education & Professional Development Division</strong>
+      <span data-i18n="contact_quick">Phone/WhatsApp: +1 (305) 629-0491 • Email: info@miamigi.com</span>
+      <span>© <span data-year></span> Miami Global Investments Group LLC. <span data-i18n="footer_rights">All rights reserved.</span></span>
     </div>
-  </section>
-<footer class="footer">
-  <div class="container foot">
-    <p>© <span id="y"></span> Miami Global Investments Group LLC — Miami, FL • </p>
-    <p><strong>Email:</strong> <a href="mailto:Info@miamiglobalgroup.com">Info@miamiglobalgroup.com</a> •
-       <strong>Phone:</strong> +1 (305) 629-0491</p>
-  </div>
-</footer>
-<!-- WhatsApp Floating Button + Welcome Bubble -->
-<a href="https://wa.me/13056290491" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
-  <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp chat icon">
-</a>
+  </footer>
 
-<div class="wa-bubble" id="waBubble">
-  💬 Need help? <strong>Chat with us on WhatsApp</strong>
-</div>
+  <a class="whatsapp-float" data-whatsapp-float href="https://wa.me/13056290491" target="_blank" rel="noopener" aria-label="Chat with MGI on WhatsApp">
+    <img src="assets/svg/whatsapp.svg" alt="" />
+    <span class="sr-only">WhatsApp</span>
+  </a>
 
-<script>
-  // Bubble auto-hide after 10s or on click
-  const bubble = document.getElementById('waBubble');
-  if(bubble){
-    setTimeout(()=>bubble.classList.add('hide'),10000);
-    bubble.addEventListener('click',()=>bubble.classList.add('hide'));
-  }
-</script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/countdown.js"></script>
 </body>
 </html>

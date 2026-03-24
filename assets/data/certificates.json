@@ -1,0 +1,82 @@
+[
+  {
+    "serial_number": "MGI-2026-0001",
+    "name": "أحمد العتيبي",
+    "course_en": "Healthcare Clinic Management",
+    "course_ar": "إدارة العيادات الصحية",
+    "issue_date": "2026-03-24",
+    "status": "valid"
+  },
+  {
+    "serial_number": "MGI-2026-0002",
+    "name": "سارة القحطاني",
+    "course_en": "Healthcare Clinic Management",
+    "course_ar": "إدارة العيادات الصحية",
+    "issue_date": "2026-03-24",
+    "status": "valid"
+  },
+  {
+    "serial_number": "MGI-2026-0003",
+    "name": "خالد الشمري",
+    "course_en": "Healthcare Clinic Management",
+    "course_ar": "إدارة العيادات الصحية",
+    "issue_date": "2026-03-24",
+    "status": "valid"
+  },
+  {
+    "serial_number": "MGI-2026-0004",
+    "name": "نورة الحربي",
+    "course_en": "Healthcare Clinic Management",
+    "course_ar": "إدارة العيادات الصحية",
+    "issue_date": "2026-03-24",
+    "status": "valid"
+  },
+  {
+    "serial_number": "MGI-2026-0005",
+    "name": "عبدالله الزهراني",
+    "course_en": "Healthcare Clinic Management",
+    "course_ar": "إدارة العيادات الصحية",
+    "issue_date": "2026-03-24",
+    "status": "valid"
+  },
+  {
+    "serial_number": "MGI-2026-0006",
+    "name": "ريم الدوسري",
+    "course_en": "Healthcare Clinic Management",
+    "course_ar": "إدارة العيادات الصحية",
+    "issue_date": "2026-03-24",
+    "status": "valid"
+  },
+  {
+    "serial_number": "MGI-2026-0007",
+    "name": "فيصل العنزي",
+    "course_en": "Healthcare Clinic Management",
+    "course_ar": "إدارة العيادات الصحية",
+    "issue_date": "2026-03-24",
+    "status": "valid"
+  },
+  {
+    "serial_number": "MGI-2026-0008",
+    "name": "هند المطيري",
+    "course_en": "Healthcare Clinic Management",
+    "course_ar": "إدارة العيادات الصحية",
+    "issue_date": "2026-03-24",
+    "status": "valid"
+  },
+  {
+    "serial_number": "MGI-2026-0009",
+    "name": "يوسف الغامدي",
+    "course_en": "Healthcare Clinic Management",
+    "course_ar": "إدارة العيادات الصحية",
+    "issue_date": "2026-03-24",
+    "status": "valid"
+  },
+  {
+    "serial_number": "MGI-2026-0010",
+    "name": "ليان السبيعي",
+    "course_en": "Healthcare Clinic Management",
+    "course_ar": "إدارة العيادات الصحية",
+    "issue_date": "2026-03-24",
+    "status": "valid"
+  }
+]
