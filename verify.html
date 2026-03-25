@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify Certificate | MGI Education</title>
+  <meta name="description" content="Verify MGI certificates by serial number and last name.">
+  <link rel="icon" href="/assets/images/IMG_1929.jpeg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap"><a href="index.html" class="brand"><span data-en="MGI Education" data-ar="MGI للتعليم"></span></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button><nav class="main-nav"><ul><li><a href="index.html" data-en="Home" data-ar="الرئيسية"></a></li><li><a href="programs.html" data-en="Programs" data-ar="البرامج"></a></li><li><a href="verify.html" data-en="Verify Certificate" data-ar="تحقق من الشهادة"></a></li><li><a href="about.html" data-en="About" data-ar="من نحن"></a></li><li><a href="faq.html" data-en="FAQ" data-ar="الأسئلة الشائعة"></a></li><li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا"></a></li></ul></nav><div class="lang-toggle"><button class="active" data-lang="en">EN</button><button data-lang="ar">AR</button></div></div></header>
+
+<main class="section"><div class="container">
+  <section class="card verify-panel">
+    <h1 data-en="Certificate Verification" data-ar="التحقق من الشهادة"></h1>
+    <p class="muted" data-en="Enter serial number + last name (or full name) to verify a certificate." data-ar="أدخل الرقم التسلسلي + اسم العائلة (أو الاسم الكامل) للتحقق من الشهادة."></p>
+    <div class="verify-form-row">
+      <input id="serial-input" placeholder="MGI-2026-000001" aria-label="Certificate serial number">
+      <input id="last-name-input" placeholder="Last Name or Full Name" aria-label="Last name">
+      <button id="verify-btn" class="btn btn-primary" data-en="Verify" data-ar="تحقق"></button>
+    </div>
+  </section>
+
+  <section id="verify-result" class="card" hidden></section>
+</div></main>
+
+<footer class="site-footer"><div class="container"><p data-en="Miami Global Investments Group LLC • Education & Professional Development Division" data-ar="Miami Global Investments Group LLC • قسم التعليم والتطوير المهني"></p><p>© <span id="year"></span></p></div></footer>
+<a id="whatsapp-float" class="whatsapp-float" href="https://wa.me/13056290491" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><img src="assets/svg/whatsapp.svg" alt=""></a>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/vendor/qrcode.min.js"></script>
+<script src="assets/js/verify.js"></script>
+</body>
+</html>
