@@ -1,4 +1,32 @@
+import { readFile } from 'node:fs/promises';
 import { getCertificate } from './certificate-store.js';
+
+function normalizeSerial(value) {
+  return String(value || '').trim().toUpperCase();
+}
+
+function normalizeLastName(value) {
+  return String(value || '').trim().toLowerCase();
+}
+
+function extractLastName(record) {
+  if (record.lastName) return normalizeLastName(record.lastName);
+  const fullName = String(record.fullName || '').trim();
+  if (!fullName) return '';
+  return normalizeLastName(fullName.split(/\s+/).at(-1));
+}
+
+async function findInSeedData(serial, lastName) {
+  try {
+    const raw = await readFile(new URL('../assets/data/certificates.json', import.meta.url), 'utf8');
+    const rows = JSON.parse(raw);
+    const wantedSerial = normalizeSerial(serial);
+    const wantedLastName = normalizeLastName(lastName);
+    return rows.find((row) => normalizeSerial(row.serial) === wantedSerial && extractLastName(row) === wantedLastName) || null;
+  } catch (error) {
+    return null;
+  }
+}
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
@@ -13,7 +41,12 @@ export default async function handler(req, res) {
   }
 
   try {
-    const certificate = await getCertificate(serial, lastName);
+    let certificate = await getCertificate(serial, lastName);
+
+    if (!certificate) {
+      certificate = await findInSeedData(serial, lastName);
+    }
+
     if (!certificate) {
       return res.status(200).json({ found: false });
     }
