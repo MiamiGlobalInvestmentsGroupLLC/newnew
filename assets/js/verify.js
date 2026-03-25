@@ -37,6 +37,9 @@
       <p><strong>${l === 'ar' ? 'البرنامج التدريبي' : 'Course'}:</strong> ${safe(course)}</p>
       <p><strong>${l === 'ar' ? 'تاريخ الإصدار' : 'Issue Date'}:</strong> ${safe(rec.issueDate)}</p>
       <p class="muted">${safe(note)}</p>
+      <div class="verify-stamp-wrap">
+        <img class="verify-stamp" src="assets/svg/seal.svg" alt="${l === 'ar' ? 'ختم التحقق' : 'Verification seal'}">
+      </div>
     `;
   }
 

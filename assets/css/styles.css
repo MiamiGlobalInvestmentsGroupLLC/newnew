@@ -320,6 +320,8 @@ textarea { min-height: 120px; }
 .status-valid { background:#eaf8ef; color:#1f7d3f; border:1px solid #bfe6cc; }
 .status-revoked { background:#fdeeee; color:#a12d2d; border:1px solid #efc5c5; }
 .status-missing { background:#f2f4f7; color:#495a6b; border:1px solid #d9e0e8; }
+.verify-stamp-wrap { display:flex; justify-content:center; margin-top:1rem; }
+.verify-stamp { width:min(240px, 80%); height:auto; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18)); }
 .verify-actions { display:flex; flex-wrap:wrap; gap:.5rem; margin:.7rem 0; }
 .qrcode-wrap { margin-top:.75rem; }
 
