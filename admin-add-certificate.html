@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Add Certificate | MGI Education</title>
+  <meta name="description" content="Internal admin dashboard for automatic certificate publishing.">
+  <link rel="icon" href="assets/svg/seal.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/admin-add-certificate.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand"><img src="assets/svg/seal.svg" class="seal" alt="MGI seal"><span data-en="MGI Education" data-ar="MGI للتعليم"></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="main-nav"><ul><li><a href="index.html" data-en="Home" data-ar="الرئيسية"></a></li><li><a href="programs.html" data-en="Programs" data-ar="البرامج"></a></li><li><a href="verify.html" data-en="Verify Certificate" data-ar="تحقق من الشهادة"></a></li><li><a href="about.html" data-en="About" data-ar="من نحن"></a></li><li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا"></a></li></ul></nav>
+    <div class="lang-toggle"><button class="active" data-lang="en">EN</button><button data-lang="ar">AR</button></div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <section id="locked-view" class="card" hidden>
+      <h1 data-en="Admin Tool Locked" data-ar="أداة الإدارة مقفلة"></h1>
+      <p data-en="Passcode not accepted. Reload and try again." data-ar="لم يتم قبول رمز المرور. أعد تحميل الصفحة وحاول مجدداً."></p>
+    </section>
+
+    <section id="admin-view" hidden>
+      <div class="card warning-banner">
+        <strong data-en="Admin tool notice — auto API publishing is currently disabled." data-ar="أداة الإدارة — النشر التلقائي عبر واجهة API مفعل."></strong>
+        <p class="muted" data-en="Use this page to prepare records, then append certificates into assets/data/certificates.json (single source of truth)." data-ar="يقوم هذا النموذج بالنشر مباشرة إلى /api/add-certificate ويعرض الرقم التسلسلي الفعلي."></p>
+      </div>
+
+      <form id="admin-cert-form" class="card form-grid" novalidate>
+        <h1 data-en="Publish Certificate" data-ar="نشر شهادة"></h1>
+        <div class="form-grid two">
+          <label><span data-en="Full Name" data-ar="الاسم الكامل"></span><input required name="fullName"></label>
+          <label><span data-en="Last Name" data-ar="اسم العائلة"></span><input required name="lastName"></label>
+        </div>
+        <div class="form-grid two">
+          <label><span data-en="Issue Date" data-ar="تاريخ الإصدار"></span><input required type="date" name="issueDate" id="issue-date"></label>
+          <label><span data-en="Optional Custom Serial (MGI-YYYY-XXXXXX)" data-ar="رقم تسلسلي مخصص اختياري (MGI-YYYY-XXXXXX)"></span><input name="customSerial" id="custom-serial" placeholder="MGI-2026-000123"></label>
+        </div>
+        <label>
+          <span data-en="Course" data-ar="البرنامج التدريبي"></span>
+          <select required name="course" id="course-select">
+            <option value="" data-en="Loading courses..." data-ar="جارِ تحميل البرامج..."></option>
+          </select>
+        </label>
+        <div class="form-grid two">
+          <label><span data-en="Notes EN (optional)" data-ar="ملاحظات EN (اختياري)"></span><textarea name="notesEn"></textarea></label>
+          <label><span data-en="Notes AR (optional)" data-ar="ملاحظات AR (اختياري)"></span><textarea name="notesAr"></textarea></label>
+        </div>
+        <div class="verify-actions">
+          <button type="submit" class="btn btn-primary" data-en="Prepare Certificate Record" data-ar="نشر الشهادة تلقائياً"></button>
+        </div>
+      </form>
+
+      <section class="card">
+        <h3 data-en="API Response & Certificate Record" data-ar="استجابة API وسجل الشهادة"></h3>
+        <pre id="json-output" class="code-output">{ }</pre>
+        <button id="copy-json" class="btn btn-secondary" data-en="Copy JSON" data-ar="نسخ JSON"></button>
+      </section>
+
+      <section class="card">
+        <h3 data-en="Verification URL" data-ar="رابط التحقق"></h3>
+        <input id="verify-url" readonly>
+        <div class="verify-actions">
+          <button id="copy-url" class="btn btn-secondary" data-en="Copy URL" data-ar="نسخ الرابط"></button>
+        </div>
+        <div id="admin-qr" class="qrcode-wrap"></div>
+      </section>
+
+      <section class="card">
+        <h3 data-en="Important" data-ar="مهم"></h3>
+        <p data-en="Verification now requires serial number and last name to protect certificate privacy." data-ar="التحقق الآن يتطلب الرقم التسلسلي واسم العائلة لحماية خصوصية الشهادات."></p>
+      </section>
+    </section>
+  </div>
+</main>
+
+<div id="copy-toast" class="copy-toast" hidden>Copied</div>
+
+<footer class="site-footer"><div class="container"><p data-en="Miami Global Investments Group LLC • Education & Professional Development Division" data-ar="Miami Global Investments Group LLC • قسم التعليم والتطوير المهني"></p><p>© <span id="year"></span></p></div></footer>
+<img src="assets/svg/seal.svg" class="watermark-seal" alt="">
+<a id="whatsapp-float" class="whatsapp-float" href="https://wa.me/13056290491" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><img src="assets/svg/whatsapp.svg" alt=""></a>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/vendor/qrcode.min.js"></script>
+<script src="assets/js/admin-add-certificate.js"></script>
+</body>
+</html>

@@ -1,0 +1,971 @@
+[
+  {
+    "serial": "MGI-2026-000001",
+    "fullName": "Omar Khaled",
+    "courseEn": "Commercial Credit Essentials",
+    "courseAr": "أساسيات الائتمان التجاري",
+    "issueDate": "2026-02-15",
+    "status": "valid",
+    "notesEn": "Certificate issued after full attendance and assessment completion.",
+    "notesAr": "تم إصدار الشهادة بعد استكمال الحضور والتقييم النهائي."
+  },
+  {
+    "serial": "MGI-2026-000002",
+    "fullName": "Lina Haddad",
+    "courseEn": "Premium Brand Positioning",
+    "courseAr": "التموضع الاحترافي للعلامة",
+    "issueDate": "2026-02-22",
+    "status": "valid",
+    "notesEn": "Active and verifiable in MGI registry.",
+    "notesAr": "الشهادة فعّالة وقابلة للتحقق ضمن سجل MGI."
+  },
+  {
+    "serial": "MGI-2026-000003",
+    "fullName": "Yousef Nassar",
+    "courseEn": "Smart Capital Structuring",
+    "courseAr": "هيكلة رأس المال بذكاء",
+    "issueDate": "2026-03-01",
+    "status": "revoked",
+    "notesEn": "Revoked due to formal administrative request.",
+    "notesAr": "تم إلغاء الشهادة بناءً على طلب إداري رسمي."
+  },
+  {
+    "serial": "MGI-2026-000004",
+    "fullName": "Sara Al-Masri",
+    "courseEn": "Cross-Border Market Entry",
+    "courseAr": "دخول الأسواق الدولية",
+    "issueDate": "2026-03-08",
+    "status": "valid",
+    "notesEn": "Certificate verified and in good standing.",
+    "notesAr": "تم التحقق من الشهادة وهي بحالة سارية."
+  },
+  {
+    "serial": "MGI-2026-000005",
+    "fullName": "Hassan Alali",
+    "courseEn": "Executive Productivity Systems",
+    "courseAr": "أنظمة إنتاجية تنفيذية",
+    "issueDate": "2026-03-10",
+    "status": "valid",
+    "notesEn": "Issued under Education & Professional Development division.",
+    "notesAr": "صادرة ضمن قسم التعليم والتطوير المهني."
+  },
+  {
+    "serial": "MGI-2026-000006",
+    "fullName": "Mariam Tarek",
+    "courseEn": "Performance Nutrition Blueprint",
+    "courseAr": "خارطة التغذية للأداء",
+    "issueDate": "2026-03-12",
+    "status": "revoked",
+    "notesEn": "Revoked after identity mismatch review.",
+    "notesAr": "أُلغيت الشهادة بعد مراجعة تطابق الهوية."
+  },
+  {
+    "serial": "MGI-2026-000301",
+    "fullName": "أحمد العتيبي",
+    "lastName": "العتيبي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000302",
+    "fullName": "سارة القحطاني",
+    "lastName": "القحطاني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000303",
+    "fullName": "خالد الشمري",
+    "lastName": "الشمري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000304",
+    "fullName": "نورة الحربي",
+    "lastName": "الحربي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000305",
+    "fullName": "عبدالله الزهراني",
+    "lastName": "الزهراني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000306",
+    "fullName": "ريم الدوسري",
+    "lastName": "الدوسري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000307",
+    "fullName": "فيصل العنزي",
+    "lastName": "العنزي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000308",
+    "fullName": "هند المطيري",
+    "lastName": "المطيري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000309",
+    "fullName": "يوسف الغامدي",
+    "lastName": "الغامدي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000310",
+    "fullName": "ليان السبيعي",
+    "lastName": "السبيعي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000311",
+    "fullName": "محمد القحطاني",
+    "lastName": "القحطاني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000312",
+    "fullName": "فاطمة الزهراني",
+    "lastName": "الزهراني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000313",
+    "fullName": "عبدالرحمن العتيبي",
+    "lastName": "العتيبي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000314",
+    "fullName": "مشاعل الدوسري",
+    "lastName": "الدوسري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000315",
+    "fullName": "تركي الشمري",
+    "lastName": "الشمري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000316",
+    "fullName": "منيرة الحربي",
+    "lastName": "الحربي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000317",
+    "fullName": "سعود الغامدي",
+    "lastName": "الغامدي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000318",
+    "fullName": "هدى العنزي",
+    "lastName": "العنزي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000319",
+    "fullName": "ناصر المطيري",
+    "lastName": "المطيري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000320",
+    "fullName": "دلال السبيعي",
+    "lastName": "السبيعي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000321",
+    "fullName": "راشد القحطاني",
+    "lastName": "القحطاني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000322",
+    "fullName": "نوف الزهراني",
+    "lastName": "الزهراني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000323",
+    "fullName": "وليد العتيبي",
+    "lastName": "العتيبي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000324",
+    "fullName": "عبير الدوسري",
+    "lastName": "الدوسري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000325",
+    "fullName": "بندر الشمري",
+    "lastName": "الشمري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000326",
+    "fullName": "مها الحربي",
+    "lastName": "الحربي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000327",
+    "fullName": "عبدالعزيز الغامدي",
+    "lastName": "الغامدي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000328",
+    "fullName": "أمل العنزي",
+    "lastName": "العنزي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000329",
+    "fullName": "سلمان المطيري",
+    "lastName": "المطيري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000330",
+    "fullName": "شيخة السبيعي",
+    "lastName": "السبيعي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000331",
+    "fullName": "فهد القحطاني",
+    "lastName": "القحطاني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000332",
+    "fullName": "جواهر الزهراني",
+    "lastName": "الزهراني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000333",
+    "fullName": "طلال العتيبي",
+    "lastName": "العتيبي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000334",
+    "fullName": "هيا الدوسري",
+    "lastName": "الدوسري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000335",
+    "fullName": "نايف الشمري",
+    "lastName": "الشمري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000336",
+    "fullName": "رنا الحربي",
+    "lastName": "الحربي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000337",
+    "fullName": "سامي الغامدي",
+    "lastName": "الغامدي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000338",
+    "fullName": "سمر العنزي",
+    "lastName": "العنزي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000339",
+    "fullName": "زياد المطيري",
+    "lastName": "المطيري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000340",
+    "fullName": "لولوة السبيعي",
+    "lastName": "السبيعي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000341",
+    "fullName": "حسن القحطاني",
+    "lastName": "القحطاني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000342",
+    "fullName": "أروى الزهراني",
+    "lastName": "الزهراني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000343",
+    "fullName": "ماجد العتيبي",
+    "lastName": "العتيبي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000344",
+    "fullName": "دانة الدوسري",
+    "lastName": "الدوسري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000345",
+    "fullName": "حمود الشمري",
+    "lastName": "الشمري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000346",
+    "fullName": "شهد الحربي",
+    "lastName": "الحربي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000347",
+    "fullName": "عبدالله الغامدي",
+    "lastName": "الغامدي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000348",
+    "fullName": "نجلاء العنزي",
+    "lastName": "العنزي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000349",
+    "fullName": "ياسر المطيري",
+    "lastName": "المطيري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000350",
+    "fullName": "هالة السبيعي",
+    "lastName": "السبيعي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000351",
+    "fullName": "إبراهيم القحطاني",
+    "lastName": "القحطاني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000352",
+    "fullName": "ريم الزهراني",
+    "lastName": "الزهراني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000353",
+    "fullName": "سعود العتيبي",
+    "lastName": "العتيبي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000354",
+    "fullName": "عبير الدوسري",
+    "lastName": "الدوسري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000355",
+    "fullName": "محمد الشمري",
+    "lastName": "الشمري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000356",
+    "fullName": "أماني الحربي",
+    "lastName": "الحربي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000357",
+    "fullName": "خالد الغامدي",
+    "lastName": "الغامدي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000358",
+    "fullName": "جمانة العنزي",
+    "lastName": "العنزي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000359",
+    "fullName": "فهد المطيري",
+    "lastName": "المطيري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000360",
+    "fullName": "سارة السبيعي",
+    "lastName": "السبيعي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000361",
+    "fullName": "عبدالله القحطاني",
+    "lastName": "القحطاني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000362",
+    "fullName": "نورة الزهراني",
+    "lastName": "الزهراني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000363",
+    "fullName": "تركي العتيبي",
+    "lastName": "العتيبي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000364",
+    "fullName": "أمل الدوسري",
+    "lastName": "الدوسري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000365",
+    "fullName": "بدر الشمري",
+    "lastName": "الشمري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000366",
+    "fullName": "هند الحربي",
+    "lastName": "الحربي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000367",
+    "fullName": "راشد الغامدي",
+    "lastName": "الغامدي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000368",
+    "fullName": "مي العنزي",
+    "lastName": "العنزي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000369",
+    "fullName": "عبدالرحمن المطيري",
+    "lastName": "المطيري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000370",
+    "fullName": "دلال السبيعي",
+    "lastName": "السبيعي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000371",
+    "fullName": "ناصر القحطاني",
+    "lastName": "القحطاني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000372",
+    "fullName": "عبير الزهراني",
+    "lastName": "الزهراني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000373",
+    "fullName": "وليد العتيبي",
+    "lastName": "العتيبي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000374",
+    "fullName": "سمر الدوسري",
+    "lastName": "الدوسري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000375",
+    "fullName": "سلمان الشمري",
+    "lastName": "الشمري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000376",
+    "fullName": "مها الحربي",
+    "lastName": "الحربي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000377",
+    "fullName": "عبدالعزيز الغامدي",
+    "lastName": "الغامدي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000378",
+    "fullName": "هدى العنزي",
+    "lastName": "العنزي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000379",
+    "fullName": "بندر المطيري",
+    "lastName": "المطيري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000380",
+    "fullName": "نوف السبيعي",
+    "lastName": "السبيعي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000381",
+    "fullName": "فهد القحطاني",
+    "lastName": "القحطاني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000382",
+    "fullName": "جواهر الزهراني",
+    "lastName": "الزهراني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000383",
+    "fullName": "طلال العتيبي",
+    "lastName": "العتيبي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000384",
+    "fullName": "رنا الدوسري",
+    "lastName": "الدوسري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000385",
+    "fullName": "نايف الشمري",
+    "lastName": "الشمري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000386",
+    "fullName": "شهد الحربي",
+    "lastName": "الحربي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000387",
+    "fullName": "سامي الغامدي",
+    "lastName": "الغامدي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000388",
+    "fullName": "أمل العنزي",
+    "lastName": "العنزي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000389",
+    "fullName": "زياد المطيري",
+    "lastName": "المطيري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000390",
+    "fullName": "لولوة السبيعي",
+    "lastName": "السبيعي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000391",
+    "fullName": "حسن القحطاني",
+    "lastName": "القحطاني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000392",
+    "fullName": "أروى الزهراني",
+    "lastName": "الزهراني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000393",
+    "fullName": "ماجد العتيبي",
+    "lastName": "العتيبي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000394",
+    "fullName": "دانة الدوسري",
+    "lastName": "الدوسري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000395",
+    "fullName": "حمود الشمري",
+    "lastName": "الشمري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000396",
+    "fullName": "نجلاء الحربي",
+    "lastName": "الحربي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000397",
+    "fullName": "عبدالله السهلي",
+    "lastName": "السهلي",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000398",
+    "fullName": "مريم القحطاني",
+    "lastName": "القحطاني",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000399",
+    "fullName": "خالد المطيري",
+    "lastName": "المطيري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000400",
+    "fullName": "منال الدوسري",
+    "lastName": "الدوسري",
+    "courseEn": "Healthcare Clinic Management",
+    "courseAr": "إدارة العيادات الصحية",
+    "issueDate": "2026-03-25",
+    "status": "valid"
+  },
+  {
+    "serial": "MGI-2026-000401",
+    "fullName": "عمر حجير",
+    "lastName": "حجير",
+    "courseEn": "How to Master Nursing",
+    "courseAr": "كورس كيف تحترف التمريض",
+    "issueDate": "2026-03-01",
+    "status": "valid"
+  }
+]
