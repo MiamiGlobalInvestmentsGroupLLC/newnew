@@ -8,7 +8,7 @@
 
   function formatCountdown(ms, lang) {
     if (ms <= 0) {
-      return `<span class="offer-ended">${lang === 'ar' ? 'انتهى العرض' : 'Offer Ended'}</span>`;
+      return '';
     }
     const d = Math.floor(ms / 86400000);
     const h = Math.floor((ms % 86400000) / 3600000);
@@ -78,7 +78,7 @@
     const lang = getLang();
     const now = Date.now();
     const offerDiff = OFFER_DEADLINE - now;
-    document.querySelectorAll('.meta-duration').forEach((el)=>{ el.textContent = lang === 'ar' ? '3 أيام | ساعتان يومياً' : '3 Days | 2 Hours/Day'; });
+    document.querySelectorAll('.meta-duration').forEach((el)=>{ el.textContent = lang === 'ar' ? 'تقديم مباشر عبر الإنترنت' : 'Live Online Delivery'; });
     document.querySelectorAll('.meta-zone').forEach((el)=>{ el.textContent = lang === 'ar' ? 'السعودية: 9:30 مساءً | الإمارات: 10:30 مساءً' : 'Saudi: 9:30 PM | UAE: 10:30 PM'; });
     
     const drawDiff = getNextWeeklyDrawTarget() - now;
@@ -94,18 +94,11 @@
     document.querySelectorAll('[data-offer-price-block], [data-price-block]').forEach((block) => {
       const cur = block.querySelector('[data-price-current]');
       const orig = block.querySelector('[data-price-original]');
+      if (!cur || !orig) return;
+      cur.textContent = '$60';
+      orig.textContent = lang === 'ar' ? 'الرسوم الأساسية: 350 دولار' : 'Regular Price: $350';
       const ended = block.querySelector('[data-offer-ended]');
-      if (!cur || !orig || !ended) return;
-      if (offerDiff <= 0) {
-        cur.textContent = '$350';
-        orig.textContent = '';
-        ended.textContent = lang === 'ar' ? 'انتهى العرض' : 'Offer Ended';
-        ended.hidden = false;
-      } else {
-        cur.textContent = '$60';
-        orig.textContent = lang === 'ar' ? 'الرسوم الأساسية: 350 دولار' : 'Regular Price: $350';
-        ended.hidden = true;
-      }
+      if (ended) ended.hidden = true;
     });
   }
 
