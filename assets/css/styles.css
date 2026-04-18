@@ -1100,3 +1100,144 @@ textarea { min-height: 120px; }
 
 /* --- Nav active state --- */
 .main-nav a.nav-active { color: var(--gold); font-weight: 700; }
+
+/* --- Announcement Bar (Hook) --- */
+.announcement-bar {
+  background: linear-gradient(90deg, #0b1c2d 0%, #132b43 60%, #1a3860 100%);
+  border-bottom: 2px solid var(--gold);
+  text-align: center;
+  padding: .62rem 1rem;
+  font-size: .82rem;
+  font-weight: 500;
+  color: #c8d8ea;
+  position: relative;
+  z-index: 101;
+  letter-spacing: .01em;
+}
+.announcement-bar strong { color: #f9e2a0; font-weight: 700; }
+.announcement-bar a {
+  color: var(--gold);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(198,167,94,.4);
+  padding-bottom: 1px;
+  margin-inline-start: .4rem;
+  transition: color .2s;
+}
+.announcement-bar a:hover { color: #f9e2a0; border-color: rgba(249,226,160,.7); }
+.announcement-bar .ann-dot {
+  color: var(--gold);
+  margin: 0 .55rem;
+  opacity: .6;
+}
+
+/* --- White Outline Button (hero dark background) --- */
+.btn-outline-white {
+  border-color: rgba(255,255,255,.5);
+  color: #fff;
+  background: rgba(255,255,255,.07);
+}
+.btn-outline-white:hover, .btn-outline-white:focus-visible {
+  background: rgba(255,255,255,.16);
+  border-color: rgba(255,255,255,.9);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* --- Coming Soon Diploma Section --- */
+.coming-soon-section {
+  background: linear-gradient(180deg, #f4f7fb 0%, #eaf0f8 100%);
+  padding: 5rem 0;
+}
+.cs-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  background: #fff8e1;
+  color: #7a5500;
+  border: 1px solid #f0d060;
+  border-radius: 999px;
+  padding: .28rem .85rem;
+  font-size: .74rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  margin-bottom: .8rem;
+}
+.diploma-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+@media (min-width: 640px)  { .diploma-grid { grid-template-columns: repeat(2,1fr); } }
+@media (min-width: 960px)  { .diploma-grid { grid-template-columns: repeat(3,1fr); } }
+
+.diploma-card {
+  border: 1px solid #d4dde8;
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 1.5rem 1.5rem 1.5rem 1.4rem;
+  box-shadow: 0 8px 20px rgba(11,28,45,.06);
+  position: relative;
+  overflow: hidden;
+}
+.diploma-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #b8a060, #d4bc7a);
+}
+.diploma-ribbon {
+  position: absolute;
+  top: .7rem; right: -1.6rem;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: .62rem;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  padding: .18rem 2rem;
+  transform: rotate(35deg);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.diploma-card-icon { font-size: 1.5rem; margin-bottom: .6rem; display: block; opacity: .8; }
+.diploma-card h3 {
+  font-size: .95rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: .35rem;
+  color: var(--navy);
+}
+.diploma-card p { font-size: .86rem; color: var(--muted); margin: 0; line-height: 1.6; }
+
+.cs-cta-row {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.cs-notify-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  border: 2px solid var(--navy);
+  border-radius: 999px;
+  padding: .78rem 1.75rem;
+  font-size: .93rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--navy);
+  background: transparent;
+  cursor: default;
+  opacity: .7;
+}
+.cs-reg-closed {
+  display: inline-block;
+  margin-top: .85rem;
+  font-size: .8rem;
+  color: var(--muted);
+  font-style: italic;
+}
+.coming-soon-section .section-label { margin-bottom: .35rem; }
+.coming-soon-section h2 { font-size: clamp(1.55rem, 3.5vw, 2.25rem); margin-bottom: .55rem; }
+.coming-soon-section > .container > p { color: var(--muted); max-width: 62ch; font-size: .98rem; line-height: 1.7; }
