@@ -11,13 +11,44 @@
 <body>
 <header class="site-header"><div class="container nav-wrap"><a href="index.html" class="brand"><img src="assets/svg/seal.svg" class="seal" alt="MGI seal"><span data-en="MGI Education" data-ar="MGI للتعليم"></span></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button><nav class="main-nav"><ul><li><a href="index.html" data-en="Home" data-ar="الرئيسية"></a></li><li><a href="programs.html" data-en="Programs" data-ar="البرامج"></a></li><li><a href="about.html" data-en="About" data-ar="من نحن"></a></li><li><a href="faq.html" data-en="FAQ" data-ar="الأسئلة الشائعة"></a></li><li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا"></a></li><li><a href="verify.html" data-en="Verify Certificate" data-ar="تحقق من الشهادة"></a></li></ul></nav><div class="lang-toggle"><button class="active" data-lang="en">EN</button><button data-lang="ar">AR</button></div></div></header>
 <main class="section"><div class="container">
-  <h1 data-en="Payment" data-ar="إتمام عملية الدفع"></h1>
-  <div class="card" data-price-block>
-    <p class="badge" data-en="Ramadan Special Discount – $60 USD" data-ar="عرض لفترة محدودة – 60$"></p>
-    <div class="price-row"><span class="price-current" data-price-current>$60</span><span class="price-original" data-price-original>Regular Price: $350 starting April 2026</span></div>
-    <p class="muted" style="font-size:.82rem;margin:.2rem 0;" data-en="⏳ Limited Time Offer — enroll before price increases" data-ar="⏳ عرض لفترة محدودة — سجّل قبل ارتفاع السعر"></p>
-    <div class="countdown" data-countdown></div>
-    <div class="cta-group"><a class="btn btn-gold" target="_blank" rel="noopener" href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02" data-en="Pay Securely with Stripe" data-ar="إتمام عملية الدفع عبر Stripe"></a></div>
+  <h1 data-en="Enrollment &amp; Payment" data-ar="التسجيل والدفع"></h1>
+  <div class="card" style="max-width:520px;">
+    <span class="section-label" data-en="Executive Diploma Programs" data-ar="برامج الدبلوم التنفيذي"></span>
+    <div class="price-row" style="margin:.75rem 0 .35rem;">
+      <span class="price-current">$400</span>
+      <span class="price-original" style="font-size:.9rem;">
+        <span data-en="Regular:" data-ar="الأصلي:"></span> $1,450
+      </span>
+    </div>
+    <p class="muted" style="font-size:.82rem;margin:.2rem 0 1rem;"
+       data-en="⚡ Limited to first 100 enrollments — price rises after"
+       data-ar="⚡ مقتصر على أول 100 تسجيل — يرتفع السعر بعدها"></p>
+
+    <div class="tc-check-wrap">
+      <input type="checkbox" id="tc-agree"
+             onchange="document.getElementById('pay-btn').classList.toggle('btn-enroll-disabled', !this.checked)">
+      <label class="tc-check-label" for="tc-agree">
+        <span data-en="I have read and agree to the " data-ar="لقد قرأت ووافقت على "></span><a href="terms.html" target="_blank" data-en="Terms &amp; Conditions" data-ar="الأحكام والشروط"></a><span data-en=". I understand this is a professional training certification, not a university degree, and there is no income guarantee." data-ar=". أفهم أن هذا اعتماد تدريبي مهني وليس درجة جامعية وليس ثمة ضمان للدخل."></span>
+      </label>
+    </div>
+
+    <div class="cta-group" style="flex-direction:column;gap:.5rem;">
+      <a id="pay-btn" class="btn btn-gold btn-enroll-disabled"
+         target="_blank" rel="noopener"
+         href="https://buy.stripe.com/5kQ6oHb1NgfAfBAbgVbfO04"
+         style="justify-content:center;"
+         data-en="Pay Securely with Stripe — $400"
+         data-ar="ادفع بأمان عبر Stripe — 400$"></a>
+      <a class="btn btn-wa-installment"
+         href="https://wa.me/13056290491?text=Hello%20MGI%2C%20I%20want%20to%20enroll%20with%20installments.%20Please%20send%20details."
+         target="_blank" rel="noopener"
+         style="justify-content:center;"
+         data-en="Pay in Installments via WhatsApp"
+         data-ar="ادفع بالتقسيط عبر واتساب"></a>
+    </div>
+    <p style="font-size:.75rem;color:var(--muted);text-align:center;margin:.75rem 0 0;"
+       data-en="You must agree to the Terms &amp; Conditions before proceeding to payment."
+       data-ar="يجب الموافقة على الأحكام والشروط قبل المتابعة إلى الدفع."></p>
   </div>
 </div></main>
 <footer class="site-footer"><div class="container"><p data-en="Miami Global Investments Group LLC • Education & Professional Development Division" data-ar="Miami Global Investments Group LLC • قسم التعليم والتطوير المهني"></p><p>© <span id="year"></span></p></div></footer>

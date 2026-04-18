@@ -1241,3 +1241,454 @@ textarea { min-height: 120px; }
 .coming-soon-section .section-label { margin-bottom: .35rem; }
 .coming-soon-section h2 { font-size: clamp(1.55rem, 3.5vw, 2.25rem); margin-bottom: .55rem; }
 .coming-soon-section > .container > p { color: var(--muted); max-width: 62ch; font-size: .98rem; line-height: 1.7; }
+
+/* ================================================================
+   PREMIUM DIPLOMA PLATFORM UPGRADE
+   ================================================================ */
+
+/* ── Hero Diploma ── */
+.hero-diploma-hero {
+  padding: 5rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 88% 12%, rgba(198,167,94,.22), transparent 38%),
+    linear-gradient(135deg, #060e18 0%, #0b1c2d 50%, #102438 100%);
+}
+.hero-diploma-hero .hero-overlay {
+  background: linear-gradient(180deg, rgba(4,10,18,.12), rgba(4,10,18,.35));
+}
+
+.hero-diploma-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  background: linear-gradient(135deg, #f9e2a0, #e8c86a);
+  color: #0b1c2d;
+  border-radius: 999px;
+  padding: .32rem .95rem;
+  font-size: .8rem;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .04em;
+  margin-bottom: .9rem;
+  box-shadow: 0 4px 14px rgba(198,167,94,.4);
+}
+
+.hero-price-display {
+  margin: 1.25rem 0 1.5rem;
+  padding: 1.1rem 1.3rem;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(198,167,94,.35);
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+}
+.hero-price-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: .5rem;
+}
+.hero-price-was {
+  font-size: 1rem;
+  color: #8ba3be;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+.hero-price-now {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
+}
+.hero-price-limit {
+  font-size: .84rem;
+  color: #f9e2a0;
+  margin: 0 0 .25rem;
+  font-weight: 600;
+}
+.hero-installment-hint {
+  font-size: .82rem;
+  color: #8ba3be;
+  margin: 0;
+}
+
+/* ── Hero Calculator Card ── */
+.hero-calc-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 28px 70px rgba(0,0,0,.35);
+  position: relative;
+  z-index: 2;
+  border: 0;
+}
+.hcc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: .85rem;
+  border-bottom: 1px solid var(--border);
+}
+.currency-switcher-row {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+}
+.currency-label {
+  font-size: .7rem;
+  font-weight: 700;
+  color: var(--muted);
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.currency-select {
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: .28rem .55rem;
+  font-size: .78rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--navy);
+  background: #fff;
+  cursor: pointer;
+  width: auto;
+  max-width: 140px;
+}
+.hcc-slider-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: .55rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.calc-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--gold) 8%, #e0d5b5 8%);
+  border-radius: 999px;
+  outline: none;
+  cursor: pointer;
+}
+.calc-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: var(--navy);
+  border: 3px solid var(--gold);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(11,28,45,.3);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.calc-slider::-webkit-slider-thumb:hover { transform: scale(1.18); box-shadow: 0 4px 14px rgba(11,28,45,.4); }
+.calc-slider::-moz-range-thumb {
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: var(--navy);
+  border: 3px solid var(--gold);
+  cursor: pointer;
+}
+.calc-slider-marks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: .4rem;
+  font-size: .7rem;
+  color: var(--muted);
+  font-family: 'Montserrat', sans-serif;
+}
+.hcc-result {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: .9rem 1rem;
+  margin: 1rem 0;
+}
+.hcc-result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .88rem;
+  color: var(--muted);
+  padding: .25rem 0;
+}
+.hcc-result-row strong { font-size: 1.05rem; color: var(--navy); font-weight: 700; }
+.hcc-total-row {
+  border-top: 1px solid var(--border);
+  margin-top: .4rem;
+  padding-top: .6rem;
+}
+.hcc-total-row strong {
+  font-size: 1.3rem;
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+}
+.hcc-actions { display: flex; flex-direction: column; gap: .5rem; margin-top: .25rem; }
+.btn-wa-installment {
+  background: #1fa855;
+  color: #fff !important;
+  border-color: #1fa855;
+  font-weight: 700;
+}
+.btn-wa-installment:hover {
+  background: #189447;
+  border-color: #189447;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(31,168,85,.35);
+  color: #fff;
+}
+.hcc-terms-note {
+  text-align: center;
+  font-size: .73rem;
+  color: var(--muted);
+  margin: .6rem 0 0;
+}
+.hcc-terms-note a { color: var(--muted); text-decoration: underline; transition: color .2s; }
+.hcc-terms-note a:hover { color: var(--navy); }
+
+/* ── Diploma Programs Section ── */
+.diploma-section { background: linear-gradient(180deg, #f7f9fc 0%, #eef2f8 100%); }
+
+.diploma-programs-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+@media (min-width: 640px) { .diploma-programs-grid { grid-template-columns: repeat(2,1fr); } }
+@media (min-width: 960px) { .diploma-programs-grid { grid-template-columns: repeat(3,1fr); } }
+
+.diploma-program-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.6rem;
+  box-shadow: 0 8px 24px rgba(11,28,45,.07);
+  position: relative;
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  display: flex;
+  flex-direction: column;
+}
+.diploma-program-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 56px rgba(11,28,45,.14);
+  border-color: rgba(198,167,94,.6);
+}
+.diploma-program-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold), #d4bc7a);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.diploma-new-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  background: #e8f4fd;
+  color: #1565c0;
+  border: 1px solid #bbd9f0;
+  border-radius: 999px;
+  padding: .22rem .65rem;
+  font-size: .7rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: .75rem;
+}
+.diploma-card-icon { font-size: 1.65rem; margin-bottom: .65rem; display: block; }
+.diploma-program-card h3 {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: .4rem;
+  color: var(--navy);
+  line-height: 1.3;
+}
+.diploma-program-card > p {
+  font-size: .87rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin: 0 0 1.1rem;
+  flex: 1;
+}
+.diploma-price-row {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.diploma-price-now {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--navy);
+  font-family: 'Playfair Display', serif;
+}
+.diploma-price-was {
+  font-size: .85rem;
+  color: var(--muted);
+  text-decoration: line-through;
+}
+.diploma-enroll-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  color: #fff;
+  border-radius: 999px;
+  padding: .7rem 1.25rem;
+  font-size: .88rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  transition: all .2s ease;
+  width: 100%;
+  border: 2px solid var(--navy);
+}
+.diploma-enroll-btn:hover {
+  background: var(--gold);
+  color: var(--navy);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(198,167,94,.35);
+}
+
+/* ── Included / Benefits Section ── */
+.included-section { background: #fff; }
+.included-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+@media (min-width: 640px) { .included-grid { grid-template-columns: repeat(2,1fr); } }
+@media (min-width: 960px) { .included-grid { grid-template-columns: repeat(3,1fr); } }
+
+.included-block {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(11,28,45,.06);
+  border-top: 4px solid var(--gold);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.included-block:hover { transform: translateY(-5px); box-shadow: 0 22px 44px rgba(11,28,45,.1); }
+.included-block-icon { font-size: 1.75rem; margin-bottom: .75rem; display: block; }
+.included-block h3 {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: .85rem;
+  color: var(--navy);
+}
+.included-block ul { list-style: none; padding: 0; margin: 0; }
+.included-block ul li {
+  font-size: .88rem;
+  color: var(--muted);
+  padding: .38rem 0;
+  border-bottom: 1px solid var(--surface);
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
+  line-height: 1.5;
+}
+.included-block ul li::before { content: "✓"; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+.included-block ul li:last-child { border-bottom: none; }
+.included-premium {
+  border-top-color: #0b1c2d;
+  background: linear-gradient(135deg, #f7f9fc 0%, #fff 100%);
+}
+.notary-seal-row {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .85rem 1rem;
+  background: linear-gradient(90deg, #f7f0dc, #fdf8e8);
+  border: 1px solid #e8d39a;
+  border-radius: 10px;
+  margin-bottom: .75rem;
+}
+.notary-seal-icon { font-size: 1.5rem; }
+.notary-seal-text { font-size: .86rem; font-weight: 700; color: #5a3e00; line-height: 1.5; }
+.notary-seal-text small { display: block; font-weight: 400; color: var(--muted); font-size: .78rem; margin-top: .1rem; }
+
+/* ── T&C Checkbox ── */
+.tc-check-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: .65rem;
+  padding: .9rem 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  margin: 1rem 0;
+  cursor: pointer;
+}
+.tc-check-wrap:focus-within { border-color: var(--navy); }
+.tc-check-wrap input[type="checkbox"] {
+  width: 18px; height: 18px; min-width: 18px;
+  margin-top: .15rem;
+  cursor: pointer;
+  accent-color: var(--navy);
+}
+.tc-check-label { font-size: .86rem; color: var(--navy); line-height: 1.6; cursor: pointer; }
+.tc-check-label a { color: var(--gold); font-weight: 700; text-decoration: underline; }
+.btn-enroll-disabled { opacity: .4 !important; cursor: not-allowed !important; pointer-events: none !important; }
+
+/* ── Terms Page ── */
+.terms-hero-section {
+  background: linear-gradient(180deg, #f7f9fc 0%, #fff 100%);
+  padding: 3rem 0 1.75rem;
+  border-bottom: 1px solid var(--border);
+}
+.terms-page-section { padding: 3rem 0 5rem; }
+.terms-content { max-width: 740px; margin: 0 auto; }
+.terms-content h2 {
+  font-size: 1.05rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 2.25rem 0 .65rem;
+  padding-bottom: .45rem;
+  border-bottom: 1px solid var(--border);
+}
+.terms-content p, .terms-content li {
+  font-size: .87rem;
+  color: #4a5a68;
+  line-height: 1.8;
+  margin-bottom: .55rem;
+}
+.terms-content ul { padding-inline-start: 1.4rem; }
+.terms-content strong { color: var(--navy); }
+.terms-disclaimer-box {
+  border: 1.5px solid #e0c060;
+  background: #fffdf0;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+.terms-disclaimer-box p { font-size: .86rem; color: #5a4500; margin: 0; font-weight: 600; line-height: 1.65; }
+
+/* ── Footer logo visibility fix ── */
+.footer-enhanced .footer-brand .seal { filter: brightness(0) invert(1); opacity: .88; }
+
+/* ── Mobile refinements ── */
+@media (max-width: 639px) {
+  .hero-diploma-hero { padding: 3.5rem 0 2.5rem; }
+  .hero-price-now { font-size: 2rem; }
+  .hero-calc-card { margin-top: 1.5rem; }
+  .diploma-program-card { padding: 1.25rem; }
+  .included-block { padding: 1.25rem; }
+  .hcc-actions .btn { font-size: .85rem; padding: .72rem .9rem; }
+}
