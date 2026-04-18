@@ -3,96 +3,405 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programs | MGI Education</title>
-  <meta name="description" content="Weekly live bilingual certification programs with limited-time offer and weekly draw.">
+  <title>Programs | MGI Training Academy</title>
+  <meta name="description" content="Professional certification programs in banking, business, marketing, entrepreneurship, productivity, and nutrition. Live online from Miami, FL.">
   <link rel="icon" href="assets/svg/seal.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+
 <header class="site-header">
   <div class="container nav-wrap">
-    <a href="index.html" class="brand"><img src="assets/svg/seal.svg" class="seal" alt="MGI seal"><span data-en="MGI Education" data-ar="MGI للتعليم"></span></a>
+    <a href="index.html" class="brand">
+      <img src="assets/svg/seal.svg" class="seal" alt="MGI seal">
+      <span>
+        <span data-en="MGI Training Academy" data-ar="MGI للتدريب"></span>
+        <small data-en="Miami, Florida" data-ar="ميامي، فلوريدا"></small>
+      </span>
+    </a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-    <nav class="main-nav"><ul><li><a href="index.html" data-en="Home" data-ar="الرئيسية"></a></li><li><a href="programs.html" data-en="Programs" data-ar="البرامج"></a></li><li><a href="about.html" data-en="About" data-ar="من نحن"></a></li><li><a href="faq.html" data-en="FAQ" data-ar="الأسئلة الشائعة"></a></li><li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا"></a></li><li><a href="verify.html" data-en="Verify Certificate" data-ar="تحقق من الشهادة"></a></li></ul></nav>
-    <div class="lang-toggle"><button class="active" data-lang="en">EN</button><button data-lang="ar">AR</button></div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" data-en="Home" data-ar="الرئيسية"></a></li>
+        <li><a href="programs.html" data-en="Programs" data-ar="البرامج"></a></li>
+        <li><a href="partnerships.html" data-en="Partnerships" data-ar="الشراكات"></a></li>
+        <li><a href="about.html" data-en="About" data-ar="من نحن"></a></li>
+        <li><a href="verify.html" data-en="Verify Certificate" data-ar="تحقق من الشهادة"></a></li>
+        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا"></a></li>
+      </ul>
+    </nav>
+    <div class="lang-toggle" role="group" aria-label="Language switcher">
+      <button class="active" data-lang="en">EN</button><button data-lang="ar">AR</button>
+    </div>
   </div>
 </header>
 
-<main class="section">
+<main id="main" class="section">
   <div class="container">
-    <section class="programs-hero card">
-      <h1 data-en="Weekly Live Professional Programs" data-ar="برامج مهنية مباشرة أسبوعية"></h1>
-      <p class="muted" data-en="Practical. Interactive. Results-Focused." data-ar="عملية – تفاعلية – تركّز على النتائج"></p>
-      <p class="badge" data-en="Weekly Live Batches – New Cohort Every Friday" data-ar="دفعات مباشرة أسبوعية – فوج جديد كل جمعة"></p>
+
+    <!-- ── HERO ── -->
+    <section class="programs-hero card fade-up">
+      <span class="section-label"
+            data-en="MGI Training Academy" data-ar="MGI Training Academy"></span>
+      <h1 data-en="Professional Certification Programs" data-ar="برامج الشهادات المهنية"></h1>
+      <p class="muted"
+         data-en="Structured. Live. Internationally credible. Every program is delivered online in real time with direct instructor access and a US-issued certificate upon completion."
+         data-ar="منظمة. مباشرة. ذات مصداقية دولية. يُقدَّم كل برنامج عبر الإنترنت في الوقت الفعلي مع وصول مباشر للمدرب وشهادة صادرة من الولايات المتحدة عند الإكمال."></p>
+      <p class="badge"
+         data-en="Weekly Live Cohorts — New Intake Every Friday"
+         data-ar="دفعات مباشرة أسبوعية — قبول جديد كل جمعة"></p>
       <div class="price-strip" data-offer-price-block>
-        <p class="badge" data-en="Limited-Time Offer – $60" data-ar="عرض لفترة محدودة – 60$"></p>
-        <p class="muted" data-en="Regular Price: $350 starting April 2026" data-ar="الرسوم الأساسية: 350 دولار اعتباراً من أبريل 2026"></p>
+        <p class="badge"
+           data-en="Limited-Time Offer – $60"
+           data-ar="عرض لفترة محدودة – 60$"></p>
+        <p class="muted"
+           data-en="Regular Price: $350 — enroll now to secure the current rate"
+           data-ar="السعر الأساسي: 350$ — سجّل الآن لتثبيت السعر الحالي"></p>
         <div class="countdown" data-offer-countdown></div>
       </div>
     </section>
 
-
-    <section class="card partnership-strip">
-      <h3 data-en="Microsoft Partnership Initiative — Featured Luxury Intake" data-ar="مبادرة الشراكة مع Microsoft — الدفعة الفاخرة الرئيسية"></h3>
-      <p data-en="A refined luxury cohort positioning for professionals who want enterprise-level outcomes and faster enrollment decisions." data-ar="طرح متميز بطابع راقٍ للمهنيين الباحثين عن مخرجات مؤسسية عالية وقرار تسجيل أسرع."></p>
-      <p class="badge" data-en="Limited Premium Seats" data-ar="مقاعد متميزة محدودة"></p>
-    </section>
-
-    
-    <section class="card" style="margin-top:1rem;">
-      <h3 data-en="Certificate Verification" data-ar="التحقق من الشهادة"></h3>
-      <p data-en="All certificates include a unique serial number + QR for instant verification." data-ar="كل شهادة تحتوي على رقم تسلسلي فريد + QR للتحقق الفوري."></p>
-      <a class="btn btn-secondary" href="verify.html" data-en="Verify Certificate" data-ar="تحقق من الشهادة"></a>
-    </section>
-
-    <section class="card schedule-card">
-      <h3 data-en="Program Schedule" data-ar="الجدول الزمني للبرنامج التدريبي"></h3>
-      <p data-en="3 Days | 2 Hours Per Day" data-ar="3 أيام | ساعتان يومياً"></p>
-      <p data-en="Saudi Arabia: 9:30 PM | UAE: 10:30 PM" data-ar="السعودية: 9:30 مساءً | الإمارات: 10:30 مساءً"></p>
+    <!-- ── SCHEDULE ── -->
+    <section class="card fade-up delay-100" style="margin-top:1.25rem;">
+      <h3 data-en="Program Schedule" data-ar="جدول البرنامج"></h3>
+      <p data-en="3 Days | 2 Hours Per Day | Live Online"
+         data-ar="3 أيام | ساعتان يومياً | مباشر عبر الإنترنت"></p>
+      <p data-en="Saudi Arabia: 9:30 PM &nbsp;|&nbsp; UAE: 10:30 PM"
+         data-ar="المملكة العربية السعودية: 9:30 مساءً &nbsp;|&nbsp; الإمارات: 10:30 مساءً"></p>
       <p class="muted" data-local-time-line></p>
     </section>
 
-    <section class="card program-layout-intro"><h3 data-en="Program Categories" data-ar="فئات البرامج"></h3><p data-en="Choose your track clearly by category: Marketing, Canva, Microsoft Apps, Nutrition, Business, Finance, International Expansion, Productivity, and Corporate Bulk Training. All programs are live online." data-ar="اختر مسارك بوضوح حسب الفئة: التسويق، Canva، تطبيقات Microsoft، التغذية، الأعمال، التمويل، الأعمال الدولية، الإنتاجية، وبرامج الشركات الجماعية. جميع البرامج مباشرة عبر الإنترنت."></p></section>
+    <!-- ── CERTIFICATE STRIP ── -->
+    <section class="card fade-up delay-100" style="margin-top:1.25rem;">
+      <h3 data-en="Certificate Verification" data-ar="التحقق من الشهادة"></h3>
+      <p data-en="Every MGI certificate carries a unique serial number and QR code for instant digital verification — recognized by employers worldwide."
+         data-ar="كل شهادة MGI تحمل رقماً تسلسلياً فريداً ورمز QR للتحقق الرقمي الفوري — معترف بها من قِبل أصحاب العمل عالمياً."></p>
+      <a class="btn btn-secondary" href="verify.html"
+         data-en="Verify a Certificate" data-ar="تحقق من شهادة"></a>
+    </section>
 
-    <section class="course-category cat-business">
-      <h2><span class="cat-icon">▣</span> Business & Wealth</h2>
+    <!-- ── FILTER NAV ── -->
+    <div class="prog-filter-nav fade-up delay-150" role="group" aria-label="Filter programs by category">
+      <button class="prog-filter-btn active" data-filter="all"
+              data-en="All Programs" data-ar="جميع البرامج">All Programs</button>
+      <button class="prog-filter-btn" data-filter="business"
+              data-en="Business &amp; Wealth" data-ar="الأعمال والثروة">Business &amp; Wealth</button>
+      <button class="prog-filter-btn" data-filter="banking"
+              data-en="Banking &amp; Finance" data-ar="المصرفية والتمويل">Banking &amp; Finance</button>
+      <button class="prog-filter-btn" data-filter="marketing"
+              data-en="Marketing" data-ar="التسويق">Marketing</button>
+      <button class="prog-filter-btn" data-filter="international"
+              data-en="Entrepreneurship" data-ar="ريادة الأعمال">Entrepreneurship</button>
+      <button class="prog-filter-btn" data-filter="productivity"
+              data-en="Productivity &amp; Design" data-ar="الإنتاجية والتصميم">Productivity &amp; Design</button>
+      <button class="prog-filter-btn" data-filter="wellness"
+              data-en="Nutrition" data-ar="التغذية">Nutrition</button>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         COURSE CATEGORIES
+    ══════════════════════════════════════ -->
+
+    <!-- Business & Wealth -->
+    <section class="course-category cat-business fade-up" data-category="business">
+      <h2><span class="cat-icon">💼</span>
+        <span data-en="Business &amp; Wealth" data-ar="الأعمال والثروة"></span>
+      </h2>
       <article class="program-card premium-card">
         <h3>Million-Dollar Business Sprint</h3>
         <p class="muted">سباق بناء الأعمال بمستوى متقدم</p>
-        <p data-en="Strategic models for growth, leadership, and execution in high-value markets." data-ar="نماذج استراتيجية للنمو والقيادة والتنفيذ في الأسواق عالية القيمة."></p>
-        <p class="badge" data-en="Weekly Live Batches – New Cohort Every Friday" data-ar="دفعات مباشرة أسبوعية – فوج جديد كل جمعة"></p>
-        <div class="price-pill" data-en="Limited-Time Offer – $60" data-ar="عرض لفترة محدودة – 60$"></div>
-        <ul class="course-meta"><li data-en="3 Days | 2 Hours/Day" data-ar="3 أيام | ساعتان يومياً"></li><li data-en="Saudi: 9:30 PM | UAE: 10:30 PM" data-ar="السعودية: 9:30 مساءً | الإمارات: 10:30 مساءً"></li><li data-local-time></li></ul>
-        <p class="muted" data-en="PDF Certificate – Stamped & Signed" data-ar="شهادة PDF مختومة وموقعة"></p>
-        
-        <a class="btn btn-gold" data-en="Enroll Now" data-ar="سجّل الآن" data-en-aria="Enroll now" href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02" target="_blank" rel="noopener"></a>
+        <p data-en="Strategic models for growth, leadership, and execution in high-value markets. Built for business owners and senior managers who need a structured competitive edge."
+           data-ar="نماذج استراتيجية للنمو والقيادة والتنفيذ في الأسواق عالية القيمة. مصممة لأصحاب الأعمال والمديرين الكبار الذين يحتاجون إلى ميزة تنافسية منظمة."></p>
+        <p class="badge"
+           data-en="Weekly Live Cohorts — New Intake Every Friday"
+           data-ar="دفعات مباشرة أسبوعية — قبول جديد كل جمعة"></p>
+        <div class="price-pill"
+             data-en="Limited-Time Offer – $60"
+             data-ar="عرض لفترة محدودة – 60$"></div>
+        <ul class="course-meta">
+          <li data-en="3 Days | 2 Hours/Day | Live Online" data-ar="3 أيام | ساعتان يومياً | مباشر عبر الإنترنت"></li>
+          <li data-en="Saudi: 9:30 PM | UAE: 10:30 PM" data-ar="السعودية: 9:30 مساءً | الإمارات: 10:30 مساءً"></li>
+          <li data-local-time></li>
+        </ul>
+        <p class="muted"
+           data-en="Signed &amp; stamped PDF certificate — physical copy shipped to your address"
+           data-ar="شهادة PDF موقّعة ومختومة — نسخة مادية تُشحن إلى عنوانك"></p>
+        <div class="program-actions">
+          <a class="btn btn-gold"
+             data-en="Enroll Now" data-ar="سجّل الآن"
+             href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02"
+             target="_blank" rel="noopener"></a>
+        </div>
         <small data-en="Secure payment via Stripe" data-ar="دفع آمن عبر Stripe"></small>
-        <p class="disclaimer" data-en="No income guarantees. This is an educational program." data-ar="لا يوجد أي ضمانات للدخل. هذا برنامج تعليمي."></p>
+        <p class="disclaimer"
+           data-en="No income guarantees. This is an educational program."
+           data-ar="لا يوجد أي ضمانات للدخل. هذا برنامج تعليمي."></p>
       </article>
     </section>
 
-    <section class="course-category cat-funding"><h2><span class="cat-icon">◉</span> Funding & Finance</h2><article class="program-card premium-card"><h3>Smart Capital Structuring</h3><p class="muted">هيكلة رأس المال بذكاء</p><p data-en="Build financing structures aligned with risk appetite and growth objectives." data-ar="بناء هياكل تمويلية تتوافق مع شهية المخاطر وأهداف النمو."></p><div class="price-pill" data-en="Limited-Time Offer – $60" data-ar="عرض لفترة محدودة – 60$"></div><a class="btn btn-gold" data-en="Enroll Now" data-ar="سجّل الآن" href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02" target="_blank" rel="noopener"></a><small data-en="Secure payment via Stripe" data-ar="دفع آمن عبر Stripe"></small></article></section>
-    <section class="course-category cat-marketing"><h2><span class="cat-icon">◆</span> Marketing & Branding</h2><article class="program-card premium-card"><h3>Premium Brand Positioning</h3><p class="muted">التموضع الاحترافي للعلامة</p><p data-en="Refine market presence, value communication, and conversion messaging." data-ar="تعزيز الحضور السوقي وصياغة القيمة والرسائل التحويلية."></p><div class="price-pill" data-en="Limited-Time Offer – $60" data-ar="عرض لفترة محدودة – 60$"></div><a class="btn btn-gold" data-en="Enroll Now" data-ar="سجّل الآن" href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02" target="_blank" rel="noopener"></a><small data-en="Secure payment via Stripe" data-ar="دفع آمن عبر Stripe"></small></article></section>
-    <section class="course-category cat-international"><h2><span class="cat-icon">⬢</span> International Business</h2><article class="program-card premium-card"><h3>Cross-Border Market Entry</h3><p class="muted">دخول الأسواق الدولية</p><p data-en="Frameworks for compliant expansion and high-quality international partnerships." data-ar="أطر عملية للتوسع المتوافق وبناء شراكات دولية عالية الجودة."></p><div class="price-pill" data-en="Limited-Time Offer – $60" data-ar="عرض لفترة محدودة – 60$"></div><a class="btn btn-gold" data-en="Enroll Now" data-ar="سجّل الآن" href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02" target="_blank" rel="noopener"></a><small data-en="Secure payment via Stripe" data-ar="دفع آمن عبر Stripe"></small></article></section>
-    <section class="course-category cat-banking"><h2><span class="cat-icon">◈</span> Banking & Credit</h2><article class="program-card premium-card"><h3>Commercial Credit Essentials</h3><p class="muted">أساسيات الائتمان التجاري</p><p data-en="Credit analysis, policy discipline, and practical decision frameworks." data-ar="تحليل ائتماني منضبط وأطر عملية لاتخاذ القرار."></p><div class="price-pill" data-en="Limited-Time Offer – $60" data-ar="عرض لفترة محدودة – 60$"></div><a class="btn btn-gold" data-en="Enroll Now" data-ar="سجّل الآن" href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02" target="_blank" rel="noopener"></a><small data-en="Secure payment via Stripe" data-ar="دفع آمن عبر Stripe"></small></article></section>
-    <section class="course-category cat-productivity"><h2><span class="cat-icon">✦</span> Productivity & Design</h2><article class="program-card premium-card"><h3>Executive Productivity Systems</h3><p class="muted">أنظمة إنتاجية تنفيذية</p><p data-en="Design your workflow for sharper focus, delivery, and measurable output." data-ar="تصميم منهجية عمل ترفع التركيز وجودة الإنجاز والمخرجات القابلة للقياس."></p><div class="price-pill" data-en="Limited-Time Offer – $60" data-ar="عرض لفترة محدودة – 60$"></div><a class="btn btn-gold" data-en="Enroll Now" data-ar="سجّل الآن" href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02" target="_blank" rel="noopener"></a><small data-en="Secure payment via Stripe" data-ar="دفع آمن عبر Stripe"></small></article></section>
-    <section class="course-category cat-wellness"><h2><span class="cat-icon">✿</span> Nutrition & Wellness</h2><article class="program-card premium-card"><h3>Performance Nutrition Blueprint</h3><p class="muted">خارطة التغذية للأداء</p><p data-en="Structured wellness planning to support sustained executive performance." data-ar="تخطيط صحي منظم لدعم استدامة الأداء المهني عالي المستوى."></p><div class="price-pill" data-en="Limited-Time Offer – $60" data-ar="عرض لفترة محدودة – 60$"></div><a class="btn btn-gold" data-en="Enroll Now" data-ar="سجّل الآن" href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02" target="_blank" rel="noopener"></a><small data-en="Secure payment via Stripe" data-ar="دفع آمن عبر Stripe"></small></article></section>
-  
-    <section class="course-category cat-marketing"><h2><span class="cat-icon">✧</span> Marketing Strategy</h2><article class="program-card premium-card"><h3>Marketing Strategy Systems</h3><p class="muted">أنظمة الاستراتيجيات التسويقية</p><p data-en="Build marketing strategy frameworks for growth, positioning, and conversion." data-ar="بناء أطر استراتيجية تسويقية للنمو والتموضع والتحويل."></p><div class="price-pill" data-en="Limited-Time Offer – $60" data-ar="عرض لفترة محدودة – 60$"></div><a class="btn btn-gold" data-en="Enroll Now" data-ar="سجّل الآن" href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02" target="_blank" rel="noopener"></a><small data-en="Live online class" data-ar="دورة مباشرة عبر الإنترنت"></small></article></section>
-    <section class="course-category cat-productivity"><h2><span class="cat-icon">▣</span> Canva & Content Design</h2><article class="program-card premium-card"><h3>Canva for Business Content</h3><p class="muted">Canva لمحتوى الأعمال</p><p data-en="Create professional visual assets for social media, campaigns, and sales materials." data-ar="إنشاء أصول بصرية احترافية لمنصات التواصل والحملات والمواد البيعية."></p><div class="price-pill" data-en="Limited-Time Offer – $60" data-ar="عرض لفترة محدودة – 60$"></div><a class="btn btn-gold" data-en="Enroll Now" data-ar="سجّل الآن" href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02" target="_blank" rel="noopener"></a><small data-en="Live online class" data-ar="دورة مباشرة عبر الإنترنت"></small></article></section>
-    <section class="course-category cat-productivity"><h2><span class="cat-icon">◩</span> Microsoft Apps</h2><article class="program-card premium-card"><h3>Microsoft Apps for Productivity</h3><p class="muted">تطبيقات Microsoft للإنتاجية</p><p data-en="Hands-on execution with Excel, PowerPoint, Teams, and workflow automation habits." data-ar="تطبيق عملي على Excel وPowerPoint وTeams وعادات أتمتة سير العمل."></p><div class="price-pill" data-en="Limited-Time Offer – $60" data-ar="عرض لفترة محدودة – 60$"></div><a class="btn btn-gold" data-en="Enroll Now" data-ar="سجّل الآن" href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02" target="_blank" rel="noopener"></a><small data-en="Live online class" data-ar="دورة مباشرة عبر الإنترنت"></small></article></section>
-    <section class="course-category cat-business"><h2><span class="cat-icon">⬣</span> Corporate Bulk Courses</h2><article class="program-card premium-card"><h3>Corporate Bulk Training Programs</h3><p class="muted">برامج تدريب جماعي للشركات</p><p data-en="Bulk online-live packages for companies with custom scheduling and team reporting." data-ar="باقات تدريب مباشر عبر الإنترنت للشركات مع جداول مخصصة وتقارير للفرق."></p><div class="price-pill" data-en="Custom Corporate Pricing" data-ar="تسعير مخصص للشركات"></div><a class="btn btn-gold" data-en="Request Proposal" data-ar="اطلب عرضاً" href="contact.html"></a><small data-en="Live online corporate delivery" data-ar="تقديم مباشر عبر الإنترنت للشركات"></small></article></section>
+    <!-- Funding & Finance -->
+    <section class="course-category cat-funding fade-up" data-category="banking">
+      <h2><span class="cat-icon">🏦</span>
+        <span data-en="Banking &amp; Finance" data-ar="المصرفية والتمويل"></span>
+      </h2>
+      <article class="program-card premium-card">
+        <h3>Smart Capital Structuring</h3>
+        <p class="muted">هيكلة رأس المال بذكاء</p>
+        <p data-en="Build financing structures aligned with risk appetite and growth objectives. Covers debt structuring, equity considerations, and capital allocation for operators and finance teams."
+           data-ar="بناء هياكل تمويلية تتوافق مع شهية المخاطر وأهداف النمو. يشمل هيكلة الديون واعتبارات الأسهم وتخصيص رأس المال للمشغّلين وفرق التمويل."></p>
+        <div class="price-pill"
+             data-en="Limited-Time Offer – $60"
+             data-ar="عرض لفترة محدودة – 60$"></div>
+        <ul class="course-meta">
+          <li data-en="3 Days | 2 Hours/Day | Live Online" data-ar="3 أيام | ساعتان يومياً | مباشر عبر الإنترنت"></li>
+        </ul>
+        <p class="muted"
+           data-en="Signed &amp; stamped PDF certificate — physical copy shipped to your address"
+           data-ar="شهادة PDF موقّعة ومختومة — نسخة مادية تُشحن إلى عنوانك"></p>
+        <div class="program-actions">
+          <a class="btn btn-gold"
+             data-en="Enroll Now" data-ar="سجّل الآن"
+             href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02"
+             target="_blank" rel="noopener"></a>
+        </div>
+        <small data-en="Secure payment via Stripe" data-ar="دفع آمن عبر Stripe"></small>
+      </article>
+
+      <article class="program-card premium-card" style="margin-top:1rem;">
+        <h3>Commercial Credit Essentials</h3>
+        <p class="muted">أساسيات الائتمان التجاري</p>
+        <p data-en="Credit analysis, policy discipline, and practical decision frameworks for banking and financial institution professionals. Covers commercial loan assessment, credit scoring, and risk indicators."
+           data-ar="تحليل ائتماني منضبط وأطر عملية لاتخاذ القرار للمهنيين المصرفيين وموظفي المؤسسات المالية. يشمل تقييم القروض التجارية والتصنيف الائتماني ومؤشرات المخاطر."></p>
+        <div class="price-pill"
+             data-en="Limited-Time Offer – $60"
+             data-ar="عرض لفترة محدودة – 60$"></div>
+        <ul class="course-meta">
+          <li data-en="3 Days | 2 Hours/Day | Live Online" data-ar="3 أيام | ساعتان يومياً | مباشر عبر الإنترنت"></li>
+        </ul>
+        <p class="muted"
+           data-en="Signed &amp; stamped PDF certificate — physical copy shipped to your address"
+           data-ar="شهادة PDF موقّعة ومختومة — نسخة مادية تُشحن إلى عنوانك"></p>
+        <div class="program-actions">
+          <a class="btn btn-gold"
+             data-en="Enroll Now" data-ar="سجّل الآن"
+             href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02"
+             target="_blank" rel="noopener"></a>
+        </div>
+        <small data-en="Secure payment via Stripe" data-ar="دفع آمن عبر Stripe"></small>
+      </article>
+    </section>
+
+    <!-- Marketing & Branding -->
+    <section class="course-category cat-marketing fade-up" data-category="marketing">
+      <h2><span class="cat-icon">📢</span>
+        <span data-en="Marketing &amp; Branding" data-ar="التسويق والعلامة التجارية"></span>
+      </h2>
+      <article class="program-card premium-card">
+        <h3>Premium Brand Positioning</h3>
+        <p class="muted">التموضع الاحترافي للعلامة التجارية</p>
+        <p data-en="Refine market presence, value communication, and conversion messaging. Designed for marketing professionals, brand managers, and business owners seeking competitive differentiation."
+           data-ar="تعزيز الحضور السوقي وصياغة القيمة والرسائل التحويلية. مصممة لمتخصصي التسويق ومديري العلامات التجارية وأصحاب الأعمال الساعين إلى التمييز التنافسي."></p>
+        <div class="price-pill"
+             data-en="Limited-Time Offer – $60"
+             data-ar="عرض لفترة محدودة – 60$"></div>
+        <div class="program-actions">
+          <a class="btn btn-gold"
+             data-en="Enroll Now" data-ar="سجّل الآن"
+             href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02"
+             target="_blank" rel="noopener"></a>
+        </div>
+        <small data-en="Secure payment via Stripe" data-ar="دفع آمن عبر Stripe"></small>
+      </article>
+
+      <article class="program-card premium-card" style="margin-top:1rem;">
+        <h3>Marketing Strategy Systems</h3>
+        <p class="muted">أنظمة الاستراتيجيات التسويقية</p>
+        <p data-en="Build marketing strategy frameworks for growth, positioning, and conversion. Covers funnel design, content strategy, and performance measurement."
+           data-ar="بناء أطر استراتيجية تسويقية للنمو والتموضع والتحويل. يشمل تصميم القمع واستراتيجية المحتوى وقياس الأداء."></p>
+        <div class="price-pill"
+             data-en="Limited-Time Offer – $60"
+             data-ar="عرض لفترة محدودة – 60$"></div>
+        <div class="program-actions">
+          <a class="btn btn-gold"
+             data-en="Enroll Now" data-ar="سجّل الآن"
+             href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02"
+             target="_blank" rel="noopener"></a>
+        </div>
+        <small data-en="Live online class" data-ar="دورة مباشرة عبر الإنترنت"></small>
+      </article>
+    </section>
+
+    <!-- International / Entrepreneurship -->
+    <section class="course-category cat-international fade-up" data-category="international">
+      <h2><span class="cat-icon">🚀</span>
+        <span data-en="Entrepreneurship &amp; International Business" data-ar="ريادة الأعمال والأعمال الدولية"></span>
+      </h2>
+      <article class="program-card premium-card">
+        <h3>Cross-Border Market Entry</h3>
+        <p class="muted">دخول الأسواق الدولية</p>
+        <p data-en="Frameworks for compliant expansion, international business structures, and high-quality cross-border partnerships. Designed for entrepreneurs and executives targeting new markets."
+           data-ar="أطر عملية للتوسع المتوافق وهياكل الأعمال الدولية وبناء شراكات عابرة للحدود عالية الجودة. مصممة للرواد والمديرين التنفيذيين الذين يستهدفون أسواقاً جديدة."></p>
+        <div class="price-pill"
+             data-en="Limited-Time Offer – $60"
+             data-ar="عرض لفترة محدودة – 60$"></div>
+        <div class="program-actions">
+          <a class="btn btn-gold"
+             data-en="Enroll Now" data-ar="سجّل الآن"
+             href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02"
+             target="_blank" rel="noopener"></a>
+        </div>
+        <small data-en="Secure payment via Stripe" data-ar="دفع آمن عبر Stripe"></small>
+      </article>
+    </section>
+
+    <!-- Productivity & Design -->
+    <section class="course-category cat-productivity fade-up" data-category="productivity">
+      <h2><span class="cat-icon">⚡</span>
+        <span data-en="Executive Productivity &amp; Design" data-ar="الإنتاجية التنفيذية والتصميم"></span>
+      </h2>
+      <article class="program-card premium-card">
+        <h3>Executive Productivity Systems</h3>
+        <p class="muted">أنظمة إنتاجية تنفيذية</p>
+        <p data-en="Design your workflow for sharper focus, consistent delivery, and measurable professional output. Covers time management, priority architecture, and decision systems."
+           data-ar="تصميم منهجية عمل لتركيز أحدّ وتسليم متسق ومخرجات مهنية قابلة للقياس. يشمل إدارة الوقت وهيكلة الأولويات وأنظمة اتخاذ القرار."></p>
+        <div class="price-pill"
+             data-en="Limited-Time Offer – $60"
+             data-ar="عرض لفترة محدودة – 60$"></div>
+        <div class="program-actions">
+          <a class="btn btn-gold"
+             data-en="Enroll Now" data-ar="سجّل الآن"
+             href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02"
+             target="_blank" rel="noopener"></a>
+        </div>
+        <small data-en="Secure payment via Stripe" data-ar="دفع آمن عبر Stripe"></small>
+      </article>
+
+      <article class="program-card premium-card" style="margin-top:1rem;">
+        <h3>Canva for Business Content</h3>
+        <p class="muted">Canva لمحتوى الأعمال</p>
+        <p data-en="Create professional visual assets for social media, campaigns, and sales materials. Practical hands-on sessions for business owners and marketing teams."
+           data-ar="إنشاء أصول بصرية احترافية لمنصات التواصل والحملات والمواد البيعية. جلسات تطبيقية عملية لأصحاب الأعمال وفرق التسويق."></p>
+        <div class="price-pill"
+             data-en="Limited-Time Offer – $60"
+             data-ar="عرض لفترة محدودة – 60$"></div>
+        <div class="program-actions">
+          <a class="btn btn-gold"
+             data-en="Enroll Now" data-ar="سجّل الآن"
+             href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02"
+             target="_blank" rel="noopener"></a>
+        </div>
+        <small data-en="Live online class" data-ar="دورة مباشرة عبر الإنترنت"></small>
+      </article>
+
+      <article class="program-card premium-card" style="margin-top:1rem;">
+        <h3>Microsoft Apps for Productivity</h3>
+        <p class="muted">تطبيقات Microsoft للإنتاجية</p>
+        <p data-en="Hands-on execution with Excel, PowerPoint, Teams, and workflow automation habits. Essential for professionals who want to work faster and produce higher-quality output."
+           data-ar="تطبيق عملي على Excel وPowerPoint وTeams وعادات أتمتة سير العمل. ضروري للمهنيين الذين يريدون العمل بشكل أسرع وإنتاج مخرجات أعلى جودة."></p>
+        <div class="price-pill"
+             data-en="Limited-Time Offer – $60"
+             data-ar="عرض لفترة محدودة – 60$"></div>
+        <div class="program-actions">
+          <a class="btn btn-gold"
+             data-en="Enroll Now" data-ar="سجّل الآن"
+             href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02"
+             target="_blank" rel="noopener"></a>
+        </div>
+        <small data-en="Live online class" data-ar="دورة مباشرة عبر الإنترنت"></small>
+      </article>
+    </section>
+
+    <!-- Nutrition & Wellness -->
+    <section class="course-category cat-wellness fade-up" data-category="wellness">
+      <h2><span class="cat-icon">🌿</span>
+        <span data-en="Nutrition &amp; Wellness" data-ar="التغذية والصحة"></span>
+      </h2>
+      <article class="program-card premium-card">
+        <h3>Performance Nutrition Blueprint</h3>
+        <p class="muted">خارطة التغذية للأداء</p>
+        <p data-en="Structured wellness planning to support sustained executive performance. Covers nutrition science, meal planning, and the physiological basis of cognitive and physical endurance."
+           data-ar="تخطيط صحي منظم لدعم استدامة الأداء المهني عالي المستوى. يشمل علم التغذية وتخطيط الوجبات والأساس الفسيولوجي للقدرة على التحمل المعرفي والجسدي."></p>
+        <div class="price-pill"
+             data-en="Limited-Time Offer – $60"
+             data-ar="عرض لفترة محدودة – 60$"></div>
+        <div class="program-actions">
+          <a class="btn btn-gold"
+             data-en="Enroll Now" data-ar="سجّل الآن"
+             href="https://buy.stripe.com/9B6cN51rdbZk4WW2KpbfO02"
+             target="_blank" rel="noopener"></a>
+        </div>
+        <small data-en="Secure payment via Stripe" data-ar="دفع آمن عبر Stripe"></small>
+      </article>
+    </section>
+
+    <!-- Corporate Bulk -->
+    <section class="course-category cat-business fade-up" data-category="business">
+      <h2><span class="cat-icon">🏢</span>
+        <span data-en="Corporate &amp; Team Training" data-ar="تدريب الشركات والفرق"></span>
+      </h2>
+      <article class="program-card premium-card">
+        <h3>Corporate Bulk Training Programs</h3>
+        <p class="muted">برامج تدريب جماعي للشركات</p>
+        <p data-en="Custom live-online training packages for corporate teams — with flexible scheduling, team reporting, and volume pricing. Suitable for organizations seeking consistent upskilling across departments."
+           data-ar="حزم تدريب مباشر عبر الإنترنت مخصصة لفرق الشركات — مع جداول زمنية مرنة وتقارير الفريق وأسعار الكميات. مناسبة للمنظمات التي تسعى إلى تطوير مهارات متسق عبر الأقسام."></p>
+        <div class="price-pill"
+             data-en="Custom Corporate Pricing"
+             data-ar="تسعير مخصص للشركات"></div>
+        <div class="program-actions">
+          <a class="btn btn-gold" href="contact.html"
+             data-en="Request a Proposal" data-ar="اطلب عرضاً"></a>
+        </div>
+        <small data-en="Live online corporate delivery" data-ar="تقديم مباشر عبر الإنترنت للشركات"></small>
+      </article>
+    </section>
 
   </div>
 </main>
 
-<footer class="site-footer"><div class="container"><p data-en="Miami Global Investments Group LLC • Education & Professional Development Division" data-ar="Miami Global Investments Group LLC • قسم التعليم والتطوير المهني"></p><p>© <span id="year"></span></p></div></footer>
+<footer class="site-footer footer-enhanced">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/svg/seal.svg" class="seal" alt="MGI seal">
+        <strong>MGI Training Academy</strong>
+        <small>Miami Global Investments Group LLC</small>
+        <span class="footer-us-bar"></span>
+        <p data-en="US-registered professional training and certification institute. Miami, Florida."
+           data-ar="معهد تدريب وشهادات مهنية مسجّل في الولايات المتحدة. ميامي، فلوريدا."></p>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Quick Links" data-ar="روابط سريعة"></h4>
+        <ul>
+          <li><a href="index.html" data-en="Home" data-ar="الرئيسية"></a></li>
+          <li><a href="programs.html" data-en="Programs" data-ar="البرامج"></a></li>
+          <li><a href="verify.html" data-en="Verify Certificate" data-ar="تحقق من الشهادة"></a></li>
+          <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا"></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Contact" data-ar="التواصل"></h4>
+        <p>2125 Biscayne Blvd, Ste 204<br>Miami, FL 33137, USA</p>
+        <p><a href="mailto:info@miamiglobalgroup.com">info@miamiglobalgroup.com</a></p>
+        <p><a href="https://wa.me/13056290491" target="_blank" rel="noopener">+1 305 629 0491</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Miami Global Investments Group LLC.</span>
+    </div>
+  </div>
+</footer>
+
 <img src="assets/svg/seal.svg" class="watermark-seal" alt="">
-<a id="whatsapp-float" class="whatsapp-float" href="https://wa.me/13056290491" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><img src="assets/svg/whatsapp.svg" alt=""></a>
+<a id="whatsapp-float" class="whatsapp-float" href="https://wa.me/13056290491" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <img src="assets/svg/whatsapp.svg" alt="">
+</a>
+
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/programs-page.js"></script>
+<script src="assets/js/animations.js"></script>
 </body>
 </html>

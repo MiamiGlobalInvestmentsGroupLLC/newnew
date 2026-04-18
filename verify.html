@@ -1,36 +1,167 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Verify Certificate | MGI Education</title>
-  <meta name="description" content="Verify MGI certificates by serial number and last name.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate Verification Portal | MGI Training Academy</title>
+  <meta name="description" content="Verify the authenticity of any certificate issued by Miami Global Investments Group LLC. Enter the serial number and certificate holder's last name.">
   <link rel="icon" href="assets/svg/seal.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<header class="site-header"><div class="container nav-wrap"><a href="index.html" class="brand"><img src="assets/svg/seal.svg" class="seal" alt="MGI seal"><span data-en="MGI Education" data-ar="MGI للتعليم"></span></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button><nav class="main-nav"><ul><li><a href="index.html" data-en="Home" data-ar="الرئيسية"></a></li><li><a href="programs.html" data-en="Programs" data-ar="البرامج"></a></li><li><a href="verify.html" data-en="Verify Certificate" data-ar="تحقق من الشهادة"></a></li><li><a href="about.html" data-en="About" data-ar="من نحن"></a></li><li><a href="faq.html" data-en="FAQ" data-ar="الأسئلة الشائعة"></a></li><li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا"></a></li></ul></nav><div class="lang-toggle"><button class="active" data-lang="en">EN</button><button data-lang="ar">AR</button></div></div></header>
 
-<main class="section"><div class="container">
-  <section class="card verify-panel">
-    <h1 data-en="Certificate Verification" data-ar="التحقق من الشهادة"></h1>
-    <p class="muted" data-en="Enter serial number + last name (or full name) to verify a certificate." data-ar="أدخل الرقم التسلسلي + اسم العائلة (أو الاسم الكامل) للتحقق من الشهادة."></p>
-    <div class="verify-form-row">
-      <input id="serial-input" placeholder="MGI-2026-000001" aria-label="Certificate serial number">
-      <input id="last-name-input" placeholder="Last Name or Full Name" aria-label="Last name">
-      <button id="verify-btn" class="btn btn-primary" data-en="Verify" data-ar="تحقق"></button>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/svg/seal.svg" class="seal" alt="MGI seal">
+      <span>
+        <span data-en="MGI Training Academy" data-ar="MGI للتدريب"></span>
+        <small data-en="Miami, Florida" data-ar="ميامي، فلوريدا"></small>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" data-en="Home" data-ar="الرئيسية"></a></li>
+        <li><a href="programs.html" data-en="Programs" data-ar="البرامج"></a></li>
+        <li><a href="partnerships.html" data-en="Partnerships" data-ar="الشراكات"></a></li>
+        <li><a href="about.html" data-en="About" data-ar="من نحن"></a></li>
+        <li><a href="verify.html" data-en="Verify Certificate" data-ar="تحقق من الشهادة"></a></li>
+        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا"></a></li>
+      </ul>
+    </nav>
+    <div class="lang-toggle" role="group" aria-label="Language switcher">
+      <button class="active" data-lang="en">EN</button><button data-lang="ar">AR</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="verify-page-section">
+    <div class="container">
+      <div class="verify-container">
+
+        <!-- Header -->
+        <div class="verify-header fade-up">
+          <span class="section-label"
+                data-en="Official Portal" data-ar="البوابة الرسمية"></span>
+          <h1 data-en="Certificate Verification" data-ar="التحقق من الشهادة"></h1>
+          <p data-en="Use this portal to confirm the authenticity of any certificate issued by MGI Training Academy. Enter the serial number exactly as printed and the certificate holder's last name."
+             data-ar="استخدم هذه البوابة للتحقق من صحة أي شهادة صادرة عن MGI Training Academy. أدخل الرقم التسلسلي كما هو مطبوع واسم عائلة صاحب الشهادة."></p>
+        </div>
+
+        <!-- Form Card -->
+        <div class="verify-form-card fade-up delay-200">
+          <div class="verify-field">
+            <label for="serial-input"
+                   data-en="Certificate Serial Number" data-ar="الرقم التسلسلي للشهادة"></label>
+            <input id="serial-input"
+                   placeholder="MGI-2026-000001"
+                   aria-label="Certificate serial number"
+                   autocomplete="off"
+                   spellcheck="false">
+          </div>
+          <div class="verify-field">
+            <label for="last-name-input"
+                   data-en="Last Name or Full Name" data-ar="اسم العائلة أو الاسم الكامل"></label>
+            <input id="last-name-input"
+                   data-en-placeholder="e.g. Al-Rashidi"
+                   data-ar-placeholder="مثال: الراشدي"
+                   placeholder="Last Name"
+                   aria-label="Last name or full name"
+                   autocomplete="off">
+          </div>
+          <button id="verify-btn" class="btn btn-primary verify-submit-btn"
+                  data-en="Verify Certificate" data-ar="تحقق من الشهادة"></button>
+
+          <!-- Trust indicators -->
+          <div class="verify-trust-row">
+            <span class="verify-trust-item">
+              <span class="verify-trust-icon">✓</span>
+              <span data-en="Secure verification" data-ar="تحقق آمن"></span>
+            </span>
+            <span class="verify-trust-item">
+              <span class="verify-trust-icon">✓</span>
+              <span data-en="US-based registry" data-ar="سجل أمريكي"></span>
+            </span>
+            <span class="verify-trust-item">
+              <span class="verify-trust-icon">✓</span>
+              <span data-en="Official MGI record" data-ar="سجل MGI الرسمي"></span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Result — populated by verify.js -->
+        <div class="verify-result-anim" id="verify-result-wrap" style="display:none;">
+          <section id="verify-result" class="card"></section>
+        </div>
+
+        <!-- Footer note -->
+        <p class="verify-footer-note fade-up delay-300"
+           data-en="This verification system is maintained by MGI Training Academy, Miami, Florida. All certificates are individually registered and traceable. For certificate disputes or reissue requests, contact info@miamiglobalgroup.com"
+           data-ar="يتم صيانة هذا النظام من قِبل MGI Training Academy، ميامي، فلوريدا. جميع الشهادات مسجلة بشكل فردي وقابلة للتتبع. للنزاعات أو طلبات إعادة الإصدار، تواصل مع info@miamiglobalgroup.com"></p>
+
+      </div>
     </div>
   </section>
+</main>
 
-  <section id="verify-result" class="card" hidden></section>
-</div></main>
+<footer class="site-footer footer-enhanced">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/svg/seal.svg" class="seal" alt="MGI seal">
+        <strong>MGI Training Academy</strong>
+        <small>Miami Global Investments Group LLC</small>
+        <span class="footer-us-bar"></span>
+        <p data-en="US-registered professional training and certification institute. Miami, Florida."
+           data-ar="معهد تدريب وشهادات مهنية مسجّل في الولايات المتحدة. ميامي، فلوريدا."></p>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Quick Links" data-ar="روابط سريعة"></h4>
+        <ul>
+          <li><a href="index.html" data-en="Home" data-ar="الرئيسية"></a></li>
+          <li><a href="programs.html" data-en="Programs" data-ar="البرامج"></a></li>
+          <li><a href="verify.html" data-en="Verify Certificate" data-ar="تحقق من الشهادة"></a></li>
+          <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا"></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Contact" data-ar="التواصل"></h4>
+        <p>2125 Biscayne Blvd, Ste 204<br>Miami, FL 33137, USA</p>
+        <p><a href="mailto:info@miamiglobalgroup.com">info@miamiglobalgroup.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Miami Global Investments Group LLC.</span>
+    </div>
+  </div>
+</footer>
 
-<footer class="site-footer"><div class="container"><p data-en="Miami Global Investments Group LLC • Education & Professional Development Division" data-ar="Miami Global Investments Group LLC • قسم التعليم والتطوير المهني"></p><p>© <span id="year"></span></p></div></footer>
-<img src="assets/svg/seal.svg" class="watermark-seal" alt=""><a id="whatsapp-float" class="whatsapp-float" href="https://wa.me/13056290491" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><img src="assets/svg/whatsapp.svg" alt=""></a>
+<img src="assets/svg/seal.svg" class="watermark-seal" alt="">
+<a id="whatsapp-float" class="whatsapp-float" href="https://wa.me/13056290491" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <img src="assets/svg/whatsapp.svg" alt="">
+</a>
+
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/vendor/qrcode.min.js"></script>
+<script src="assets/js/animations.js"></script>
+<script>
+  // Bridge: verify.js writes to #verify-result; reveal wrapper when result is populated
+  (function () {
+    var wrapper = document.getElementById('verify-result-wrap');
+    var result  = document.getElementById('verify-result');
+    if (!wrapper || !result) return;
+    var obs = new MutationObserver(function () {
+      wrapper.style.display = result.innerHTML.trim() ? 'block' : 'none';
+    });
+    obs.observe(result, { childList: true, subtree: true });
+  })();
+</script>
 <script src="assets/js/verify.js"></script>
 </body>
 </html>
