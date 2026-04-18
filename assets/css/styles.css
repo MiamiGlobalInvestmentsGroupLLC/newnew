@@ -46,9 +46,10 @@ img { max-width: 100%; display: block; }
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 100;
-  background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(8px);
+  z-index: 200;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
 .nav-wrap {
@@ -1111,7 +1112,7 @@ textarea { min-height: 120px; }
   font-weight: 500;
   color: #c8d8ea;
   position: relative;
-  z-index: 101;
+  z-index: 99;
   letter-spacing: .01em;
 }
 .announcement-bar strong { color: #f9e2a0; font-weight: 700; }
@@ -1695,11 +1696,16 @@ textarea { min-height: 120px; }
 
 /* ================================================================
    NAV GUARANTEED CONTRAST — RTL / Arabic mode fix
+   The announcement bar was z-index:101 > header z-index:100 which
+   caused the dark bar to paint over the sticky header in Arabic mode.
+   Fixed: header z-index raised to 200, bar lowered to 99.
    ================================================================ */
 .site-header { color: var(--navy); }
-.nav-toggle { color: var(--navy); }
-body.ar .nav-toggle { color: var(--navy); }
-body.ar .lang-toggle button:not(.active) { color: var(--navy); }
+.nav-toggle { color: var(--navy) !important; background: #fff !important; }
+.lang-toggle button { color: var(--navy) !important; }
+.lang-toggle button.active { background: var(--navy) !important; color: #fff !important; }
+body.ar .nav-toggle { color: var(--navy) !important; }
+body.ar .lang-toggle button:not(.active) { color: var(--navy) !important; }
 body.ar .main-nav a { color: var(--navy); }
 
 /* ================================================================
