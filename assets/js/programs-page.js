@@ -71,7 +71,9 @@
   }
 
   function applyStripeLinks() {
-    document.querySelectorAll('.program-card a.btn').forEach((a) => { a.href = STRIPE_CHECKOUT_URL; });
+    document.querySelectorAll('.program-card a.btn').forEach((a) => {
+      if (!a.getAttribute('href').startsWith('mailto:')) a.href = STRIPE_CHECKOUT_URL;
+    });
   }
 
   function tick() {
