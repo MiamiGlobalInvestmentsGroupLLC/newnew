@@ -32,42 +32,68 @@ img { max-width: 100%; display: block; }
 .section { padding: 4rem 0; }
 .muted { color: var(--muted); }
 
+/* skip-link: use clip (not left:-9999px) to avoid horizontal overflow in RTL */
 .skip-link {
   position: absolute;
-  left: -9999px;
-  top: 0;
-  background: var(--navy);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}
+.skip-link:focus {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: auto;
+  height: auto;
+  clip: auto;
+  overflow: visible;
+  white-space: normal;
+  background: #0b1c2d;
   color: #fff;
   padding: 0.75rem 1rem;
   z-index: 1000;
+  border-radius: 6px;
 }
-.skip-link:focus { left: 0.5rem; top: 0.5rem; }
 
 .site-header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 200;
   background: #ffffff;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid #d8dde3;
   box-shadow: 0 2px 16px rgba(11,28,45,.07);
+  /* force GPU compositing layer — fixes iOS Safari RTL sticky rendering bug */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .nav-wrap {
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   min-height: 72px;
   gap: 1rem;
 }
-.brand { display: flex; align-items: center; gap: 0.75rem; font-weight: 700; }
+.brand { display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; gap: 0.75rem; font-weight: 700; -webkit-flex-shrink: 0; flex-shrink: 0; }
 .brand small { display:block; font-size:0.74rem; color:var(--muted); font-weight:500; }
 .seal { width: 34px; height: 34px; }
 
 .nav-toggle {
   border: 1px solid var(--border);
-  background: #fff;
+  background: #ffffff;
   border-radius: 10px;
   padding: 0.4rem 0.6rem;
   font-size: 1.1rem;
+  color: #0b1c2d;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
 }
 .main-nav {
   position: absolute;
@@ -87,8 +113,11 @@ img { max-width: 100%; display: block; }
   border: 1px solid var(--gold);
   border-radius: 999px;
   padding: 0.35rem;
+  display: -webkit-inline-flex;
   display: inline-flex;
   gap: 0.35rem;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
 }
 .lang-toggle button {
   border: 0;
@@ -1700,13 +1729,24 @@ textarea { min-height: 120px; }
    caused the dark bar to paint over the sticky header in Arabic mode.
    Fixed: header z-index raised to 200, bar lowered to 99.
    ================================================================ */
-.site-header { color: var(--navy); }
-.nav-toggle { color: var(--navy) !important; background: #fff !important; }
-.lang-toggle button { color: var(--navy) !important; }
-.lang-toggle button.active { background: var(--navy) !important; color: #fff !important; }
-body.ar .nav-toggle { color: var(--navy) !important; }
-body.ar .lang-toggle button:not(.active) { color: var(--navy) !important; }
-body.ar .main-nav a { color: var(--navy); }
+.site-header { color: #0b1c2d; }
+.nav-toggle { color: #0b1c2d !important; background: #ffffff !important; border-color: #d8dde3 !important; }
+.lang-toggle button { color: #0b1c2d !important; }
+.lang-toggle button.active { background: #0b1c2d !important; color: #ffffff !important; }
+body.ar .nav-toggle { color: #0b1c2d !important; background: #ffffff !important; }
+body.ar .lang-toggle button:not(.active) { color: #0b1c2d !important; }
+body.ar .main-nav a { color: #0b1c2d; }
+/* Additional iOS Safari RTL guarantee — force element visibility */
+body.ar .site-header,
+body.ar .nav-wrap,
+body.ar .brand,
+body.ar .brand span,
+body.ar .nav-toggle {
+  opacity: 1 !important;
+  visibility: visible !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
 
 /* ================================================================
    FAQ ACCORDION
