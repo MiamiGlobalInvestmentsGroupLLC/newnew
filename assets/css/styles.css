@@ -72,7 +72,9 @@ img { max-width: 100%; display: block; }
 }
 .main-nav {
   position: absolute;
-  inset: 72px 0 auto 0;
+  top: 100%;
+  left: 0;
+  right: 0;
   background: #fff;
   border-bottom: 1px solid var(--border);
   display: none;
@@ -1102,17 +1104,15 @@ textarea { min-height: 120px; }
 /* --- Nav active state --- */
 .main-nav a.nav-active { color: var(--gold); font-weight: 700; }
 
-/* --- Announcement Bar (Hook) --- */
+/* --- Announcement Bar (inside .site-header — no competing z-index) --- */
 .announcement-bar {
   background: linear-gradient(90deg, #0b1c2d 0%, #132b43 60%, #1a3860 100%);
   border-bottom: 2px solid var(--gold);
   text-align: center;
-  padding: .62rem 1rem;
+  padding: .55rem 1rem;
   font-size: .82rem;
   font-weight: 500;
   color: #c8d8ea;
-  position: relative;
-  z-index: 99;
   letter-spacing: .01em;
 }
 .announcement-bar strong { color: #f9e2a0; font-weight: 700; }
