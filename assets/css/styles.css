@@ -47,10 +47,9 @@ img { max-width: 100%; display: block; }
   position: sticky;
   top: 0;
   z-index: 200;
-  background: rgba(255,255,255,0.97);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: #ffffff;
   border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 16px rgba(11,28,45,.07);
 }
 .nav-wrap {
   display: flex;
@@ -1104,7 +1103,8 @@ textarea { min-height: 120px; }
 /* --- Nav active state --- */
 .main-nav a.nav-active { color: var(--gold); font-weight: 700; }
 
-/* --- Announcement Bar (inside .site-header — no competing z-index) --- */
+/* --- Announcement Bar — plain block, NO position/z-index to avoid
+       stacking context conflict with the sticky header above it --- */
 .announcement-bar {
   background: linear-gradient(90deg, #0b1c2d 0%, #132b43 60%, #1a3860 100%);
   border-bottom: 2px solid var(--gold);
