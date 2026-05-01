@@ -2316,3 +2316,5 @@ body.ar .nav-toggle {
   .ws-handles-grid { grid-template-columns: 1fr; }
   .ws-hero-trust { flex-direction: column; gap: .5rem; }
 }
+.ws-service-link { text-decoration: none; }
+.ws-service-link:hover { text-decoration: underline; }
