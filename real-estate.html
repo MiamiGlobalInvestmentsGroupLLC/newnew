@@ -575,21 +575,51 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/js/animations.js"></script>
 <script>
-['deal-form', 'buyer-form-el'].forEach(function(id) {
-  var form = document.getElementById(id);
-  if (!form) return;
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var btn = form.querySelector('button[type="submit"]');
-    var lang = document.documentElement.lang || 'en';
-    btn.textContent = lang === 'ar'
-      ? '✓ تم الإرسال — سنتواصل معك خلال 24 ساعة'
-      : '✓ Submitted — we\'ll be in touch within 24 hours';
-    btn.disabled = true;
-    btn.style.background = '#34d399';
-    btn.style.color = '#0b1c2d';
-    btn.style.borderColor = '#34d399';
-  });
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Deal Submission Form → email to info@miamiglobalgroup.com
+  var dealForm = document.getElementById('deal-form');
+  if (dealForm) {
+    dealForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var d = new FormData(dealForm);
+      var subject = encodeURIComponent('Deal Submission - MGI Real Estate');
+      var body = encodeURIComponent(
+        'Name: ' + (d.get('name') || '') +
+        '\nEmail: ' + (d.get('email') || '') +
+        '\nPhone: ' + (d.get('phone') || '') +
+        '\n\nProperty Address: ' + (d.get('address') || '') +
+        '\nAsking Price: ' + (d.get('asking_price') || '') +
+        '\nEstimated ARV: ' + (d.get('arv') || '') +
+        '\nProperty Type: ' + (d.get('property_type') || '') +
+        '\nCondition: ' + (d.get('condition') || '') +
+        '\n\nNotes:\n' + (d.get('notes') || '')
+      );
+      window.location.href = 'mailto:info@miamiglobalgroup.com?subject=' + subject + '&body=' + body;
+    });
+  }
+
+  // Buyer / JV Form → email to info@miamiglobalgroup.com
+  var buyerForm = document.getElementById('buyer-form-el');
+  if (buyerForm) {
+    buyerForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var d = new FormData(buyerForm);
+      var subject = encodeURIComponent('Buyer Registration - MGI Real Estate');
+      var body = encodeURIComponent(
+        'Name: ' + (d.get('name') || '') +
+        '\nEmail: ' + (d.get('email') || '') +
+        '\nTarget Market: ' + (d.get('market') || '') +
+        '\nMin Budget: ' + (d.get('price_min') || '') +
+        '\nMax Budget: ' + (d.get('price_max') || '') +
+        '\nProperty Type: ' + (d.get('property_type') || '') +
+        '\nDeal Preference: ' + (d.get('deal_preference') || '') +
+        '\n\nAdditional Notes:\n' + (d.get('notes') || '')
+      );
+      window.location.href = 'mailto:info@miamiglobalgroup.com?subject=' + subject + '&body=' + body;
+    });
+  }
+
 });
 </script>
 </body>
