@@ -1,115 +1,626 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <title>MGI Real Estate Wholesaling — Miami Luxury</title>
-  <meta name="description" content="Condos, villas, penthouses; off-market options; investor-friendly flows.">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="styles.css?v=9100" />
-  <script defer src="script.js?v=9100"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Wholesaling | MGI — Florida & Texas</title>
+  <meta name="description" content="Off-market real estate wholesaling in Florida and Texas. Deal sourcing, buyer connections, and joint venture facilitation. MGI — Miami, Florida.">
+  <link rel="icon" href="assets/svg/seal.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<header class="nav-wrap">
-  <div class="nav container">
-    <a class="brand" href="index.html">
-      <img class="logo" src="assets/mgi-logo.jpg" alt="MGI logo" />
-      <span>Miami Global Investments Group</span>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/svg/seal.svg" class="seal" alt="MGI seal">
+      <span>
+        <span data-en="MGI" data-ar="MGI"></span>
+        <small data-en="Miami, Florida" data-ar="ميامي، فلوريدا"></small>
+      </span>
     </a>
-    <nav>
-      <a href="consulting.html">Consulting</a>
-      <a href="travel.html">Travel</a>
-      <a href="real-estate.html" aria-current="page">Real Estate</a>
-      <a href="about.html">About</a>
-      <a class="cta" href="contact.html">Contact</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" data-en="Home" data-ar="الرئيسية"></a></li>
+        <li><a href="real-estate.html" data-en="Real Estate" data-ar="العقارات"></a></li>
+        <li><a href="index.html#services" data-en="Website Services" data-ar="خدمات المواقع"></a></li>
+        <li><a href="training.html" data-en="Training" data-ar="التدريب"></a></li>
+        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا"></a></li>
+      </ul>
     </nav>
+    <div class="lang-toggle" role="group" aria-label="Language switcher">
+      <button class="active" data-lang="en">EN</button><button data-lang="ar">AR</button>
+    </div>
   </div>
 </header>
 
-<main id="main-content">
-  <!-- Hero -->
-  <section class="hero">
-    <img class="hero-img" src="assets/hero-realestate.jpg" alt="Real Estate hero illustration"/>
-    <div class="hero-overlay">
-      <h1>MGI Real Estate</h1>
-      <p>Waterfront villas, skyline penthouses, and investor-ready condos.</p>
+<main id="main">
+
+  <!-- ══════════════════════════════════════
+       SECTION 1: HERO
+  ══════════════════════════════════════ -->
+  <section class="re-hero">
+    <div class="re-hero-bg"></div>
+    <div class="container re-hero-container">
+      <div class="re-hero-content">
+        <div class="re-hero-badge fade-in">
+          <span>🏠</span>
+          <span data-en="Real Estate Wholesaling — Florida &amp; Texas" data-ar="بيع عقارات بالجملة — فلوريدا وتكساس"></span>
+        </div>
+        <h1 class="re-hero-heading fade-up delay-100"
+            data-en="Off-Market Opportunities. Real Connections. Serious Execution."
+            data-ar="فرص خارج السوق. علاقات حقيقية. تنفيذ جاد."></h1>
+        <p class="re-hero-sub fade-up delay-200"
+           data-en="We source, evaluate, and connect off-market real estate deals across Florida and Texas with qualified buyers and joint venture partners. No retail listings. No time-wasters. Just deals that move."
+           data-ar="نبحث عن صفقات عقارية خارج السوق في فلوريدا وتكساس ونقيّمها ونربطها بالمشترين المؤهلين وشركاء المشاريع المشتركة. لا قوائم تجزئة. لا مضيعة للوقت. فقط صفقات تتحرك."></p>
+        <div class="cta-group fade-up delay-300">
+          <a class="btn btn-gold" href="#submit-deal"
+             data-en="Submit a Deal" data-ar="أرسل صفقة"></a>
+          <a class="btn btn-outline-white" href="#buyer-form"
+             data-en="Join Buyer List" data-ar="انضم لقائمة المشترين"></a>
+        </div>
+        <div class="re-hero-trust fade-up delay-400">
+          <span class="re-trust-item">
+            <span class="re-trust-check">✓</span>
+            <span data-en="US-based company" data-ar="شركة أمريكية"></span>
+          </span>
+          <span class="re-trust-item">
+            <span class="re-trust-check">✓</span>
+            <span data-en="Florida &amp; Texas markets" data-ar="أسواق فلوريدا وتكساس"></span>
+          </span>
+          <span class="re-trust-item">
+            <span class="re-trust-check">✓</span>
+            <span data-en="Buyers & JV partners welcome" data-ar="مشترون وشركاء مشاريع مشتركة"></span>
+          </span>
+        </div>
+      </div>
+      <div class="re-hero-visual fade-in delay-200">
+        <div class="re-hero-card-stack">
+          <div class="re-deal-preview-card re-dpc-back">
+            <div class="re-dpc-tag" data-en="Off-Market" data-ar="خارج السوق"></div>
+            <div class="re-dpc-addr">Houston, TX</div>
+            <div class="re-dpc-row">
+              <span>ARV</span><strong>$520K</strong>
+            </div>
+          </div>
+          <div class="re-deal-preview-card re-dpc-mid">
+            <div class="re-dpc-tag" data-en="Fix & Flip" data-ar="إصلاح وبيع"></div>
+            <div class="re-dpc-addr">Tampa, FL</div>
+            <div class="re-dpc-row">
+              <span>ARV</span><strong>$390K</strong>
+            </div>
+          </div>
+          <div class="re-deal-preview-card re-dpc-front">
+            <div class="re-dpc-tag" data-en="Available Now" data-ar="متاح الآن"></div>
+            <div class="re-dpc-addr">Miami, FL</div>
+            <div class="re-dpc-type" data-en="Value-Add Residential" data-ar="سكني يضيف قيمة"></div>
+            <div class="re-dpc-row">
+              <span>ARV</span><strong>$550K</strong>
+            </div>
+            <div class="re-dpc-row">
+              <span data-en="Asking" data-ar="المطلوب"></span><strong class="re-dpc-price">$390K</strong>
+            </div>
+            <div class="re-dpc-btn" data-en="View Deal →" data-ar="عرض الصفقة →"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Gallery (keep first only) -->
-  <section class="container gallery">
-    <figure>
-      <img src="assets/re-condo.jpg" alt="Bayfront condo graphic"/>
-      <figcaption>Bayfront Condo</figcaption>
-    </figure>
-    <figure>
-      <img src="assets/re-villa.jpg" alt="Waterfront villa graphic"/>
-      <figcaption>Waterfront Villa</figcaption>
-    </figure>
-    <figure>
-      <img src="assets/re-penthouse.jpg" alt="Penthouse skyline graphic"/>
-      <figcaption>Skyline Penthouse</figcaption>
-    </figure>
+  <!-- ══════════════════════════════════════
+       SECTION 2: WHAT WE DO
+  ══════════════════════════════════════ -->
+  <section class="section re-what-section">
+    <div class="container">
+      <span class="section-label fade-up" data-en="What We Do" data-ar="ما نقدمه"></span>
+      <h2 class="fade-up delay-100"
+          data-en="Off-Market Real Estate, Done Right"
+          data-ar="عقارات خارج السوق، بالطريقة الصحيحة"></h2>
+      <p class="muted fade-up delay-200" style="max-width:62ch;"
+         data-en="MGI operates as a real estate wholesaling and deal facilitation company active in Florida and Texas. We identify motivated sellers, position deals for maximum value, and connect them with our network of serious buyers and investors."
+         data-ar="تعمل MGI كشركة لبيع العقارات بالجملة وتسهيل الصفقات في فلوريدا وتكساس. نحدد البائعين المحفزين، ونضع الصفقات لتحقيق أقصى قيمة، ونربطها بشبكة المشترين والمستثمرين الجادين لدينا."></p>
+      <div class="re-what-grid">
+        <div class="re-what-card fade-up delay-100">
+          <div class="re-what-icon">🔍</div>
+          <h3 data-en="Off-Market Sourcing" data-ar="البحث خارج السوق"></h3>
+          <p data-en="We identify properties before they hit the MLS — distressed assets, motivated sellers, and undervalued opportunities that most buyers never see."
+             data-ar="نحدد العقارات قبل ظهورها في MLS — الأصول المتعثرة والبائعين المحفزين والفرص المقومة بأقل من قيمتها التي لا يراها معظم المشترين."></p>
+        </div>
+        <div class="re-what-card fade-up delay-200">
+          <div class="re-what-icon">📊</div>
+          <h3 data-en="Deal Positioning" data-ar="تحديد موضع الصفقة"></h3>
+          <p data-en="Every deal is evaluated for ARV, repair scope, and exit strategies before it reaches our buyers — so you're always looking at deals that make financial sense."
+             data-ar="تُقيَّم كل صفقة لتحديد القيمة بعد الإصلاح ونطاق الإصلاح واستراتيجيات الخروج قبل وصولها إلى مشترينا — حتى تنظر دائماً إلى الصفقات المنطقية مالياً."></p>
+        </div>
+        <div class="re-what-card fade-up delay-300">
+          <div class="re-what-icon">🤝</div>
+          <h3 data-en="Buyer Connections" data-ar="روابط المشترين"></h3>
+          <p data-en="Our buyer network includes cash investors, fix-and-flip operators, landlords, and developers actively looking for their next deal across Florida and Texas."
+             data-ar="تشمل شبكة المشترين لدينا المستثمرين النقديين ومشغلي إصلاح وبيع العقارات والملاك والمطورين الباحثين بنشاط عن صفقتهم التالية في فلوريدا وتكساس."></p>
+        </div>
+        <div class="re-what-card fade-up delay-400">
+          <div class="re-what-icon">⚖️</div>
+          <h3 data-en="JV Facilitation" data-ar="تسهيل المشاريع المشتركة"></h3>
+          <p data-en="We structure joint venture arrangements where both parties contribute — capital, deal flow, or execution — and share in the outcome transparently."
+             data-ar="نهيكل ترتيبات المشاريع المشتركة حيث تساهم كلتا الجهتين — رأس المال أو تدفق الصفقات أو التنفيذ — ويتشاركان النتائج بشفافية."></p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- How We Work -->
-  <section class="container section" aria-labelledby="hww">
-    <h2 id="hww">How We Work</h2>
-    <ul class="check">
-      <li><strong>Investor Intake &amp; Opportunity Matching</strong> — We gather your goals, locations, and budget, then match you with off-market or investment-ready opportunities that fit your strategy.</li>
-      <li><strong>Transaction Facilitation &amp; Coordination Support</strong> — We streamline communications, organize documents, and coordinate among parties to keep deal flow efficient. We do not represent buyers or sellers as brokers.</li>
-      <li><strong>Due Diligence Assistance &amp; Closing Preparation</strong> — We help review available information and connect you with trusted title companies, attorneys, and other licensed professionals for closing.</li>
-    </ul>
-    <a class="btn pill" href="contact.html" aria-label="Share your investment criteria via the contact page">Share your criteria</a>
+  <!-- ══════════════════════════════════════
+       SECTION 3: DEAL TYPES
+  ══════════════════════════════════════ -->
+  <section class="section section-soft re-deal-types-section">
+    <div class="container">
+      <span class="section-label fade-up" data-en="Deal Types" data-ar="أنواع الصفقات"></span>
+      <h2 class="fade-up delay-100"
+          data-en="What Kinds of Deals We Work With"
+          data-ar="أنواع الصفقات التي نتعامل معها"></h2>
+      <p class="muted fade-up delay-200" style="max-width:60ch;"
+         data-en="We focus on property types that offer genuine upside — for the right buyer with the right strategy."
+         data-ar="نركز على أنواع العقارات التي تقدم إمكانات حقيقية — للمشتري المناسب بالاستراتيجية الصحيحة."></p>
+      <div class="re-deal-grid">
+        <div class="re-deal-card fade-up delay-100">
+          <div class="re-deal-icon">🏚️</div>
+          <h3 data-en="Tear-Down / Land" data-ar="هدم / أراضي"></h3>
+          <p data-en="Properties sold for land value — ready for new construction, development, or lot splitting. Ideal for builders and developers."
+             data-ar="عقارات تُباع بقيمة الأرض — جاهزة للبناء الجديد أو التطوير أو تقسيم الأراضي. مثالية للمقاولين والمطورين."></p>
+        </div>
+        <div class="re-deal-card fade-up delay-200">
+          <div class="re-deal-icon">🏗️</div>
+          <h3 data-en="Buildable Lots" data-ar="قطع قابلة للبناء"></h3>
+          <p data-en="Vacant or cleared land in growth corridors — zoned for residential or mixed-use development with clear title."
+             data-ar="أراضٍ شاغرة أو مُخلاة في ممرات النمو — مُرمَّزة للتطوير السكني أو متعدد الاستخدامات بملكية واضحة."></p>
+        </div>
+        <div class="re-deal-card fade-up delay-300">
+          <div class="re-deal-icon">🏠</div>
+          <h3 data-en="Value-Add Residential" data-ar="عقارات سكنية تضيف قيمة"></h3>
+          <p data-en="Single and multi-family properties needing cosmetic to moderate repairs — strong ARV upside for fix-and-flip or rental conversion."
+             data-ar="عقارات من أسرة واحدة ومتعددة تحتاج إلى إصلاحات تجميلية إلى معتدلة — إمكانات قوية للقيمة بعد الإصلاح للإصلاح والبيع أو تحويل الإيجار."></p>
+        </div>
+        <div class="re-deal-card fade-up delay-400">
+          <div class="re-deal-icon">🏢</div>
+          <h3 data-en="Underutilized Assets" data-ar="أصول غير مستغلة"></h3>
+          <p data-en="Commercial, mixed-use, or small apartment assets operating below market potential — repositioning plays for experienced operators."
+             data-ar="الأصول التجارية متعددة الاستخدامات أو الشقق الصغيرة التي تعمل دون الإمكانات السوقية — فرص إعادة تموضع لمشغلين ذوي خبرة."></p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Map -->
-  <section class="map" aria-labelledby="map-title">
-    <h2 id="map-title" class="visually-hidden">Our Miami Location</h2>
-    <iframe
-      title="MGI Miami Office on Google Maps"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps?q=2125+Biscayne+Blvd,+Ste+204,+Miami+FL&output=embed">
-    </iframe>
+  <!-- ══════════════════════════════════════
+       SECTION 4: OUR NETWORK
+  ══════════════════════════════════════ -->
+  <section class="section re-network-section">
+    <div class="container re-network-inner">
+      <div class="re-network-text fade-up">
+        <span class="section-label" data-en="Our Network" data-ar="شبكتنا"></span>
+        <h2 data-en="Built on Real Relationships" data-ar="مبنية على علاقات حقيقية"></h2>
+        <p data-en="Our value isn't just in finding deals — it's in knowing who's ready to close. We maintain active relationships with:"
+           data-ar="قيمتنا ليست فقط في إيجاد الصفقات — بل في معرفة من هو مستعد للإغلاق. نحافظ على علاقات نشطة مع:"></p>
+        <ul class="re-network-list">
+          <li data-en="Cash buyers actively seeking off-market properties" data-ar="مشترو نقد يسعون بنشاط للعقارات خارج السوق"></li>
+          <li data-en="Fix-and-flip investors with fast close timelines" data-ar="مستثمرو إصلاح وبيع بجداول إغلاق سريعة"></li>
+          <li data-en="Buy-and-hold landlords expanding their portfolios" data-ar="الملاك الذين يشترون ويحتفظون لتوسيع محافظهم"></li>
+          <li data-en="Developers looking for land and tear-down opportunities" data-ar="المطورون الباحثون عن فرص الأراضي والهدم"></li>
+          <li data-en="JV partners contributing capital or deal flow" data-ar="شركاء المشاريع المشتركة الذين يساهمون برأس المال أو تدفق الصفقات"></li>
+          <li data-en="International investors targeting US real estate" data-ar="المستثمرون الدوليون الذين يستهدفون العقارات الأمريكية"></li>
+        </ul>
+        <a class="btn btn-gold" href="#buyer-form" style="margin-top:1.25rem;display:inline-flex;"
+           data-en="Join Our Network" data-ar="انضم إلى شبكتنا"></a>
+      </div>
+      <div class="re-network-stats fade-up delay-200">
+        <div class="re-ns-card">
+          <div class="re-ns-icon">🏘️</div>
+          <strong data-en="Off-Market" data-ar="خارج السوق"></strong>
+          <span data-en="All deals sourced privately" data-ar="جميع الصفقات خاصة"></span>
+        </div>
+        <div class="re-ns-card">
+          <div class="re-ns-icon">🇺🇸</div>
+          <strong data-en="FL &amp; TX" data-ar="فلوريدا وتكساس"></strong>
+          <span data-en="Florida &amp; Texas markets" data-ar="أسواق فلوريدا وتكساس"></span>
+        </div>
+        <div class="re-ns-card">
+          <div class="re-ns-icon">🤝</div>
+          <strong data-en="JV-Ready" data-ar="جاهز للمشاريع المشتركة"></strong>
+          <span data-en="Structured joint ventures" data-ar="مشاريع مشتركة منظمة"></span>
+        </div>
+        <div class="re-ns-card">
+          <div class="re-ns-icon">⚡</div>
+          <strong data-en="Fast Movers" data-ar="تحرك سريع"></strong>
+          <span data-en="Serious buyers only" data-ar="المشترون الجادون فقط"></span>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Legal Disclaimer -->
-  <section class="container section" aria-labelledby="legal">
-    <h2 id="legal">Legal Disclaimer</h2>
-    <p><strong>Miami Global Investments Group LLC</strong> operates as a private investment and consulting company. We are <strong>not</strong> licensed real estate brokers or agents. All property transactions are conducted through independent, verified, and licensed third-party professionals when required by law. Any references to opportunities are for informational purposes only and are subject to independent verification, market conditions, and availability.</p>
+  <!-- ══════════════════════════════════════
+       SECTION 5: HOW WE WORK
+  ══════════════════════════════════════ -->
+  <section class="section section-soft re-how-section">
+    <div class="container">
+      <span class="section-label fade-up" data-en="How We Work" data-ar="كيف نعمل"></span>
+      <h2 class="fade-up delay-100"
+          data-en="Our 4-Step Process"
+          data-ar="عمليتنا ذات الخطوات الأربع"></h2>
+      <p class="muted fade-up delay-200" style="max-width:58ch;margin-bottom:0;"
+         data-en="Simple, transparent, and built around getting deals done — not just found."
+         data-ar="بسيطة وشفافة ومبنية حول إتمام الصفقات — لا مجرد إيجادها."></p>
+      <div class="re-how-grid">
+        <div class="re-how-step fade-up delay-100">
+          <div class="re-how-num">01</div>
+          <div class="re-how-icon">🔎</div>
+          <h3 data-en="Identify" data-ar="تحديد"></h3>
+          <p data-en="We identify motivated sellers and off-market properties across Florida and Texas through our network, direct outreach, and proprietary deal sourcing methods."
+             data-ar="نحدد البائعين المحفزين والعقارات خارج السوق في فلوريدا وتكساس من خلال شبكتنا والتواصل المباشر وأساليب الحصول على الصفقات الخاصة بنا."></p>
+        </div>
+        <div class="re-how-arrow">→</div>
+        <div class="re-how-step fade-up delay-200">
+          <div class="re-how-num">02</div>
+          <div class="re-how-icon">📋</div>
+          <h3 data-en="Evaluate" data-ar="تقييم"></h3>
+          <p data-en="We analyze ARV, repair estimates, market comps, and exit strategies. Only deals that meet our criteria move forward to our buyers."
+             data-ar="نحلل القيمة بعد الإصلاح وتقديرات الإصلاح ومقارنات السوق واستراتيجيات الخروج. تتقدم فقط الصفقات التي تلبي معاييرنا."></p>
+        </div>
+        <div class="re-how-arrow">→</div>
+        <div class="re-how-step fade-up delay-300">
+          <div class="re-how-num">03</div>
+          <div class="re-how-icon">🔗</div>
+          <h3 data-en="Connect" data-ar="ربط"></h3>
+          <p data-en="We match the deal with the right buyer or JV partner from our active network — based on target market, deal type, and financial capacity."
+             data-ar="نطابق الصفقة مع المشتري المناسب أو شريك المشروع المشترك من شبكتنا النشطة — بناءً على السوق المستهدف ونوع الصفقة والقدرة المالية."></p>
+        </div>
+        <div class="re-how-arrow">→</div>
+        <div class="re-how-step fade-up delay-400">
+          <div class="re-how-num">04</div>
+          <div class="re-how-icon">🚀</div>
+          <h3 data-en="Facilitate" data-ar="تسهيل"></h3>
+          <p data-en="We support both parties through due diligence and closing — ensuring transparency and smooth execution from contract to close."
+             data-ar="ندعم كلا الطرفين خلال العناية الواجبة والإغلاق — مما يضمن الشفافية والتنفيذ السلس من العقد إلى الإغلاق."></p>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 6: LEGAL DISCLAIMER
+  ══════════════════════════════════════ -->
+  <section class="re-legal-section">
+    <div class="container">
+      <div class="re-legal-box fade-up">
+        <div class="re-legal-icon">⚖️</div>
+        <div>
+          <h4 data-en="Important Legal Notice" data-ar="إشعار قانوني هام"></h4>
+          <p data-en="MGI is not a licensed real estate broker or agent. We operate as a wholesaling and deal facilitation company. All parties involved in any transaction are responsible for conducting their own independent due diligence, legal review, and financial analysis. Nothing on this page constitutes legal or financial advice. Always consult qualified professionals before entering any real estate transaction."
+             data-ar="MGI ليست وسيطاً أو وكيلاً عقارياً مرخصاً. نعمل كشركة بيع بالجملة وتسهيل الصفقات. جميع الأطراف المشاركة في أي معاملة مسؤولة عن إجراء العناية الواجبة المستقلة والمراجعة القانونية والتحليل المالي الخاص بها. لا يمثل أي شيء في هذه الصفحة نصيحة قانونية أو مالية. استشر دائماً محترفين مؤهلين قبل الدخول في أي صفقة عقارية."></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 7: DEAL SUBMISSION FORM
+  ══════════════════════════════════════ -->
+  <section class="section re-form-section" id="submit-deal">
+    <div class="container">
+      <div class="re-forms-grid">
+
+        <article class="card re-form-card fade-up delay-100">
+          <div class="re-form-header">
+            <span class="re-form-badge" data-en="For Sellers &amp; Wholesalers" data-ar="للبائعين والمنتجين بالجملة"></span>
+            <h2 data-en="Submit a Deal" data-ar="أرسل صفقة"></h2>
+            <p class="muted"
+               data-en="Have a property or deal to share? Send us the details and we'll review it within 24 hours."
+               data-ar="هل لديك عقار أو صفقة لمشاركتها؟ أرسل لنا التفاصيل وسنراجعها خلال 24 ساعة."></p>
+          </div>
+          <form id="deal-form" class="form-grid" novalidate>
+            <div class="form-grid two">
+              <input name="name" required
+                     data-en-placeholder="Your Name" data-ar-placeholder="اسمك"
+                     placeholder="Your Name">
+              <input type="email" name="email" required
+                     data-en-placeholder="Email Address" data-ar-placeholder="البريد الإلكتروني"
+                     placeholder="Email Address">
+            </div>
+            <input name="phone"
+                   data-en-placeholder="Phone / WhatsApp" data-ar-placeholder="الهاتف / واتساب"
+                   placeholder="Phone / WhatsApp">
+            <input name="address" required
+                   data-en-placeholder="Property Address" data-ar-placeholder="عنوان العقار"
+                   placeholder="Property Address">
+            <div class="form-grid two">
+              <input name="asking_price"
+                     data-en-placeholder="Asking Price ($)" data-ar-placeholder="السعر المطلوب ($)"
+                     placeholder="Asking Price ($)">
+              <input name="arv"
+                     data-en-placeholder="Estimated ARV ($)" data-ar-placeholder="القيمة المقدرة بعد الإصلاح ($)"
+                     placeholder="Estimated ARV ($)">
+            </div>
+            <div class="form-grid two">
+              <select name="property_type">
+                <option value="" data-en="— Property Type" data-ar="— نوع العقار">— Property Type</option>
+                <option value="sfr" data-en="Single Family" data-ar="عائلة واحدة">Single Family</option>
+                <option value="multi" data-en="Multi-Family" data-ar="متعددة العائلات">Multi-Family</option>
+                <option value="land" data-en="Land / Lot" data-ar="أرض / قطعة">Land / Lot</option>
+                <option value="commercial" data-en="Commercial" data-ar="تجاري">Commercial</option>
+                <option value="other" data-en="Other" data-ar="أخرى">Other</option>
+              </select>
+              <select name="condition">
+                <option value="" data-en="— Condition" data-ar="— الحالة">— Condition</option>
+                <option value="excellent" data-en="Excellent" data-ar="ممتاز">Excellent</option>
+                <option value="good" data-en="Good" data-ar="جيد">Good</option>
+                <option value="fair" data-en="Fair / Needs Work" data-ar="مقبول / يحتاج عمل">Fair / Needs Work</option>
+                <option value="distressed" data-en="Distressed" data-ar="متعثر">Distressed</option>
+              </select>
+            </div>
+            <textarea name="notes"
+                      data-en-placeholder="Additional notes, timeline, seller situation..."
+                      data-ar-placeholder="ملاحظات إضافية، الجدول الزمني، وضع البائع..."
+                      placeholder="Additional notes, timeline, seller situation..."></textarea>
+            <button class="btn btn-gold" type="submit" style="width:100%;justify-content:center;"
+                    data-en="Submit Opportunity" data-ar="أرسل الفرصة"></button>
+            <p class="muted" style="font-size:.82rem;text-align:center;margin:0;"
+               data-en="We review all submissions within 24 hours."
+               data-ar="نراجع جميع الطلبات خلال 24 ساعة."></p>
+          </form>
+        </article>
+
+        <!-- ══ SECTION 8: BUYER / JV FORM ══ -->
+        <article class="card re-form-card fade-up delay-200" id="buyer-form">
+          <div class="re-form-header">
+            <span class="re-form-badge re-form-badge-alt" data-en="For Buyers &amp; Investors" data-ar="للمشترين والمستثمرين"></span>
+            <h2 data-en="Join Our Buyer List" data-ar="انضم إلى قائمة المشترين"></h2>
+            <p class="muted"
+               data-en="Tell us what you're looking for and we'll reach out when matching deals become available."
+               data-ar="أخبرنا بما تبحث عنه وسنتواصل معك عند توفر صفقات مطابقة."></p>
+          </div>
+          <form id="buyer-form-el" class="form-grid" novalidate>
+            <div class="form-grid two">
+              <input name="name" required
+                     data-en-placeholder="Your Name" data-ar-placeholder="اسمك"
+                     placeholder="Your Name">
+              <input type="email" name="email" required
+                     data-en-placeholder="Email Address" data-ar-placeholder="البريد الإلكتروني"
+                     placeholder="Email Address">
+            </div>
+            <input name="market"
+                   data-en-placeholder="Target Market (e.g. Miami FL, Houston TX, Dallas TX)" data-ar-placeholder="السوق / المنطقة المستهدفة (مثال: ميامي، هيوستن)"
+                   placeholder="Target Market (e.g. Miami FL, Houston TX)">
+            <div class="form-grid two">
+              <input name="price_min"
+                     data-en-placeholder="Min Budget ($)" data-ar-placeholder="الميزانية الدنيا ($)"
+                     placeholder="Min Budget ($)">
+              <input name="price_max"
+                     data-en-placeholder="Max Budget ($)" data-ar-placeholder="الميزانية القصوى ($)"
+                     placeholder="Max Budget ($)">
+            </div>
+            <div class="form-grid two">
+              <select name="property_type">
+                <option value="" data-en="— Property Type" data-ar="— نوع العقار">— Property Type</option>
+                <option value="sfr" data-en="Single Family" data-ar="عائلة واحدة">Single Family</option>
+                <option value="multi" data-en="Multi-Family" data-ar="متعددة العائلات">Multi-Family</option>
+                <option value="land" data-en="Land / Lot" data-ar="أرض / قطعة">Land / Lot</option>
+                <option value="commercial" data-en="Commercial" data-ar="تجاري">Commercial</option>
+                <option value="any" data-en="Any" data-ar="أي">Any</option>
+              </select>
+              <select name="deal_preference">
+                <option value="" data-en="— Deal Preference" data-ar="— تفضيل الصفقة">— Deal Preference</option>
+                <option value="fix-flip" data-en="Fix &amp; Flip" data-ar="إصلاح وبيع">Fix &amp; Flip</option>
+                <option value="buy-hold" data-en="Buy &amp; Hold" data-ar="شراء واحتفاظ">Buy &amp; Hold</option>
+                <option value="wholesale" data-en="Wholesale" data-ar="بالجملة">Wholesale</option>
+                <option value="jv" data-en="Joint Venture" data-ar="مشروع مشترك">Joint Venture</option>
+                <option value="any" data-en="Open to All" data-ar="مفتوح للكل">Open to All</option>
+              </select>
+            </div>
+            <textarea name="notes"
+                      data-en-placeholder="Anything else we should know about your investment criteria..."
+                      data-ar-placeholder="أي شيء آخر يجب أن نعرفه عن معاييرك الاستثمارية..."
+                      placeholder="Anything else we should know about your criteria..."></textarea>
+            <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center;"
+                    data-en="Explore Partnership" data-ar="استعرض الشراكة"></button>
+            <p class="muted" style="font-size:.82rem;text-align:center;margin:0;"
+               data-en="We'll reach out when a matching deal is available."
+               data-ar="سنتواصل معك عند توفر صفقة مطابقة."></p>
+          </form>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 9: HIGH-CONVERSION CTA
+  ══════════════════════════════════════ -->
+  <section class="re-cta-section">
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="re-cta-inner fade-up">
+        <h2 data-en="Let's Work on the Right Deal"
+            data-ar="لنعمل على الصفقة الصحيحة"></h2>
+        <p data-en="Whether you have a deal to move or capital to deploy — we connect the right people with the right opportunities. No fluff. No delays. Just deals that close."
+           data-ar="سواء كان لديك صفقة لتحريكها أو رأس مال لنشره — نربط الأشخاص المناسبين بالفرص المناسبة. بدون زيادات. بدون تأخير. فقط صفقات تُغلق."></p>
+        <div class="cta-group">
+          <a class="btn btn-gold" href="#submit-deal"
+             data-en="Submit a Deal" data-ar="أرسل صفقة"></a>
+          <a class="btn btn-outline-white" href="https://wa.me/13056290491"
+             target="_blank" rel="noopener"
+             data-en="Chat on WhatsApp" data-ar="تحدث على واتساب"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 10: PLATFORM ACCESS
+  ══════════════════════════════════════ -->
+  <section class="section re-platform-section">
+    <div class="container">
+      <div class="re-platform-inner">
+        <div class="re-platform-text fade-up">
+          <span class="re-early-badge" data-en="🔒 Early Access" data-ar="🔒 وصول مبكر"></span>
+          <h2 data-en="MGI Deal Platform" data-ar="منصة صفقات MGI"></h2>
+          <p data-en="We're building a private deal platform where vetted buyers and sellers can access off-market opportunities, submit deals, and manage transactions — all in one place."
+             data-ar="نبني منصة صفقات خاصة حيث يمكن للمشترين والبائعين المعتمدين الوصول إلى الفرص خارج السوق وإرسال الصفقات وإدارة المعاملات — كل ذلك في مكان واحد."></p>
+          <ul class="re-platform-list">
+            <li data-en="Private deal listings for qualified buyers only" data-ar="قوائم صفقات خاصة للمشترين المؤهلين فقط"></li>
+            <li data-en="Direct deal submission portal for wholesalers" data-ar="بوابة إرسال صفقات مباشرة للبائعين بالجملة"></li>
+            <li data-en="Buyer-seller matching and direct communication" data-ar="مطابقة المشترين والبائعين والتواصل المباشر"></li>
+            <li data-en="Document sharing and due diligence tools" data-ar="مشاركة المستندات وأدوات العناية الواجبة"></li>
+          </ul>
+          <a class="btn btn-gold" href="https://app.miamiglobalgroup.com"
+             target="_blank" rel="noopener"
+             data-en="Request Early Access" data-ar="اطلب الوصول المبكر"></a>
+          <p class="muted" style="font-size:.82rem;margin-top:.75rem;"
+             data-en="Platform currently in private beta — approved members only."
+             data-ar="المنصة حالياً في مرحلة بيتا الخاصة — للأعضاء المعتمدين فقط."></p>
+        </div>
+        <div class="re-platform-visual fade-up delay-200">
+          <div class="re-plat-mockup">
+            <div class="re-plat-header">
+              <div class="re-plat-dots">
+                <span class="re-plat-dot"></span>
+                <span class="re-plat-dot"></span>
+                <span class="re-plat-dot"></span>
+              </div>
+              <span class="re-plat-url">app.miamiglobalgroup.com</span>
+            </div>
+            <div class="re-plat-body">
+              <div class="re-plat-sidebar">
+                <div class="re-plat-menu-item re-plat-active"></div>
+                <div class="re-plat-menu-item"></div>
+                <div class="re-plat-menu-item"></div>
+                <div class="re-plat-menu-item"></div>
+              </div>
+              <div class="re-plat-content">
+                <div class="re-plat-deal-card">
+                  <div class="re-pdc-tag"></div>
+                  <div class="re-pdc-line re-pdc-h"></div>
+                  <div class="re-pdc-line"></div>
+                  <div class="re-pdc-price"></div>
+                </div>
+                <div class="re-plat-deal-card">
+                  <div class="re-pdc-tag"></div>
+                  <div class="re-pdc-line re-pdc-h"></div>
+                  <div class="re-pdc-line"></div>
+                  <div class="re-pdc-price"></div>
+                </div>
+                <div class="re-plat-deal-card">
+                  <div class="re-pdc-tag"></div>
+                  <div class="re-pdc-line re-pdc-h"></div>
+                  <div class="re-pdc-line"></div>
+                  <div class="re-pdc-price"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="re-plat-badge">
+            <span class="re-plat-badge-icon">🔒</span>
+            <div>
+              <strong data-en="Private Access" data-ar="وصول خاص"></strong>
+              <span data-en="Vetted members only" data-ar="للأعضاء المعتمدين فقط"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
-<footer class="footer" role="contentinfo">
-  <div class="container foot">
-    <p>© <span id="y"></span> Miami Global Investments Group LLC — Miami, FL • </p>
-    <p><strong>Email:</strong> <a href="mailto:Info@miamiglobalgroup.com">Info@miamiglobalgroup.com</a> •
-       <strong>Phone:</strong> <a href="tel:+13056290491">+1 (305) 629-0491</a></p>
+<!-- FOOTER -->
+<footer class="site-footer footer-enhanced">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/svg/seal.svg" class="seal" alt="MGI seal">
+        <strong>MGI</strong>
+        <small>Miami Global Investments Group LLC</small>
+        <span class="footer-us-bar"></span>
+        <p data-en="Real estate wholesaling in Florida &amp; Texas, website development, and professional training. Headquartered in Miami, Florida."
+           data-ar="بيع العقارات بالجملة في فلوريدا وتكساس، وتطوير المواقع والتدريب المهني. المقر في ميامي، فلوريدا."></p>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Real Estate" data-ar="العقارات"></h4>
+        <ul>
+          <li><a href="#submit-deal" data-en="Submit a Deal" data-ar="أرسل صفقة"></a></li>
+          <li><a href="#buyer-form" data-en="Join Buyer List" data-ar="انضم لقائمة المشترين"></a></li>
+          <li><a href="https://app.miamiglobalgroup.com" target="_blank" rel="noopener" data-en="Deal Platform" data-ar="منصة الصفقات"></a></li>
+          <li><a href="contact.html" data-en="Connect With Our Team" data-ar="تواصل مع فريقنا"></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Contact" data-ar="التواصل"></h4>
+        <p>2125 Biscayne Blvd, Ste 204<br>Miami, FL 33137, USA</p>
+        <p><a href="mailto:info@miamiglobalgroup.com">info@miamiglobalgroup.com</a></p>
+        <p><a href="https://wa.me/13056290491" target="_blank" rel="noopener">+1 305 629 0491</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Miami Global Investments Group LLC. All rights reserved.</span>
+    </div>
   </div>
 </footer>
 
-<script>
-  (function () {
-    var y = document.getElementById('y');
-    if (y) y.textContent = new Date().getFullYear();
-  })();
-</script>
-  <!-- WhatsApp Floating Button + Welcome Bubble -->
-<a href="https://wa.me/13056290491" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
-  <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp chat icon">
+<img src="assets/svg/seal.svg" class="watermark-seal" alt="">
+<a id="whatsapp-float" class="whatsapp-float" href="https://wa.me/13056290491" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <img src="assets/svg/whatsapp.svg" alt="">
 </a>
 
-<div class="wa-bubble" id="waBubble">
-  💬 Need help? <strong>Chat with us on WhatsApp</strong>
-</div>
-
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
 <script>
-  // Bubble auto-hide after 10s or on click
-  const bubble = document.getElementById('waBubble');
-  if(bubble){
-    setTimeout(()=>bubble.classList.add('hide'),10000);
-    bubble.addEventListener('click',()=>bubble.classList.add('hide'));
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Deal Submission Form → email to info@miamiglobalgroup.com
+  var dealForm = document.getElementById('deal-form');
+  if (dealForm) {
+    dealForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var d = new FormData(dealForm);
+      var subject = encodeURIComponent('Deal Submission - MGI Real Estate');
+      var body = encodeURIComponent(
+        'Name: ' + (d.get('name') || '') +
+        '\nEmail: ' + (d.get('email') || '') +
+        '\nPhone: ' + (d.get('phone') || '') +
+        '\n\nProperty Address: ' + (d.get('address') || '') +
+        '\nAsking Price: ' + (d.get('asking_price') || '') +
+        '\nEstimated ARV: ' + (d.get('arv') || '') +
+        '\nProperty Type: ' + (d.get('property_type') || '') +
+        '\nCondition: ' + (d.get('condition') || '') +
+        '\n\nNotes:\n' + (d.get('notes') || '')
+      );
+      window.location.href = 'mailto:info@miamiglobalgroup.com?subject=' + subject + '&body=' + body;
+    });
   }
+
+  // Buyer / JV Form → email to info@miamiglobalgroup.com
+  var buyerForm = document.getElementById('buyer-form-el');
+  if (buyerForm) {
+    buyerForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var d = new FormData(buyerForm);
+      var subject = encodeURIComponent('Buyer Registration - MGI Real Estate');
+      var body = encodeURIComponent(
+        'Name: ' + (d.get('name') || '') +
+        '\nEmail: ' + (d.get('email') || '') +
+        '\nTarget Market: ' + (d.get('market') || '') +
+        '\nMin Budget: ' + (d.get('price_min') || '') +
+        '\nMax Budget: ' + (d.get('price_max') || '') +
+        '\nProperty Type: ' + (d.get('property_type') || '') +
+        '\nDeal Preference: ' + (d.get('deal_preference') || '') +
+        '\n\nAdditional Notes:\n' + (d.get('notes') || '')
+      );
+      window.location.href = 'mailto:info@miamiglobalgroup.com?subject=' + subject + '&body=' + body;
+    });
+  }
+
+});
 </script>
 </body>
 </html>

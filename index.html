@@ -3,31 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MGI Education | Executive Professional Programs</title>
-  <meta name="description" content="Refined executive professional programs across nutrition, marketing, business, technology, finance, design, and more by Miami Global Investments Group LLC.">
-  <meta property="og:title" content="MGI Education | Executive Professional Programs">
-  <meta property="og:description" content="Miami-based bilingual executive programs with live online delivery across nutrition, marketing, business, design, technology, finance, and modern professional tracks.">
+  <title>MGI | Professional Website Design & Development — Miami, FL</title>
+  <meta name="description" content="We build professional websites for businesses — modern design, hosting, updates, and ongoing support. Miami Global Investments Group, Miami, Florida.">
+  <meta property="og:title" content="MGI | Professional Website Design & Development">
+  <meta property="og:description" content="We design and manage modern websites that help your business grow and attract more clients.">
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/svg/seal.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ══ SUMMER PROMO BANNER ══ -->
+<div class="ws-promo-bar">
+  <div class="container ws-promo-inner">
+    <span class="ws-promo-badge" data-en="☀️ Early Summer Offer" data-ar="☀️ عرض أوائل الصيف"></span>
+    <span data-en-html="Sign before <strong>June 30</strong> and get <strong>20% off</strong> your website — only 10 spots available"
+          data-ar-html="سجّل قبل <strong>30 يونيو</strong> واحصل على <strong>خصم 20%</strong> على موقعك — 10 مقاعد فقط"></span>
+    <a href="contact.html" data-en="Claim Offer →" data-ar="احجز العرض ←"></a>
+  </div>
+</div>
+
 <header class="site-header">
   <div class="container nav-wrap">
-    <a href="index.html" class="brand"><img src="assets/svg/seal.svg" class="seal" alt="MGI seal"><span data-en="MGI Education" data-ar="MGI للتعليم"></span></a>
+    <a href="index.html" class="brand">
+      <img src="assets/svg/seal.svg" class="seal" alt="MGI seal">
+      <span>
+        <span data-en="MGI" data-ar="MGI"></span>
+        <small data-en="Miami, Florida" data-ar="ميامي، فلوريدا"></small>
+      </span>
+    </a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
     <nav class="main-nav" aria-label="Main navigation">
       <ul>
         <li><a href="index.html" data-en="Home" data-ar="الرئيسية"></a></li>
-        <li><a href="programs.html" data-en="Programs" data-ar="البرامج"></a></li>
-        <li><a href="about.html" data-en="About" data-ar="من نحن"></a></li>
-        <li><a href="faq.html" data-en="FAQ" data-ar="الأسئلة الشائعة"></a></li>
+        <li><a href="real-estate.html" data-en="Real Estate" data-ar="العقارات"></a></li>
+        <li><a href="index.html#services" data-en="Website Services" data-ar="خدمات المواقع"></a></li>
+        <li><a href="training.html" data-en="Training" data-ar="التدريب"></a></li>
         <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا"></a></li>
-        <li><a href="verify.html" data-en="Verify Certificate" data-ar="تحقق من الشهادة"></a></li>
       </ul>
     </nav>
     <div class="lang-toggle" role="group" aria-label="Language switcher">
@@ -37,112 +53,714 @@
 </header>
 
 <main id="main">
-  <section class="hero hero-convert">
-    <div class="hero-overlay"></div>
-    <div class="container hero-grid hero-grid-single">
-      <div class="hero-copy-wrap">
-        <span id="hero-badge" class="hero-badge"></span>
-        <h1 id="hero-title"></h1>
-        <p id="hero-subtitle" class="hero-subtitle"></p>
-        <p id="hero-cred" class="hero-cred"></p>
-        <div class="cta-group hero-cta">
-          <a id="hero-cta-primary" class="btn btn-primary" href="programs.html"></a>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="ws-hero">
+    <div class="ws-hero-bg"></div>
+    <div class="container ws-hero-container">
+      <div class="ws-hero-content">
+        <div class="ws-summer-pill fade-in">
+          <span class="ws-summer-dot"></span>
+          <span data-en="☀️ Early Summer Discount — Limited Slots" data-ar="☀️ خصم أوائل الصيف — مقاعد محدودة"></span>
+        </div>
+        <h1 class="ws-hero-heading fade-up delay-100"
+            data-en="We Build Professional Websites That Bring You Customers"
+            data-ar="نبني مواقع ويب احترافية تجلب لك العملاء"></h1>
+        <p class="ws-hero-sub fade-up delay-200"
+           data-en="From a clean business website to a full online store — we design, build, and manage everything so you can focus on running your business."
+           data-ar="من موقع أعمال أنيق إلى متجر إلكتروني متكامل — نصمم ونبني ونُدير كل شيء حتى تتفرغ لإدارة أعمالك."></p>
+        <div class="cta-group fade-up delay-300">
+          <a class="btn btn-gold ws-hero-cta"
+             href="contact.html"
+             data-en="Get Your Website" data-ar="احصل على موقعك"></a>
+          <a class="btn btn-outline-white"
+             href="#services"
+             data-en="See Our Services" data-ar="استعرض خدماتنا"></a>
+        </div>
+        <div class="ws-hero-trust fade-up delay-400">
+          <span class="ws-trust-item">
+            <span class="ws-trust-check">✓</span>
+            <span data-en="US-based company" data-ar="شركة أمريكية"></span>
+          </span>
+          <span class="ws-trust-item">
+            <span class="ws-trust-check">✓</span>
+            <span data-en="Design & hosting included" data-ar="تصميم واستضافة مشمولة"></span>
+          </span>
+          <span class="ws-trust-item">
+            <span class="ws-trust-check">✓</span>
+            <span data-en="Launched in days, not months" data-ar="إطلاق في أيام لا أشهر"></span>
+          </span>
         </div>
       </div>
-      <aside class="card" data-price-block>
-        <p class="badge" data-en="Limited-Time Offer – $60" data-ar="عرض لفترة محدودة – 60$"></p>
-        <div class="price-row">
-          <span class="price-current" data-price-current>$60</span>
-          <span class="price-original" data-price-original>Regular Price: $350 starting April 2026</span>
+      <div class="ws-hero-visual fade-in delay-200">
+        <div class="ws-hero-mockup">
+          <div class="ws-mockup-bar">
+            <span></span><span></span><span></span>
+            <div class="ws-mockup-url"></div>
+          </div>
+          <div class="ws-mockup-body">
+            <div class="ws-mockup-nav-bar">
+              <div class="ws-mockup-logo"></div>
+              <div class="ws-mockup-nav-links">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="ws-mockup-nav-btn"></div>
+            </div>
+            <div class="ws-mockup-hero-block">
+              <div class="ws-mockup-hero-text">
+                <div class="ws-mht-line ws-mht-h"></div>
+                <div class="ws-mht-line ws-mht-p"></div>
+                <div class="ws-mht-line ws-mht-p short"></div>
+                <div class="ws-mht-btn"></div>
+              </div>
+            </div>
+            <div class="ws-mockup-cards">
+              <div class="ws-mockup-card">
+                <div class="ws-mc-icon"></div>
+                <div class="ws-mc-line"></div>
+                <div class="ws-mc-line short"></div>
+              </div>
+              <div class="ws-mockup-card">
+                <div class="ws-mc-icon"></div>
+                <div class="ws-mc-line"></div>
+                <div class="ws-mc-line short"></div>
+              </div>
+              <div class="ws-mockup-card">
+                <div class="ws-mc-icon"></div>
+                <div class="ws-mc-line"></div>
+                <div class="ws-mc-line short"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="offer-ended" data-offer-ended hidden>Offer Ended</p>
-        <div class="countdown" data-countdown></div>
-        <p class="muted" data-en="Live executive cohorts with practical implementation and direct instructor support." data-ar="دفعات تنفيذية مباشرة مع تطبيق عملي ودعم مباشر من المدرب."></p>
-      </aside>
-    </div>
-  </section>
-
-
-  <section class="section logos-home-section">
-    <div class="container">
-      <h2 data-en="Technology Logos & Learning Ecosystem" data-ar="شعارات التقنيات والنظام التعليمي"></h2>
-      <p class="muted" data-en="Clear visual ecosystem used in our practical programs." data-ar="نظام تقني واضح يُستخدم في برامجنا التطبيقية."></p>
-      <div class="logos-home-grid">
-        <article class="logo-chip"><span class="logo-dot"></span><strong>Microsoft AI Cloud Partner Program</strong></article>
-        <article class="logo-chip"><span class="logo-dot"></span><strong>Python</strong></article>
-        <article class="logo-chip"><span class="logo-dot"></span><strong>Project Jupyter</strong></article>
-        <article class="logo-chip"><span class="logo-dot"></span><strong>TensorFlow</strong></article>
-        <article class="logo-chip"><span class="logo-dot"></span><strong>PyTorch</strong></article>
-        <article class="logo-chip"><span class="logo-dot"></span><strong>Docker</strong></article>
-        <article class="logo-chip"><span class="logo-dot"></span><strong>Kubernetes</strong></article>
-        <article class="logo-chip"><span class="logo-dot"></span><strong>Git</strong></article>
-      </div><p class="muted" data-en="We also provide bulk corporate course packages for teams and organizations." data-ar="نوفر أيضاً باقات تدريب جماعية للشركات والفرق."></p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2 data-en="Why professionals and companies choose MGI Education" data-ar="أسباب اختيار MGI للتعليم"></h2>
-      <div class="grid-3">
-        <article class="card"><h3 data-en="Official signed & stamped certificate" data-ar="شهادة رسمية مختومة وموقعة"></h3></article>
-        <article class="card"><h3 data-en="Printed certificate delivered to your home (complimentary shipping)" data-ar="تسليم الشهادة المطبوعة إلى مقر إقامتكم (شحن مجاني)"></h3></article>
-        <article class="card"><h3 data-en="All courses are delivered live online + direct instructor access" data-ar="محاضرات مباشرة مع إتاحة التواصل المباشر مع المدرب"></h3></article>
+        <!-- Floating badge -->
+        <div class="ws-mockup-badge">
+          <span class="ws-mockup-badge-icon">⚡</span>
+          <div>
+            <strong data-en="Fast Launch" data-ar="إطلاق سريع"></strong>
+            <span data-en="Ready in days" data-ar="جاهز في أيام"></span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <!-- ══════════════════════════════════════
+       CORE SERVICES — 3 PILLARS
+  ══════════════════════════════════════ -->
+  <section class="section mgi-core-section">
     <div class="container">
-      <h2 data-en="Participant Testimonials" data-ar="آراء المشاركين"></h2>
-      <div class="grid-2">
-        <article class="card"><p data-en="The curriculum was practical and directly relevant to my corporate credit responsibilities." data-ar="كان المحتوى التدريبي عملياً ومرتبطاً بشكل مباشر بمهامي في الائتمان المؤسسي."></p><p class="muted">— Senior Credit Analyst</p></article>
-        <article class="card"><p data-en="The live sessions and instructor access helped me apply risk frameworks immediately at work." data-ar="أسهمت المحاضرات المباشرة وإمكانية التواصل مع المدرب في تطبيق أطر إدارة المخاطر مباشرة في العمل."></p><p class="muted">— Portfolio Manager</p></article>
-        <article class="card"><p data-en="A refined bilingual learning experience with clear structure and measurable outcomes." data-ar="تجربة تعليمية ثنائية اللغة بأسلوب مؤسسي واضح ومخرجات قابلة للقياس."></p><p class="muted">— Operations Lead</p></article>
-        <article class="card"><p data-en="The program strengthened my strategic communication and decision quality in cross-functional business projects." data-ar="عزّز البرنامج جودة اتخاذ القرار ومهارات التواصل الاستراتيجي في المشاريع متعددة التخصصات."></p><p class="muted">— FinTech Product Specialist</p></article>
+      <span class="section-label fade-up" data-en="What MGI Does" data-ar="ما تقدمه MGI"></span>
+      <h2 class="fade-up delay-100"
+          data-en="Three Ways We Help You Win"
+          data-ar="ثلاثة طرق نساعدك بها للنجاح"></h2>
+      <p class="muted fade-up delay-200" style="max-width:58ch;margin-bottom:0;"
+         data-en="MGI is a US-based company operating across three business lines — each built on the same commitment to professionalism, execution, and results."
+         data-ar="MGI شركة أمريكية تعمل عبر ثلاثة خطوط عمل — كل واحدة مبنية على نفس الالتزام بالاحترافية والتنفيذ والنتائج."></p>
+      <div class="mgi-core-grid">
+
+        <!-- Real Estate — Featured -->
+        <article class="mgi-core-card mgi-core-card-featured fade-up delay-100">
+          <div class="mgi-core-featured-ribbon" data-en="Primary Service" data-ar="الخدمة الرئيسية"></div>
+          <div class="mgi-core-icon">🏠</div>
+          <span class="mgi-core-tag" data-en="Real Estate Wholesaling" data-ar="بيع عقارات بالجملة"></span>
+          <h3 class="mgi-core-title"
+              data-en="Off-Market Deal Sourcing & Facilitation"
+              data-ar="البحث عن الصفقات خارج السوق وتسهيلها"></h3>
+          <p class="mgi-core-desc"
+             data-en="We source, evaluate, and connect off-market real estate deals across Florida and Texas with qualified buyers and JV partners. Cash buyers and wholesalers welcome."
+             data-ar="نبحث عن فرص عقارية خارج السوق في فلوريدا وتكساس ونقيّمها ونربطها بالمشترين المؤهلين وشركاء المشاريع المشتركة. مرحباً بالمشترين النقديين والبائعين بالجملة."></p>
+          <ul class="mgi-core-points">
+            <li data-en="Off-market properties — no MLS" data-ar="عقارات خارج السوق — لا MLS"></li>
+            <li data-en="Buyer network: cash, fix-flip, landlords" data-ar="شبكة مشترين: نقدي، إصلاح وبيع، ملاك"></li>
+            <li data-en="Joint venture structuring" data-ar="هيكلة المشاريع المشتركة"></li>
+            <li data-en="Deal platform: app.miamiglobalgroup.com" data-ar="منصة الصفقات: app.miamiglobalgroup.com"></li>
+          </ul>
+          <a class="mgi-core-cta" href="real-estate.html"
+             data-en="Explore Opportunities →" data-ar="استعرض الفرص →"></a>
+        </article>
+
+        <!-- Website Development -->
+        <article class="mgi-core-card fade-up delay-200">
+          <div class="mgi-core-icon">💻</div>
+          <span class="mgi-core-tag" data-en="Website Development" data-ar="تطوير المواقع"></span>
+          <h3 class="mgi-core-title"
+              data-en="Professional Websites, Fully Managed"
+              data-ar="مواقع احترافية، مُدارة بالكامل"></h3>
+          <p class="mgi-core-desc"
+             data-en="Custom websites for businesses — fast launch, mobile-first design, hosting included, and ongoing support every month."
+             data-ar="مواقع مخصصة للشركات — إطلاق سريع وتصميم للجوال أولاً واستضافة مشمولة ودعم مستمر كل شهر."></p>
+          <ul class="mgi-core-points">
+            <li data-en="Business, catalog &amp; e-commerce sites" data-ar="مواقع أعمال وكتالوج وتجارة إلكترونية"></li>
+            <li data-en="Launched in 5–10 days" data-ar="إطلاق في 5–10 أيام"></li>
+            <li data-en="Mobile-first, SEO-ready" data-ar="جوال أولاً، جاهز لـ SEO"></li>
+            <li data-en="Monthly management included" data-ar="إدارة شهرية مشمولة"></li>
+          </ul>
+          <a class="mgi-core-cta" href="#services"
+             data-en="View Web Solutions →" data-ar="استعرض حلول الويب →"></a>
+        </article>
+
+        <!-- Training Academy -->
+        <article class="mgi-core-card fade-up delay-300">
+          <div class="mgi-core-icon">🎓</div>
+          <span class="mgi-core-tag" data-en="Training Academy" data-ar="أكاديمية التدريب"></span>
+          <h3 class="mgi-core-title"
+              data-en="Professional Certification Programs"
+              data-ar="برامج الشهادات المهنية"></h3>
+          <p class="mgi-core-desc"
+             data-en="US-issued professional diplomas in banking, business, digital marketing, IT, and more — delivered live online from Miami, Florida."
+             data-ar="دبلومات مهنية صادرة من الولايات المتحدة في المصرفية والأعمال والتسويق الرقمي وتقنية المعلومات والمزيد — تُقدَّم مباشرة عبر الإنترنت من ميامي، فلوريدا."></p>
+          <ul class="mgi-core-points">
+            <li data-en="US-registered institute" data-ar="معهد مسجّل في الولايات المتحدة"></li>
+            <li data-en="Live online delivery" data-ar="تقديم مباشر عبر الإنترنت"></li>
+            <li data-en="Banking, business, IT &amp; more" data-ar="مصرفية وأعمال وتقنية معلومات والمزيد"></li>
+            <li data-en="Internationally recognized certificates" data-ar="شهادات معترف بها دولياً"></li>
+          </ul>
+          <a class="mgi-core-cta" href="training.html"
+             data-en="View Programs →" data-ar="استعرض البرامج →"></a>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <section class="section section-soft">
-    <div class="container grid-3">
-      <article class="card feature-card">
-        <h3 data-en="Executive Learning Experience" data-ar="تجربة تعليمية تنفيذية"></h3>
-        <p data-en="Luxury-modern visual curriculum design with practical outcomes for business, finance, marketing, and nutrition tracks." data-ar="تصميم أكاديمي حديث بمخرجات عملية قابلة للتطبيق في مسارات الأعمال والتمويل والتسويق والتغذية."></p>
-      </article>
-      <article class="card feature-card">
-        <h3 data-en="Bilingual Delivery" data-ar="تقديم ثنائي اللغة"></h3>
-        <p data-en="All core information is available in English and Arabic with smooth RTL support." data-ar="تتوفر جميع المعلومات الأساسية باللغتين العربية والإنجليزية مع دعم متكامل للاتجاه من اليمين إلى اليسار."></p>
-      </article>
-      <article class="card feature-card">
-        <h3 data-en="Career-Ready Frameworks" data-ar="أطر مهنية جاهزة للتطبيق"></h3>
-        <p data-en="Focused on decision quality, analysis discipline, and strategy communication." data-ar="يرتكز المحتوى على جودة القرار، وانضباط التحليل، والتواصل الاستراتيجي."></p>
-      </article>
+  <!-- ══════════════════════════════════════
+       STATS STRIP
+  ══════════════════════════════════════ -->
+  <div class="ws-stats-strip">
+    <div class="container ws-stats-inner">
+      <div class="ws-stat-item fade-up delay-100">
+        <strong>50+</strong>
+        <span data-en="Websites Delivered" data-ar="موقع مُسلَّم"></span>
+      </div>
+      <div class="ws-stat-divider"></div>
+      <div class="ws-stat-item fade-up delay-200">
+        <strong>5</strong>
+        <span data-en="Days Avg. Launch Time" data-ar="أيام متوسط وقت الإطلاق"></span>
+      </div>
+      <div class="ws-stat-divider"></div>
+      <div class="ws-stat-item fade-up delay-300">
+        <strong>100%</strong>
+        <span data-en="Mobile Responsive" data-ar="متوافق مع الجوال"></span>
+      </div>
+      <div class="ws-stat-divider"></div>
+      <div class="ws-stat-item fade-up delay-400">
+        <strong>US</strong>
+        <span data-en="Registered Company" data-ar="شركة مسجّلة"></span>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <section class="section">
+  <!-- ══════════════════════════════════════
+       VALUE PROPOSITION
+  ══════════════════════════════════════ -->
+  <section class="section ws-value-section">
     <div class="container">
-      <h2 data-en="Miami Location" data-ar="موقع ميامي"></h2>
-      <p class="muted" data-en="2125 Biscayne Blvd, Miami, Florida 33137" data-ar="2125 Biscayne Blvd, Miami, Florida 33137"></p>
-      <div class="map-wrap">
-        <iframe title="MGI Miami location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=2125+Biscayne+Blvd+Miami+FL+33137&output=embed"></iframe>
+      <div class="ws-value-headline fade-up">
+        <span class="section-label" data-en="What We Do" data-ar="ما نفعله"></span>
+        <h2 data-en="We build all types of websites — from simple business websites to product catalogs and full e-commerce platforms."
+            data-ar="نبني جميع أنواع المواقع — من مواقع الأعمال البسيطة إلى كتالوجات المنتجات ومنصات التجارة الإلكترونية الكاملة."></h2>
+      </div>
+      <div class="ws-value-grid">
+        <div class="ws-value-item fade-up delay-100">
+          <span class="ws-value-icon">⚡</span>
+          <h3 data-en="Fast Delivery" data-ar="تسليم سريع"></h3>
+          <p data-en="Most websites are ready in 5–10 days. We work efficiently without ever cutting corners on quality."
+             data-ar="معظم المواقع جاهزة في 5–10 أيام. نعمل بكفاءة دون التنازل عن الجودة."></p>
+        </div>
+        <div class="ws-value-item fade-up delay-200">
+          <span class="ws-value-icon">📱</span>
+          <h3 data-en="Mobile-First Design" data-ar="تصميم للجوال أولاً"></h3>
+          <p data-en="Every website we build looks and works perfectly on phones, tablets, and desktops — always."
+             data-ar="كل موقع نبنيه يبدو ويعمل بشكل مثالي على الهواتف والأجهزة اللوحية وأجهزة الكمبيوتر."></p>
+        </div>
+        <div class="ws-value-item fade-up delay-300">
+          <span class="ws-value-icon">🔧</span>
+          <h3 data-en="Fully Managed" data-ar="مُدار بالكامل"></h3>
+          <p data-en="Hosting, updates, security, backups, and support — all included. Nothing for you to worry about."
+             data-ar="الاستضافة والتحديثات والأمان والنسخ الاحتياطية والدعم — كل شيء مشمول. لا شيء يقلقك."></p>
+        </div>
+        <div class="ws-value-item fade-up delay-200">
+          <span class="ws-value-icon">🎨</span>
+          <h3 data-en="Custom Design" data-ar="تصميم مخصص"></h3>
+          <p data-en="No templates, no generic layouts. Every website is designed specifically around your brand and your goals."
+             data-ar="لا قوالب جاهزة، لا تصاميم عامة. كل موقع مصمم خصيصاً حول علامتك التجارية وأهدافك."></p>
+        </div>
+        <div class="ws-value-item fade-up delay-300">
+          <span class="ws-value-icon">🔍</span>
+          <h3 data-en="SEO Ready" data-ar="جاهز للـ SEO"></h3>
+          <p data-en="Every website we deliver is structured to rank on Google — with clean code, fast loading, and SEO best practices built in."
+             data-ar="كل موقع نسلمه مبني للظهور على Google — بكود نظيف وتحميل سريع وممارسات SEO مدمجة."></p>
+        </div>
+        <div class="ws-value-item fade-up delay-400">
+          <span class="ws-value-icon">💬</span>
+          <h3 data-en="Direct Communication" data-ar="تواصل مباشر"></h3>
+          <p data-en="You talk directly to the team building your website — no account managers, no delays, no confusion."
+             data-ar="تتحدث مباشرة مع الفريق الذي يبني موقعك — لا وسطاء، لا تأخير، لا تعقيد."></p>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- ══════════════════════════════════════
+       SUMMER OFFER
+  ══════════════════════════════════════ -->
+  <section class="ws-summer-section">
+    <div class="ws-summer-glow"></div>
+    <div class="container ws-summer-inner">
+      <div class="ws-summer-text fade-up">
+        <div class="ws-summer-tag">
+          <span>☀️</span>
+          <span data-en="Limited Time — Early Summer 2025" data-ar="عرض محدود — أوائل صيف 2025"></span>
+        </div>
+        <h2 data-en="Early Summer Offer: 20% Off Setup" data-ar="عرض أوائل الصيف: خصم 20% على الإعداد"></h2>
+        <p data-en="Sign up before June 30, 2025 and get 20% off your website setup fee. This applies to all service types — business websites, e-commerce, catalog sites, and redesigns."
+           data-ar="سجّل قبل 30 يونيو 2025 واحصل على خصم 20% على رسوم إعداد موقعك. يُطبّق على جميع أنواع الخدمات — مواقع الأعمال والتجارة الإلكترونية والكتالوجات وإعادة التصميم."></p>
+        <ul class="ws-summer-bullets">
+          <li data-en="✓ Valid for new projects signed before June 30, 2025" data-ar="✓ صالح للمشاريع الجديدة المُوقَّعة قبل 30 يونيو 2025"></li>
+          <li data-en="✓ Applies to all website service types" data-ar="✓ يُطبّق على جميع أنواع خدمات المواقع"></li>
+          <li data-en="✓ No code needed — discount applied automatically" data-ar="✓ لا كود مطلوب — الخصم يُطبَّق تلقائياً"></li>
+          <li data-en="✓ Limited to first 10 new clients" data-ar="✓ محدود بأول 10 عملاء جدد"></li>
+        </ul>
+        <a class="btn ws-summer-btn" href="contact.html"
+           data-en="Claim Your 20% Discount" data-ar="احجز خصم الـ 20%"></a>
+      </div>
+      <div class="ws-summer-card fade-up delay-200">
+        <div class="ws-summer-countdown-label" data-en="Offer Ends" data-ar="ينتهي العرض"></div>
+        <div class="ws-summer-date">June 30, 2025</div>
+        <div class="ws-summer-divider"></div>
+        <div class="ws-summer-saving">
+          <div class="ws-saving-row ws-saving-highlight">
+            <span data-en="Your discount" data-ar="خصمك"></span>
+            <strong class="ws-saving-price" data-en="20% Off Setup" data-ar="خصم 20% على الإعداد"></strong>
+          </div>
+        </div>
+        <a class="btn btn-gold" href="contact.html"
+           style="width:100%;justify-content:center;margin-top:1.25rem;"
+           data-en="Get the Discount" data-ar="احصل على الخصم"></a>
+        <p class="ws-summer-note" data-en="Limited slots — first 10 new clients only."
+           data-ar="مقاعد محدودة — أول 10 عملاء جدد فقط."></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════ -->
+  <section class="section section-soft" id="services">
+    <div class="container">
+      <span class="section-label fade-up"
+            data-en="What We Build" data-ar="ما نبنيه"></span>
+      <h2 class="fade-up delay-100"
+          data-en="Our Website Services"
+          data-ar="خدمات المواقع لدينا"></h2>
+      <p class="muted fade-up delay-200" style="max-width:62ch;margin-bottom:0;"
+         data-en="Every website we deliver is built to a professional standard — clean code, fast loading, and designed to convert visitors into customers."
+         data-ar="كل موقع نسلمه مبني وفق معايير احترافية — كود نظيف وتحميل سريع ومصمم لتحويل الزوار إلى عملاء."></p>
+
+      <div class="ws-services-grid-v2">
+
+        <!-- Business Websites -->
+        <article class="ws-svc-card fade-up delay-100">
+          <div class="ws-svc-top">
+            <div class="ws-svc-icon-wrap">🏢</div>
+            <div>
+              <span class="ws-svc-tag" data-en="Most Popular" data-ar="الأكثر طلباً"></span>
+              <h3 data-en="Business Website" data-ar="موقع أعمال"></h3>
+            </div>
+          </div>
+          <p data-en="A clean, fast, and professional website that presents your business at its best — built to attract clients and build trust from the first click."
+             data-ar="موقع نظيف وسريع واحترافي يعرض عملك بأفضل صورة — مبني لاستقطاب العملاء وبناء الثقة من النقرة الأولى."></p>
+          <ul class="ws-svc-features">
+            <li data-en="Up to 8 custom-designed pages" data-ar="حتى 8 صفحات مصممة خصيصاً"></li>
+            <li data-en="Contact form & WhatsApp integration" data-ar="نموذج تواصل وتكامل واتساب"></li>
+            <li data-en="Google Maps & location embed" data-ar="خريطة Google وتضمين الموقع"></li>
+            <li data-en="Social media links & icons" data-ar="روابط وأيقونات وسائل التواصل"></li>
+            <li data-en="SEO-optimized structure" data-ar="هيكل محسَّن لمحركات البحث"></li>
+            <li data-en="Mobile-first responsive design" data-ar="تصميم متجاوب يبدأ من الجوال"></li>
+            <li data-en="SSL certificate & security setup" data-ar="شهادة SSL وإعداد الأمان"></li>
+          </ul>
+          <a class="btn btn-gold" href="contact.html" style="width:100%;justify-content:center;"
+             data-en="Get a Quote" data-ar="اطلب عرض سعر"></a>
+        </article>
+
+        <!-- Product / Catalog -->
+        <article class="ws-svc-card fade-up delay-200">
+          <div class="ws-svc-top">
+            <div class="ws-svc-icon-wrap">🛍️</div>
+            <div>
+              <span class="ws-svc-tag ws-svc-tag-alt" data-en="Product Showcase" data-ar="عرض المنتجات"></span>
+              <h3 data-en="Product / Catalog Website" data-ar="موقع منتجات وكتالوج"></h3>
+            </div>
+          </div>
+          <p data-en="Showcase your full product or service range in a structured, visually rich catalog — ideal for importers, distributors, wholesalers, and service companies."
+             data-ar="اعرض مجموعة منتجاتك أو خدماتك كاملةً في كتالوج منظم وغني بصرياً — مثالي للمستوردين والموزعين وشركات الجملة وشركات الخدمات."></p>
+          <ul class="ws-svc-features">
+            <li data-en="Unlimited product/service listings" data-ar="عروض منتجات وخدمات غير محدودة"></li>
+            <li data-en="Category & filter navigation" data-ar="تصفح بالفئات والفلاتر"></li>
+            <li data-en="Product image galleries" data-ar="معارض صور المنتجات"></li>
+            <li data-en="Inquiry form per product" data-ar="نموذج استفسار لكل منتج"></li>
+            <li data-en="WhatsApp order integration" data-ar="تكامل طلبات واتساب"></li>
+            <li data-en="Multi-language support" data-ar="دعم متعدد اللغات"></li>
+            <li data-en="Search functionality" data-ar="وظيفة البحث"></li>
+          </ul>
+          <a class="btn btn-primary" href="contact.html" style="width:100%;justify-content:center;"
+             data-en="Get a Quote" data-ar="اطلب عرض سعر"></a>
+        </article>
+
+        <!-- E-commerce -->
+        <article class="ws-svc-card ws-svc-card-featured fade-up delay-300">
+          <div class="ws-svc-featured-badge" data-en="Full Store" data-ar="متجر متكامل"></div>
+          <div class="ws-svc-top">
+            <div class="ws-svc-icon-wrap">🛒</div>
+            <div>
+              <span class="ws-svc-tag ws-svc-tag-gold" data-en="Most Complete" data-ar="الأكثر اكتمالاً"></span>
+              <h3 data-en="E-commerce Website" data-ar="متجر إلكتروني"></h3>
+            </div>
+          </div>
+          <p data-en="A full online store where customers can browse, add to cart, and pay — with everything managed and maintained for you on a monthly basis."
+             data-ar="متجر إلكتروني كامل يتصفحه العملاء ويضيفون للسلة ويدفعون — مع إدارة وصيانة كاملة منا شهرياً."></p>
+          <ul class="ws-svc-features">
+            <li data-en="Full product catalog with variants" data-ar="كتالوج منتجات كامل مع المتغيرات"></li>
+            <li data-en="Secure payment gateway (Stripe, PayPal, local)" data-ar="بوابة دفع آمنة (Stripe وPayPal ومحلي)"></li>
+            <li data-en="Shopping cart & checkout flow" data-ar="سلة التسوق وعملية الدفع"></li>
+            <li data-en="Order management dashboard" data-ar="لوحة تحكم إدارة الطلبات"></li>
+            <li data-en="Inventory tracking" data-ar="تتبع المخزون"></li>
+            <li data-en="Customer accounts & order history" data-ar="حسابات العملاء وسجل الطلبات"></li>
+            <li data-en="Shipping rules & discount codes" data-ar="قواعد الشحن وأكواد الخصم"></li>
+            <li data-en="Analytics & sales reporting" data-ar="التحليلات وتقارير المبيعات"></li>
+          </ul>
+          <a class="btn btn-gold" href="contact.html" style="width:100%;justify-content:center;"
+             data-en="Get a Quote" data-ar="اطلب عرض سعر"></a>
+        </article>
+
+        <!-- Redesign -->
+        <article class="ws-svc-card fade-up delay-400">
+          <div class="ws-svc-top">
+            <div class="ws-svc-icon-wrap">✨</div>
+            <div>
+              <span class="ws-svc-tag ws-svc-tag-alt" data-en="Upgrade" data-ar="ترقية"></span>
+              <h3 data-en="Website Redesign" data-ar="إعادة تصميم الموقع"></h3>
+            </div>
+          </div>
+          <p data-en="Your website is your first impression. If it looks outdated or isn't converting visitors into clients — we'll rebuild it into something that actually works for your business."
+             data-ar="موقعك هو انطباعك الأول. إذا كان يبدو قديماً أو لا يحوّل الزوار إلى عملاء — نعيد بناءه ليعمل فعلاً لصالح عملك."></p>
+          <ul class="ws-svc-features">
+            <li data-en="Full visual redesign from scratch" data-ar="إعادة تصميم بصري كاملة من الصفر"></li>
+            <li data-en="Content migration & restructure" data-ar="نقل المحتوى وإعادة هيكلته"></li>
+            <li data-en="Speed optimization (Google PageSpeed)" data-ar="تحسين السرعة (Google PageSpeed)"></li>
+            <li data-en="SEO audit & on-page fixes" data-ar="تدقيق SEO وإصلاحات الصفحة"></li>
+            <li data-en="Mobile experience overhaul" data-ar="تحسين تجربة الجوال بالكامل"></li>
+            <li data-en="Modern UI/UX with conversion focus" data-ar="واجهة حديثة تركز على التحويل"></li>
+            <li data-en="Same domain — zero downtime" data-ar="نفس النطاق — بدون توقف"></li>
+          </ul>
+          <a class="btn btn-primary" href="contact.html" style="width:100%;justify-content:center;"
+             data-en="Get a Quote" data-ar="اطلب عرض سعر"></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PROCESS — HOW IT WORKS
+  ══════════════════════════════════════ -->
+  <section class="section ws-process-section">
+    <div class="container">
+      <span class="section-label fade-up"
+            data-en="Our Process" data-ar="طريقة عملنا"></span>
+      <h2 class="fade-up delay-100"
+          data-en="From First Call to Live Website in Days"
+          data-ar="من أول مكالمة إلى موقع حي في أيام"></h2>
+      <p class="muted fade-up delay-200" style="max-width:60ch;margin-bottom:0;"
+         data-en="We keep the process simple, transparent, and fast. Here's exactly how we work."
+         data-ar="نبقي العملية بسيطة وشفافة وسريعة. هذا هو بالضبط كيف نعمل."></p>
+      <div class="ws-process-grid">
+        <div class="ws-process-step fade-up delay-100">
+          <div class="ws-step-number">01</div>
+          <div class="ws-step-icon">💬</div>
+          <h3 data-en="Discovery Call" data-ar="مكالمة الاستكشاف"></h3>
+          <p data-en="We talk about your business, your goals, and what you need from your website. No obligation — just a clear conversation."
+             data-ar="نتحدث عن عملك وأهدافك وما تحتاجه من موقعك. بدون التزام — فقط حوار واضح."></p>
+        </div>
+        <div class="ws-process-arrow">→</div>
+        <div class="ws-process-step fade-up delay-200">
+          <div class="ws-step-number">02</div>
+          <div class="ws-step-icon">🎨</div>
+          <h3 data-en="Design & Approval" data-ar="التصميم والموافقة"></h3>
+          <p data-en="We design your website and share it with you. You review, give feedback, and we refine until it's exactly right."
+             data-ar="نصمم موقعك ونشاركك إياه. تراجعه وتعطينا ملاحظاتك ونحسّنه حتى يكون صحيحاً تماماً."></p>
+        </div>
+        <div class="ws-process-arrow">→</div>
+        <div class="ws-process-step fade-up delay-300">
+          <div class="ws-step-number">03</div>
+          <div class="ws-step-icon">⚙️</div>
+          <h3 data-en="Build & Test" data-ar="البناء والاختبار"></h3>
+          <p data-en="We build the full website, test it on all devices, and make sure everything works perfectly before launch."
+             data-ar="نبني الموقع الكامل ونختبره على جميع الأجهزة ونتأكد من أن كل شيء يعمل بشكل مثالي قبل الإطلاق."></p>
+        </div>
+        <div class="ws-process-arrow">→</div>
+        <div class="ws-process-step fade-up delay-400">
+          <div class="ws-step-number">04</div>
+          <div class="ws-step-icon">🚀</div>
+          <h3 data-en="Launch & Support" data-ar="الإطلاق والدعم"></h3>
+          <p data-en="Your website goes live. We handle hosting, security, and updates — and we're here whenever you need us."
+             data-ar="موقعك يُطلق. نتولى الاستضافة والأمان والتحديثات — ونحن هنا متى احتجتنا."></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       MONTHLY MODEL
+  ══════════════════════════════════════ -->
+  <section class="section ws-monthly-section">
+    <div class="container">
+      <div class="ws-monthly-inner">
+
+        <div class="ws-monthly-text fade-up">
+          <span class="section-label"
+                data-en="How It Works" data-ar="كيف يعمل"></span>
+          <h2 data-en="Simple Monthly Model — No Large Upfront Cost"
+              data-ar="نموذج شهري بسيط — بدون دفعة أولى كبيرة"></h2>
+          <p data-en="Our service is built on a simple monthly model, so you don't need a large upfront investment. We handle everything — design, hosting, updates, and ongoing support — for one predictable monthly fee."
+             data-ar="خدمتنا مبنية على نموذج شهري بسيط، لا تحتاج استثماراً أولياً كبيراً. نتولى كل شيء — التصميم والاستضافة والتحديثات والدعم المستمر — مقابل رسوم شهرية ثابتة."></p>
+          <ul class="ws-monthly-list">
+            <li data-en="✓ Low setup fee — paid once" data-ar="✓ رسوم إعداد منخفضة — تُدفع مرة واحدة"></li>
+            <li data-en="✓ Affordable monthly subscription" data-ar="✓ اشتراك شهري ميسور التكلفة"></li>
+            <li data-en="✓ Design & development included" data-ar="✓ التصميم والتطوير مشمولان"></li>
+            <li data-en="✓ Hosting & domain management" data-ar="✓ إدارة الاستضافة والنطاق"></li>
+            <li data-en="✓ Regular content updates" data-ar="✓ تحديثات منتظمة للمحتوى"></li>
+            <li data-en="✓ Security monitoring & backups" data-ar="✓ مراقبة الأمان والنسخ الاحتياطي"></li>
+            <li data-en="✓ WhatsApp & email support" data-ar="✓ دعم عبر واتساب والبريد الإلكتروني"></li>
+          </ul>
+          <a class="btn btn-gold" href="contact.html" style="margin-top:1.5rem;display:inline-flex;"
+             data-en="Get Started Today" data-ar="ابدأ اليوم"></a>
+        </div>
+
+        <div class="ws-monthly-visual fade-up delay-200">
+          <div class="ws-plan-card">
+            <div class="ws-plan-badge" data-en="Monthly Plan" data-ar="الخطة الشهرية"></div>
+            <div class="ws-plan-price" data-en="Flexible Pricing" data-ar="أسعار مرنة"></div>
+            <p data-en="Tailored to your business size and scope. Contact us for a transparent, itemized quote — no surprises."
+               data-ar="مصمم حسب حجم عملك ونطاقه. تواصل معنا للحصول على عرض سعر شفاف ومفصّل — بدون مفاجآت."></p>
+            <ul class="ws-plan-features">
+              <li data-en="Professional custom design" data-ar="تصميم مخصص احترافي"></li>
+              <li data-en="Fast 5–10 day launch" data-ar="إطلاق سريع 5–10 أيام"></li>
+              <li data-en="Hosting & SSL included" data-ar="استضافة وSSL مشمولة"></li>
+              <li data-en="Monthly updates & support" data-ar="تحديثات ودعم شهري"></li>
+              <li data-en="No long-term lock-in" data-ar="لا قيود طويلة المدى"></li>
+            </ul>
+            <a class="btn btn-gold" href="contact.html"
+               style="width:100%;justify-content:center;margin-top:1rem;"
+               data-en="Request a Free Quote" data-ar="اطلب عرض سعر مجاني"></a>
+            <p style="text-align:center;font-size:.78rem;color:rgba(200,216,234,.7);margin:.75rem 0 0;"
+               data-en="No obligation — we respond within 24 hours"
+               data-ar="بدون التزام — نرد خلال 24 ساعة"></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       WHY CHOOSE MGI
+  ══════════════════════════════════════ -->
+  <section class="section section-soft ws-why-section">
+    <div class="container">
+      <span class="section-label fade-up"
+            data-en="Why MGI" data-ar="لماذا MGI"></span>
+      <h2 class="fade-up delay-100"
+          data-en="We're Different From Other Agencies"
+          data-ar="نحن مختلفون عن الوكالات الأخرى"></h2>
+      <div class="ws-why-grid">
+        <div class="ws-why-item fade-up delay-100">
+          <div class="ws-why-vs">
+            <div class="ws-why-col ws-why-them">
+              <span class="ws-why-col-label" data-en="Other Agencies" data-ar="الوكالات الأخرى"></span>
+              <ul>
+                <li data-en="Months to launch" data-ar="أشهر للإطلاق"></li>
+                <li data-en="Large upfront fees" data-ar="رسوم مسبقة كبيرة"></li>
+                <li data-en="Confusing contracts" data-ar="عقود معقدة"></li>
+                <li data-en="Hard to reach after launch" data-ar="صعب التواصل بعد الإطلاق"></li>
+                <li data-en="Generic template designs" data-ar="تصاميم قوالب عامة"></li>
+              </ul>
+            </div>
+            <div class="ws-why-col ws-why-us">
+              <span class="ws-why-col-label" data-en="MGI" data-ar="MGI"></span>
+              <ul>
+                <li data-en="Live in 5–10 days" data-ar="حي في 5–10 أيام"></li>
+                <li data-en="Low setup, simple monthly" data-ar="إعداد منخفض، شهري بسيط"></li>
+                <li data-en="Clear, simple agreements" data-ar="اتفاقيات واضحة وبسيطة"></li>
+                <li data-en="WhatsApp support always available" data-ar="دعم واتساب متاح دائماً"></li>
+                <li data-en="100% custom-built for you" data-ar="مبني 100% خصيصاً لك"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       WHAT WE HANDLE
+  ══════════════════════════════════════ -->
+  <section class="section ws-handles-section">
+    <div class="container">
+      <div class="ws-handles-header">
+        <span class="section-label fade-up"
+              data-en="Full Service" data-ar="خدمة متكاملة"></span>
+        <h2 class="fade-up delay-100"
+            data-en="We Handle Everything For You"
+            data-ar="نتولى كل شيء نيابةً عنك"></h2>
+        <p class="muted fade-up delay-200" style="max-width:58ch;margin-bottom:0;"
+           data-en="You focus on your business. We take care of the entire technical side — from launch day through every month that follows."
+           data-ar="أنت تركز على عملك. نحن نهتم بالجانب التقني بالكامل — من يوم الإطلاق وطوال كل شهر يليه."></p>
+      </div>
+      <div class="ws-handles-grid">
+        <div class="ws-handle-item fade-up delay-100">
+          <span class="ws-handle-icon">🎨</span>
+          <div>
+            <strong data-en="Design" data-ar="التصميم"></strong>
+            <p data-en="Custom professional design built around your brand identity, colors, and goals."
+               data-ar="تصميم احترافي مخصص مبني حول هوية علامتك التجارية وألوانها وأهدافها."></p>
+          </div>
+        </div>
+        <div class="ws-handle-item fade-up delay-200">
+          <span class="ws-handle-icon">⚙️</span>
+          <div>
+            <strong data-en="Development" data-ar="التطوير"></strong>
+            <p data-en="Clean, fast code built for performance — compatible with all browsers and devices."
+               data-ar="كود نظيف وسريع مبني للأداء — متوافق مع جميع المتصفحات والأجهزة."></p>
+          </div>
+        </div>
+        <div class="ws-handle-item fade-up delay-300">
+          <span class="ws-handle-icon">🌐</span>
+          <div>
+            <strong data-en="Hosting & Domain" data-ar="الاستضافة والنطاق"></strong>
+            <p data-en="Fast, secure, and reliable hosting — plus domain setup and renewal management."
+               data-ar="استضافة سريعة وآمنة وموثوقة — بالإضافة إلى إعداد النطاق وإدارة تجديده."></p>
+          </div>
+        </div>
+        <div class="ws-handle-item fade-up delay-100">
+          <span class="ws-handle-icon">🔄</span>
+          <div>
+            <strong data-en="Content Updates" data-ar="تحديثات المحتوى"></strong>
+            <p data-en="Need to change a price, update a photo, or add a new section? Just send us a message."
+               data-ar="تريد تغيير سعر أو تحديث صورة أو إضافة قسم جديد؟ فقط أرسل لنا رسالة."></p>
+          </div>
+        </div>
+        <div class="ws-handle-item fade-up delay-200">
+          <span class="ws-handle-icon">🛡️</span>
+          <div>
+            <strong data-en="Security & Backups" data-ar="الأمان والنسخ الاحتياطي"></strong>
+            <p data-en="SSL, firewall, malware monitoring, and daily backups — your website is always protected."
+               data-ar="SSL وجدار الحماية ومراقبة البرامج الضارة والنسخ الاحتياطية اليومية — موقعك محمي دائماً."></p>
+          </div>
+        </div>
+        <div class="ws-handle-item fade-up delay-300">
+          <span class="ws-handle-icon">💬</span>
+          <div>
+            <strong data-en="Ongoing Support" data-ar="الدعم المستمر"></strong>
+            <p data-en="Direct WhatsApp and email support — you always have someone to reach when something comes up."
+               data-ar="دعم مباشر عبر واتساب والبريد الإلكتروني — دائماً هناك من تتواصل معه عند الحاجة."></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FINAL CTA
+  ══════════════════════════════════════ -->
+  <section class="ws-final-cta">
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="ws-final-cta-summer fade-up"
+           data-en="☀️ Early Summer Offer — 20% Off Setup — Ends June 30"
+           data-ar="☀️ عرض أوائل الصيف — خصم 20% على الإعداد — ينتهي 30 يونيو"></div>
+      <h2 class="fade-up delay-100"
+          data-en="Start Your Website Today"
+          data-ar="أطلق موقعك اليوم"></h2>
+      <p class="lead fade-up delay-200"
+         data-en="Tell us about your business and we'll build you a website that works — fast, professional, and fully managed every month."
+         data-ar="أخبرنا عن عملك وسنبني لك موقعاً يعمل — سريعاً واحترافياً ومُداراً بالكامل كل شهر."></p>
+      <div class="cta-group fade-up delay-300">
+        <a class="btn btn-primary" href="contact.html"
+           data-en="Get Your Website" data-ar="احصل على موقعك"></a>
+        <a class="btn btn-secondary" href="https://wa.me/13056290491"
+           target="_blank" rel="noopener"
+           data-en="Chat on WhatsApp" data-ar="تحدث على واتساب"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       TRAINING TEASER
+  ══════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="ws-training-teaser fade-up">
+        <div class="ws-training-teaser-icon">🎓</div>
+        <div class="ws-training-teaser-body">
+          <span class="section-label"
+                data-en="Also from MGI" data-ar="أيضاً من MGI"></span>
+          <h3 data-en="MGI Training Academy — Professional Certification Programs"
+              data-ar="MGI Training Academy — برامج الشهادات المهنية"></h3>
+          <p data-en="US-issued professional diplomas in banking, business, digital marketing, IT, healthcare, and project management. Live online delivery. Miami, Florida."
+             data-ar="دبلومات مهنية صادرة من الولايات المتحدة في المصرفية والأعمال والتسويق الرقمي وتقنية المعلومات والرعاية الصحية وإدارة المشاريع. تقديم مباشر عبر الإنترنت. ميامي، فلوريدا."></p>
+          <a class="btn btn-primary" href="training.html"
+             data-en="Explore Training Programs" data-ar="استعرض برامج التدريب"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer footer-enhanced">
   <div class="container">
-    <p data-en="Miami Global Investments Group LLC • Education & Professional Development Division" data-ar="Miami Global Investments Group LLC • قسم التعليم والتطوير المهني"></p>
-    <p><a href="mailto:info@miamiglobalgroup.com">info@miamiglobalgroup.com</a></p>
-    <p>© <span id="year"></span></p>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/svg/seal.svg" class="seal" alt="MGI seal">
+        <strong>MGI</strong>
+        <small>Miami Global Investments Group LLC</small>
+        <span class="footer-us-bar"></span>
+        <p data-en="Professional website design, development, and management — and professional training certification programs. Miami, Florida."
+           data-ar="تصميم وتطوير وإدارة مواقع الويب الاحترافية — وبرامج الشهادات التدريبية المهنية. ميامي، فلوريدا."></p>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Website Services" data-ar="خدمات المواقع"></h4>
+        <ul>
+          <li><a href="index.html#services" data-en="Business Websites" data-ar="مواقع الأعمال"></a></li>
+          <li><a href="index.html#services" data-en="Product Catalogs" data-ar="كتالوجات المنتجات"></a></li>
+          <li><a href="index.html#services" data-en="E-commerce Stores" data-ar="متاجر إلكترونية"></a></li>
+          <li><a href="index.html#services" data-en="Website Redesign" data-ar="إعادة التصميم"></a></li>
+          <li><a href="contact.html" data-en="Get a Quote" data-ar="اطلب عرض سعر"></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Contact" data-ar="التواصل"></h4>
+        <p>2125 Biscayne Blvd, Ste 204<br>Miami, FL 33137, USA</p>
+        <p><a href="mailto:info@miamiglobalgroup.com">info@miamiglobalgroup.com</a></p>
+        <p><a href="https://wa.me/13056290491" target="_blank" rel="noopener">+1 305 629 0491</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Miami Global Investments Group LLC. All rights reserved.</span>
+    </div>
   </div>
 </footer>
+
 <img src="assets/svg/seal.svg" class="watermark-seal" alt="">
-<a id="whatsapp-float" class="whatsapp-float" href="https://wa.me/13056290491" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><img src="assets/svg/whatsapp.svg" alt=""></a>
+<a id="whatsapp-float" class="whatsapp-float" href="https://wa.me/13056290491" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <img src="assets/svg/whatsapp.svg" alt="">
+</a>
+
 <script src="assets/js/i18n.js"></script>
-<script src="assets/js/countdown.js"></script>
 <script src="assets/js/main.js"></script>
-<script src="assets/js/hero-variants.js"></script>
+<script src="assets/js/animations.js"></script>
 </body>
 </html>

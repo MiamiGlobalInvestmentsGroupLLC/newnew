@@ -3,13 +3,13 @@
 
   function getLabels(lang) {
     return lang === 'ar'
-      ? { days: 'يوم', hours: 'ساعة', minutes: 'دقيقة', seconds: 'ثانية', ended: 'انتهت فترة السعر التشجيعي' }
-      : { days: 'Days', hours: 'Hours', minutes: 'Minutes', seconds: 'Seconds', ended: 'Offer Ended' };
+      ? { days: 'يوم', hours: 'ساعة', minutes: 'دقيقة', seconds: 'ثانية' }
+      : { days: 'Days', hours: 'Hours', minutes: 'Minutes', seconds: 'Seconds' };
   }
 
   function paintCountdown(el, diff, labels) {
     if (diff <= 0) {
-      el.innerHTML = `<span class="offer-ended">${labels.ended}</span>`;
+      el.innerHTML = '';
       return;
     }
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -30,19 +30,11 @@
     document.querySelectorAll('[data-price-block]').forEach((block) => {
       const current = block.querySelector('[data-price-current]');
       const original = block.querySelector('[data-price-original]');
+      if (!current || !original) return;
+      current.textContent = '$60';
+      original.textContent = `${label}: $350`;
       const ended = block.querySelector('[data-offer-ended]');
-      if (!current || !original || !ended) return;
-      if (isExpired) {
-        current.textContent = '$350';
-        original.textContent = '';
-        ended.textContent = lang === 'ar' ? 'انتهت فترة السعر التشجيعي' : 'Offer Ended';
-        ended.hidden = false;
-      } else {
-        current.textContent = '$60';
-        original.textContent = `${label}: $350`;
-        
-        ended.hidden = true;
-      }
+      if (ended) ended.hidden = true;
     });
   }
 
