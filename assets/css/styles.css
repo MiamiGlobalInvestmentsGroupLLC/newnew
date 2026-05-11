@@ -2902,7 +2902,7 @@ body.ar .nav-toggle {
    MGI CORE SERVICES SECTION (homepage)
    ================================================================ */
 .mgi-core-section {
-  padding: 4rem 0 3rem;
+  padding: 3rem 0 3rem;
   background: #fff;
 }
 .mgi-core-section .section-label { margin-bottom: .5rem; display: block; }
