@@ -1,0 +1,83 @@
+backend:
+  name: github
+  repo: MiamiGlobalInvestmentsGroupLLC/Website
+  branch: main
+publish_mode: editorial_workflow
+media_folder: assets/uploads
+public_folder: /assets/uploads
+site_url: https://mgiglobalgroup.com
+display_url: https://mgiglobalgroup.com
+collections:
+  - name: services
+    label: Services
+    files:
+      - label: Service Catalog
+        name: service_catalog
+        file: content/services.json
+        format: json
+        fields:
+          - label: Services
+            name: services
+            widget: list
+            fields:
+              - {label: Slug, name: slug, widget: string}
+              - {label: Title, name: title, widget: string}
+              - {label: Category, name: category, widget: string}
+              - {label: Summary, name: summary, widget: text}
+  - name: insights
+    label: Insights
+    files:
+      - label: Insights Library
+        name: insights_library
+        file: content/insights.json
+        format: json
+        fields:
+          - {label: Categories, name: categories, widget: list}
+          - label: Articles
+            name: articles
+            widget: list
+            fields:
+              - {label: Slug, name: slug, widget: string}
+              - {label: Title, name: title, widget: string}
+              - {label: Category, name: category, widget: string}
+              - {label: Summary, name: summary, widget: text}
+              - {label: Body, name: body, widget: markdown}
+              - {label: Published, name: published, widget: boolean, default: false}
+  - name: proof
+    label: Verified Proof
+    files:
+      - label: Case Studies
+        name: case_studies
+        file: content/case-studies.json
+        format: json
+        fields:
+          - label: Case Studies
+            name: caseStudies
+            widget: list
+            fields:
+              - {label: Client Type, name: clientType, widget: string}
+              - {label: Industry, name: industry, widget: string}
+              - {label: Challenge, name: challenge, widget: text}
+              - {label: Team Deployed, name: teamDeployed, widget: string}
+              - {label: Workflow, name: workflow, widget: text}
+              - {label: Time to Launch, name: timeToLaunch, widget: string}
+              - {label: KPIs, name: kpis, widget: text}
+              - {label: Outcome, name: outcome, widget: text}
+              - {label: Client Quote, name: clientQuote, widget: text, required: false}
+              - {label: Duration, name: duration, widget: string, required: false}
+              - {label: Seat Expansion, name: seatExpansion, widget: string, required: false}
+              - {label: Verified and Approved, name: approved, widget: boolean, default: false}
+      - label: Testimonials
+        name: testimonials
+        file: content/testimonials.json
+        format: json
+        fields:
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Title, name: title, widget: string}
+              - {label: Company, name: company, widget: string}
+              - {label: Quote, name: quote, widget: text}
+              - {label: Approved, name: approved, widget: boolean, default: false}
