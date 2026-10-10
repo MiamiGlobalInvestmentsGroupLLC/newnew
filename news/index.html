@@ -15,18 +15,27 @@
 .media-main{padding:88px 0 110px}.media-topline{display:flex;justify-content:space-between;gap:20px;align-items:end;border-bottom:1px solid #dce3ec;padding-bottom:26px;margin-bottom:36px}
 .media-topline h2{font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.04em;line-height:1.1;margin:12px 0 0}
 .media-label{font-size:.74rem;text-transform:uppercase;letter-spacing:.16em;font-weight:800;color:#376bc2}
-.media-card{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(245px,.65fr);border:1px solid #dfe5ef;background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 18px 55px rgba(7,17,31,.055)}
-.media-copy{padding:clamp(26px,5vw,62px)}.media-date{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:#53769b}
-.media-copy h3{font-size:clamp(1.85rem,3.5vw,3.35rem);line-height:1.12;letter-spacing:-.045em;margin:24px 0}.media-copy p{font-size:1.08rem;color:#56677c;line-height:1.75;max-width:650px}
-.media-topics{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 30px}.media-topics span{border:1px solid #dbe3ee;padding:7px 12px;border-radius:999px;color:#486078;font-size:.77rem;font-weight:750}
-.media-state{display:inline-flex;align-items:center;gap:9px;font-size:.87rem;font-weight:750;color:#536b86;padding:12px 17px;background:#eef3fa;border-radius:999px}.media-state i{width:8px;height:8px;background:#4781e9;border-radius:50%;display:inline-block}
-.media-side{background:linear-gradient(145deg,#0a1a30,#133661);color:white;padding:42px 33px;display:flex;flex-direction:column;justify-content:space-between;min-height:380px;position:relative}
-.media-side:before{content:"MGI";position:absolute;font-size:clamp(5rem,12vw,9rem);font-weight:900;letter-spacing:-.12em;opacity:.08;transform:rotate(-90deg);top:150px;right:-20px}
-.media-side .small{font-size:.75rem;text-transform:uppercase;letter-spacing:.17em;color:#9bb9e3}
-.media-side strong{display:block;font-size:1.9rem;line-height:1.16;letter-spacing:-.035em;max-width:210px}.media-side p{font-size:.9rem;color:#adc0d6;line-height:1.6}
-.release-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:26px}.release-link{display:flex;flex-direction:column;justify-content:space-between;gap:20px;padding:27px 29px;border:1px solid #dfe5ef;border-radius:22px;background:#fff;box-shadow:0 12px 35px rgba(7,17,31,.035);text-decoration:none;color:#11253f;transition:transform .2s,border-color .2s,box-shadow .2s}.release-link:hover{transform:translateY(-3px);border-color:#85a8df;box-shadow:0 18px 40px rgba(7,17,31,.09)}.release-link .release-source{font-size:.74rem;text-transform:uppercase;letter-spacing:.13em;font-weight:850;color:#376bc2}.release-link h3{font-size:1.45rem;line-height:1.24;letter-spacing:-.035em;margin:12px 0}.release-link p{color:#56677c;line-height:1.65;margin:0}.release-link .release-action{font-weight:800;color:#1d58af}.release-link.featured{border-color:#b7cdec;background:linear-gradient(140deg,#f5f9ff,#fff)}.media-note{margin-top:26px;color:#66788b;font-size:.88rem}.media-note a{color:#225ed0;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.press-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:stretch}
+.press-card{display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid #dfe6f0;border-radius:26px;overflow:hidden;box-shadow:0 18px 50px rgba(7,17,31,.065);transition:transform .22s ease,box-shadow .22s ease}
+.press-card:hover{transform:translateY(-5px);box-shadow:0 25px 60px rgba(7,17,31,.12)}
+.press-art{min-height:205px;background:radial-gradient(circle at 85% 12%,rgba(97,174,247,.24),transparent 45%),linear-gradient(125deg,#07182d,#163c69);color:#fff;padding:29px 33px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.press-art:after{content:"MGI";position:absolute;right:25px;bottom:-39px;font-size:clamp(7rem,14vw,12rem);font-weight:900;letter-spacing:-.12em;opacity:.085;pointer-events:none}
+.press-art .press-type{font-size:.73rem;text-transform:uppercase;letter-spacing:.16em;font-weight:800;color:#9de4f0;position:relative;z-index:1}
+.press-art .press-mark{font-size:1.5rem;letter-spacing:-.04em;font-weight:850;line-height:1.15;max-width:300px;position:relative;z-index:1}
+.press-card:nth-child(2) .press-art{background:radial-gradient(circle at 75% 5%,rgba(99,172,255,.23),transparent 42%),linear-gradient(125deg,#10243d,#244b72)}
+.press-body{padding:clamp(25px,3vw,38px);display:flex;flex-direction:column;flex:1}
+.press-meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:#58708b;font-size:.79rem;font-weight:800;letter-spacing:.025em}
+.press-meta .publisher{background:#edf4fc;color:#235b9b;padding:6px 11px;border-radius:999px}
+.press-body h3{font-size:clamp(1.45rem,2.3vw,2.05rem);line-height:1.23;letter-spacing:-.045em;color:#11243b;margin:22px 0 16px}
+.press-body p{font-size:1rem;line-height:1.72;color:#586b80;margin:0 0 23px}
+.press-topics{display:flex;flex-wrap:wrap;gap:7px;margin:auto 0 25px}
+.press-topics span{border:1px solid #dce5f0;border-radius:999px;padding:6px 10px;font-size:.73rem;font-weight:750;color:#4b6179}
+.press-button{display:inline-flex;align-items:center;justify-content:space-between;gap:15px;align-self:stretch;background:#0d2d56;color:#fff!important;padding:16px 20px;border-radius:13px;font-size:.93rem;font-weight:800;text-decoration:none;transition:background .2s}
+.press-button:hover{background:#19508d}.press-button span{font-size:1.2rem}
+.press-note{margin-top:24px;color:#66788b;font-size:.87rem;line-height:1.6}
+@media(max-width:760px){.press-grid{grid-template-columns:1fr;gap:22px}.press-art{min-height:170px}.press-body{padding:27px}.press-body h3{font-size:1.6rem}}
 .media-contact{margin-top:55px;padding:36px;background:#eaf0f8;border-radius:22px;display:flex;align-items:center;justify-content:space-between;gap:25px}.media-contact h2{margin:0 0 7px;font-size:1.55rem;letter-spacing:-.035em}.media-contact p{margin:0;color:#536679}.media-contact a{background:#0d2d56;color:#fff;border-radius:999px;padding:13px 22px;font-weight:800;white-space:nowrap}
-@media(max-width:760px){.release-grid{grid-template-columns:1fr}.media-hero{padding:132px 0 76px}.media-main{padding:62px 0 82px}.media-card{grid-template-columns:1fr}.media-side{min-height:230px;gap:20px}.media-topline{align-items:start}.media-contact{display:block}.media-contact a{display:inline-block;margin-top:18px}.media-copy h3{font-size:2rem}}
+@media(max-width:760px){.media-hero{padding:132px 0 76px}.media-main{padding:62px 0 82px}.media-topline{align-items:start}.media-contact{display:block}.media-contact a{display:inline-block;margin-top:18px}}
 </style>
 </head>
 <body>
@@ -35,21 +44,27 @@
 <section class="media-hero"><div class="container"><span class="eyebrow">Company newsroom</span><h1>NEWS &amp;<br>MEDIA.</h1><p>Corporate announcements, strategic milestones and updates from Miami Global Investments Group LLC.</p></div></section>
 <section class="media-main"><div class="container">
 <div class="media-topline"><div><span class="media-label">Official company announcements</span><h2>News &amp; Press Releases</h2></div><span class="media-label">2026</span></div>
-<article class="media-card">
-<div class="media-copy">
-<div class="media-date">October 10, 2026 · Latest press release</div>
+<div class="press-grid" aria-label="MGI published press releases">
+<article class="press-card">
+<div class="press-art"><span class="press-type">Corporate announcement · 2027 strategy</span><span class="press-mark">Outsourcing.<br>Innovation.<br>Growth.</span></div>
+<div class="press-body">
+<div class="press-meta"><span class="publisher">PRLog</span><time datetime="2026-10-10">October 10, 2026</time></div>
 <h3>Miami-Based MGI Announces 2027 Expansion Strategy Across Outsourcing, AI and Business Ventures</h3>
-<p>MGI outlines its 2027 roadmap for managed outsourcing and international talent, alongside plans to explore AI-enabled operations, strategic partnerships and carefully evaluated business ventures.</p>
-<div class="media-topics"><span>Business Expansion</span><span>Managed Outsourcing</span><span>AI Solutions</span><span>Strategic Partnerships</span></div>
-<a class="btn btn-primary" href="https://www.prlog.org/13175919-miami-based-mgi-announces-2027-expansion-strategy-across-outsourcing-ai-and-business-ventures.html" target="_blank" rel="noopener noreferrer">Read on PRLog <span aria-hidden="true">↗</span></a>
+<p>MGI shares its 2027 strategy for managed outsourcing, international talent, AI-powered business solutions and potential new ventures.</p>
+<div class="press-topics"><span>Outsourcing</span><span>AI</span><span>Business Expansion</span></div>
+<a class="press-button" href="https://www.prlog.org/13175919-miami-based-mgi-announces-2027-expansion-strategy-across-outsourcing-ai-and-business-ventures.html" target="_blank" rel="noopener noreferrer" aria-label="Read MGI press release published on PRLog">Read press release on PRLog <span aria-hidden="true">↗</span></a>
+</div></article>
+<article class="press-card">
+<div class="press-art"><span class="press-type">Corporate announcement · Growth roadmap</span><span class="press-mark">Managed Teams.<br>AI Automation.<br>Opportunity.</span></div>
+<div class="press-body">
+<div class="press-meta"><span class="publisher">SubmitPR</span><span>2027 Growth Strategy</span></div>
+<h3>Miami-Based MGI Announces 2027 Growth Strategy in BPO, AI Automation and Business Expansion</h3>
+<p>MGI outlines plans for managed business process outsourcing, remote staffing, practical AI automation and longer-term business expansion.</p>
+<div class="press-topics"><span>BPO</span><span>Managed Staffing</span><span>AI Automation</span></div>
+<a class="press-button" href="https://submitpr.org/press-release/miami-global-investments-group-bpo-ai-expansion-2027" target="_blank" rel="noopener noreferrer" aria-label="Read MGI press release published on SubmitPR">Read press release on SubmitPR <span aria-hidden="true">↗</span></a>
+</div></article>
 </div>
-<div class="media-side"><span class="small">Latest announcement / 2027 strategy</span><div><strong>Expanding what's possible.</strong><p>Managed workforce solutions. Practical innovation. Long-term opportunity.</p></div><span class="small">Miami · Florida · United States</span></div>
-</article>
-<div class="release-grid" aria-label="Published press releases">
-<a class="release-link featured" href="https://www.prlog.org/13175919-miami-based-mgi-announces-2027-expansion-strategy-across-outsourcing-ai-and-business-ventures.html" target="_blank" rel="noopener noreferrer"><div><span class="release-source">PRLog · October 10, 2026</span><h3>MGI Announces 2027 Expansion Strategy</h3><p>Read the full announcement covering outsourcing, AI and future business ventures.</p></div><span class="release-action">View published release ↗</span></a>
-<a class="release-link" href="https://submitpr.org/press-release/miami-global-investments-group-bpo-ai-expansion-2027" target="_blank" rel="noopener noreferrer"><div><span class="release-source">SubmitPR · Company press release</span><h3>MGI Outlines BPO, AI Automation and Business Growth Strategy</h3><p>Explore MGI's announcement on managed staffing, AI initiatives and its broader growth plans.</p></div><span class="release-action">View published release ↗</span></a>
-</div>
-<p class="media-note">These links lead to company-issued press releases hosted by third-party publishing platforms. They do not represent independent editorial coverage or third-party endorsements.</p>
+<p class="press-note">Both items are company-issued press releases published on third-party platforms, not independent editorial coverage or endorsements.</p>
 <div class="media-contact"><div><h2>Media &amp; partnership inquiries</h2><p>Connect with MGI about company updates, business partnerships and media requests.</p></div><a href="mailto:matt@mgiglobalgroup.com">Contact MGI <span aria-hidden="true">↗</span></a></div>
 </div></section>
 </main><div data-footer></div><script src="/script.js" defer></script>
