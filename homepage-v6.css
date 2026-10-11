@@ -18,3 +18,39 @@
 @media(min-width:921px){.home-v6 .nav{gap:clamp(7px,.95vw,16px);font-size:clamp(.68rem,.82vw,.81rem)}.home-v6 .nav-wrap{gap:12px}.home-v6 .brand-mark{width:clamp(70px,6.5vw,95px)}}
 @media(max-width:1100px){.mgi-expansion-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mgi-expansion-head{grid-template-columns:1fr;gap:18px}.mgi-expansion-card{min-height:300px}}
 @media(max-width:680px){.mgi-expansion-grid{grid-template-columns:1fr}.mgi-expansion-card{min-height:245px}.mgi-expansion-card h3{margin-top:30px}.mgi-expansion-bottom,.mgi-news-strip-inner{align-items:flex-start;flex-direction:column}.mgi-news-strip-inner>a{white-space:normal}.mgi-expansion-bottom a{white-space:normal}}
+
+
+/* Homepage editorial rhythm: intentional chapter breaks, compact mobile reading. */
+.v6-chapter{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(115deg,#0a1930 0%,#103563 58%,#164c9b 100%);color:#fff;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+.v6-chapter:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 84% 50%,rgba(91,176,255,.28),transparent 48%),repeating-linear-gradient(125deg,transparent 0 34px,rgba(255,255,255,.035) 35px 36px);pointer-events:none}
+.v6-chapter-inner{position:relative;min-height:176px;display:grid;grid-template-columns:120px minmax(0,1fr) 170px;align-items:center;gap:30px}
+.v6-chapter-index{font-size:.85rem;font-weight:800;letter-spacing:.15em;color:#a8caff}
+.v6-chapter-copy{display:flex;flex-direction:column;gap:12px}.v6-chapter-copy>span{font-size:.7rem;letter-spacing:.2em;font-weight:800;color:#86c5ff}.v6-chapter-copy strong{font-size:clamp(1.5rem,3vw,2.8rem);line-height:1.1;letter-spacing:-.045em;font-weight:750}
+.v6-chapter-art{display:flex;align-items:center;justify-content:flex-end;gap:9px;transform:rotate(-24deg)}.v6-chapter-art i{display:block;width:21px;height:72px;border:1px solid rgba(177,221,255,.48);border-radius:50px;background:linear-gradient(180deg,rgba(126,194,255,.48),rgba(126,194,255,.04))}.v6-chapter-art i:nth-child(2){height:108px}.v6-chapter-art i:nth-child(3){height:52px}
+.home-v6 .v6-section{position:relative}
+.home-v6 .v6-section:not(.v6-premise):not(.v6-services):not(.v6-agency):not(.v6-process):not(.v6-track):not(.v6-markets):not(.mgi-expansion){border-top:1px solid rgba(30,69,118,.09)}
+.home-v6 #outsourcing-faq,.home-v6 #managed-bpo-faq{background:#f7f9fe}
+.home-v6 #company-verification{background:#eaf1fc}
+.home-v6 #global-talent-pipeline{background:linear-gradient(130deg,#e8f2ff,#fff 75%)}
+@media(max-width:640px){
+ .v6-chapter-inner{min-height:128px;grid-template-columns:55px minmax(0,1fr) 36px;gap:12px}
+ .v6-chapter-index{font-size:.66rem;letter-spacing:.04em}.v6-chapter-copy{gap:7px}.v6-chapter-copy>span{font-size:.58rem;letter-spacing:.12em}.v6-chapter-copy strong{font-size:clamp(1.2rem,5.4vw,1.65rem);line-height:1.15}.v6-chapter-art{gap:4px}.v6-chapter-art i{width:8px;height:40px}.v6-chapter-art i:nth-child(2){height:64px}.v6-chapter-art i:nth-child(3){height:30px}
+ .home-v6 .v6-section{padding-top:54px;padding-bottom:58px}
+ .home-v6 .v6-title{font-size:clamp(2rem,8.5vw,3rem);line-height:1.04;letter-spacing:-.048em;overflow-wrap:break-word}
+ .home-v6 .v6-section h2:not(.v6-title){overflow-wrap:break-word}
+ .home-v6 .v6-copy{font-size:1rem;line-height:1.57}
+ .home-v6 .v6-card:not(.featured){min-height:190px;padding:21px}
+ .home-v6 .v6-card.featured{min-height:270px}
+ .home-v6 .v6-card h3{line-height:1.14}
+ .home-v6 .v6-bento{gap:12px;margin-top:28px}
+ .home-v6 .v6-process-grid{gap:0}
+ .home-v6 .v6-step{padding-top:24px;padding-bottom:24px}
+ .home-v6 .v6-actions{gap:10px}
+ .home-v6 .v6-button.ghost,.home-v6 .v6-button.outline{background:#fff;color:#17335b;border:1px solid #cbd8ed}
+ .home-v6 .v6-hero .v6-button.ghost,.home-v6 .v6-final .v6-button.ghost{background:rgba(255,255,255,.11);color:#fff;border-color:rgba(255,255,255,.4)}
+ .home-v6 .v6-kicker{font-size:.62rem;letter-spacing:.12em}
+ .home-v6 .mgi-expansion-card{min-height:210px}
+ .home-v6 .mgi-expansion-card h3{margin-top:22px}
+ .home-v6 #outsourcing-faq,.home-v6 #managed-bpo-faq{padding-top:52px;padding-bottom:52px}
+}
+@media(prefers-reduced-motion:reduce){.v6-chapter-art,.v6-chapter-art *{animation:none!important}}
