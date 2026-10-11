@@ -54,3 +54,33 @@
  .home-v6 #outsourcing-faq,.home-v6 #managed-bpo-faq{padding-top:52px;padding-bottom:52px}
 }
 @media(prefers-reduced-motion:reduce){.v6-chapter-art,.v6-chapter-art *{animation:none!important}}
+
+
+/* MGI service-card redesign — actual responsive site styles */
+.home-v6 .v6-services{background:linear-gradient(180deg,#071425 0%,#0c203a 100%);color:#f5f9ff}
+.home-v6 .v6-services .v6-kicker{color:#84b9ff}
+.home-v6 .v6-services .v6-copy{color:#b7c7de}
+.home-v6 .v6-services .v6-card{background:linear-gradient(125deg,#112747 0%,#0a1a30 73%,#153b70 100%);border:1px solid rgba(109,169,255,.28);box-shadow:inset 0 1px rgba(255,255,255,.07),0 12px 36px rgba(0,0,0,.15);color:#f8fbff}
+.home-v6 .v6-services .v6-card:nth-child(3n+2){background:linear-gradient(125deg,#102b52,#0a1a32 70%,#1a4c88)}
+.home-v6 .v6-services .v6-card:nth-child(3n){background:linear-gradient(125deg,#132c47,#091c34 70%,#184276)}
+.home-v6 .v6-services .v6-card:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 38px,rgba(133,185,255,.025) 39px 40px);pointer-events:none}
+.home-v6 .v6-services .v6-card:after{background:radial-gradient(circle,rgba(66,139,255,.28),transparent 69%);width:290px;height:290px;right:-105px;bottom:-160px}
+.home-v6 .v6-services .v6-card .num{color:#79adff;font-weight:850;font-size:.78rem}
+.home-v6 .v6-services .v6-card h3{color:#fff}
+.home-v6 .v6-services .v6-card p{color:#bdcde4}
+.home-v6 .v6-services .v6-card .go{background:#e8f1ff;color:#155de6;border-color:rgba(255,255,255,.3);box-shadow:0 6px 20px rgba(0,0,0,.2)}
+.home-v6 .v6-services .v6-card:hover{border-color:#6ea9ff;box-shadow:0 18px 48px rgba(0,0,0,.3)}
+.home-v6 .v6-services .v6-all-services .v6-button{border-color:rgba(148,193,255,.5);color:#fff;background:rgba(255,255,255,.08)}
+.home-v6 .mgi-expansion-card:not(.mgi-expansion-feature){background:linear-gradient(145deg,#fff 0%,#eef5ff 100%);border-color:#cadbf1;box-shadow:0 12px 35px rgba(20,57,104,.07)}
+.home-v6 .mgi-expansion-card:not(.mgi-expansion-feature):nth-child(even){background:linear-gradient(145deg,#f7faff 0%,#e6f0ff 100%)}
+@media(max-width:640px){
+ .home-v6 .v6-services .v6-bento{gap:14px}
+ .home-v6 .v6-services .v6-card,.home-v6 .v6-services .v6-card.featured{min-height:195px;padding:23px 22px;border-radius:24px}
+ .home-v6 .v6-services .v6-card.featured{min-height:230px}
+ .home-v6 .v6-services .v6-card h3{margin-top:44px;font-size:clamp(1.45rem,6.5vw,1.9rem)}
+ .home-v6 .v6-services .v6-card.featured h3{font-size:clamp(1.8rem,8vw,2.5rem)}
+ .home-v6 .v6-services .v6-card p{font-size:.91rem;line-height:1.55}
+ .home-v6 .v6-services .v6-card .go{top:20px;right:20px}
+ .home-v6 .v6-services .v6-all-services .v6-button{background:#173966;color:#fff;border-color:#739cce}
+ .home-v6 .mgi-expansion-card:not(.mgi-expansion-feature){min-height:205px}
+}
