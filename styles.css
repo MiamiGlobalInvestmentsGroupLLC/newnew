@@ -2,3 +2,54 @@
 /* Responsive primary navigation: preserve room for expanded MGI sections */
 @media(min-width:921px){.nav{gap:clamp(7px,.9vw,15px);font-size:clamp(.68rem,.76vw,.81rem)}.nav-wrap{gap:12px}.nav .btn{padding-inline:clamp(10px,1.1vw,17px);font-size:inherit}.brand{gap:7px}.brand-mark{width:clamp(66px,6.1vw,90px)}.brand span{font-size:clamp(.68rem,.86vw,.9rem)}}
 @media(max-width:1160px) and (min-width:921px){.brand span{display:none}}
+
+/* Mobile navigation: full-height scrollable overlay on every page, not only homepage. */
+@media (max-width: 1024px) {
+  .topbar { z-index: 1000; }
+  .topbar .nav-wrap { position: static; }
+  .topbar .nav {
+    position: fixed !important;
+    top: 66px !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: calc(100dvh - 66px) !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 16px 24px max(40px, env(safe-area-inset-bottom)) !important;
+    display: none !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: #07111f !important;
+    box-shadow: none !important;
+    transform: none !important;
+    z-index: 1001;
+  }
+  .topbar .nav.open { display: flex !important; }
+  .topbar .nav > a:not(.btn) {
+    display: block;
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 12px 8px !important;
+    margin: 0 !important;
+    color: #e8f1fc !important;
+    font-size: 1rem !important;
+    line-height: 1.35;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  .topbar .nav > .btn { flex: 0 0 auto; margin: 18px 0 12px !important; }
+  .topbar .menu-btn { display: grid; position: relative; z-index: 1002; }
+  body.nav-open { overflow: hidden !important; }
+}
+@media (min-width: 681px) and (max-width: 1024px) {
+  .topbar .nav { top: 78px !important; height: calc(100dvh - 78px) !important; }
+  .topbar.scrolled .nav { top: 70px !important; height: calc(100dvh - 70px) !important; }
+}
