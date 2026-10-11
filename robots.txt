@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Sitemap: https://mgiglobalgroup.com/sitemap.xml
+Sitemap: https://www.mgiglobalgroup.com/sitemap.xml
