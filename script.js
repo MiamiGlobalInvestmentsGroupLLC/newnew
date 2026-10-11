@@ -1,6 +1,6 @@
 (function(){
 'use strict';
-var MGI={email:'info@mgiglobalgroup.com',phoneDisplay:'+1 305-629-0491',phone:'13056290491',site:'https://mgiglobalgroup.com'};
+var MGI={email:'info@mgiglobalgroup.com',phoneDisplay:'+1 305-629-0491',phone:'13056290491',site:'https://www.mgiglobalgroup.com'};
 var wa='https://wa.me/'+MGI.phone+'?text='+encodeURIComponent("Hi MGI, I'm interested in discussing outsourcing support for my company.");
 var faqData=[
 ['What does MGI do?','MGI provides dedicated outsourced human capacity for sales-development, customer-support and back-office workflows, with a strong white-label model for agency partners.'],
