@@ -84,3 +84,5 @@
  .home-v6 .v6-services .v6-all-services .v6-button{background:#173966;color:#fff;border-color:#739cce}
  .home-v6 .mgi-expansion-card:not(.mgi-expansion-feature){min-height:205px}
 }
+
+.v6-founding-note{background:#dceafe;border-top:1px solid #bcd4f6;border-bottom:1px solid #bcd4f6}.v6-founding-note .v6-shell{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}.v6-founding-note strong{font-size:.78rem;letter-spacing:.08em;color:#0a3775}.v6-founding-note span{font-size:.84rem;color:#355474}.v6-founding-note a{font-size:.8rem;font-weight:800;color:#1255aa;text-decoration:underline;text-underline-offset:3px}@media(max-width:640px){.v6-founding-note .v6-shell{display:grid;gap:7px;padding-top:18px;padding-bottom:18px}}
