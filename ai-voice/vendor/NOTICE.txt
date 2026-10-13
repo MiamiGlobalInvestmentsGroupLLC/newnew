@@ -1,0 +1,15 @@
+MGI local voice runtime uses Transformers.js 3.8.1, Kokoro.js 1.2.1,
+Phonemizer.js 1.2.1 and ONNX Runtime Web 1.22.0-dev.20250409-89f8206ba4.
+License texts for bundled Apache-2.0 packages are included in this directory.
+Bundled dependency notices: ../worker.js.LEGAL.txt.
+ONNX Runtime (MIT): https://github.com/microsoft/onnxruntime/blob/main/LICENSE
+Phonemizer.js wraps eSpeak NG (GPL-3.0-or-later); upstream source:
+https://github.com/espeak-ng/espeak-ng and https://github.com/xenova/phonemizer.js
+The JS wrapper is Apache-2.0; preserve the upstream source and license notices
+when redistributing or modifying the embedded phonemizer.
+
+Models downloaded by opt-in, and their upstream licenses:
+Qwen3-0.6B: Apache-2.0, https://huggingface.co/Qwen/Qwen3-0.6B
+Kokoro-82M v1.0: Apache-2.0, https://huggingface.co/hexgrad/Kokoro-82M
+Whisper tiny.en: MIT, https://github.com/openai/whisper/blob/main/LICENSE
+Generated welcome samples use Kokoro v1.0, af_heart, af_bella and am_michael.

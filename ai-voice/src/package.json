@@ -1,0 +1,1 @@
+{"name":"mgi-local-voice-runtime","private":true,"type":"module","scripts":{"build":"node build.mjs node_modules"},"dependencies":{"@huggingface/transformers":"3.8.1","kokoro-js":"1.2.1","esbuild":"0.25.12"}}
