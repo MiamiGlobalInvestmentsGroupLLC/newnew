@@ -67,3 +67,20 @@
  .home-v6 .v6-founding-note .v6-shell{grid-template-columns:1fr}
  .home-v6 .v6-founding-note span{text-align:left}
 }
+
+
+/* Refined corporate registration bar, desktop only */
+@media(min-width:1025px){
+ .home-v6 .v6-founding-note{background:linear-gradient(105deg,#091d35 0%,#103a68 100%);border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.14)}
+ .home-v6 .v6-founding-note .v6-shell{display:flex;align-items:center;justify-content:space-between;flex-wrap:nowrap;gap:clamp(16px,2vw,32px);padding-block:21px}
+ .home-v6 .v6-founding-note strong{display:inline-flex;align-items:center;gap:11px;flex:0 1 auto;color:#f5f9ff;font-size:clamp(.73rem,.84vw,.89rem);font-weight:800;letter-spacing:.045em;line-height:1.45;white-space:nowrap}
+ .home-v6 .v6-founding-note strong:before{content:"✓";display:grid;place-items:center;flex:none;width:26px;height:26px;border-radius:50%;background:rgba(78,213,181,.16);color:#6de8ca;font-size:14px;letter-spacing:0}
+ .home-v6 .v6-founding-note span{flex:1 1 auto;min-width:0;color:#b8d0ed;font-size:clamp(.74rem,.84vw,.9rem);line-height:1.45;text-align:center}
+ .home-v6 .v6-founding-note a{grid-column:auto;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;white-space:nowrap;padding:12px 17px;border:1px solid rgba(183,214,255,.36);border-radius:11px;background:rgba(255,255,255,.09);color:#fff;font-size:.79rem;font-weight:800;text-decoration:none;transition:background .2s,border-color .2s}
+ .home-v6 .v6-founding-note a:hover{background:rgba(255,255,255,.17);border-color:#b8d9ff}
+}
+@media(min-width:1025px) and (max-width:1300px){
+ .home-v6 .v6-founding-note .v6-shell{flex-wrap:wrap;justify-content:flex-start;row-gap:9px}
+ .home-v6 .v6-founding-note span{flex:1 1 50%;text-align:left}
+ .home-v6 .v6-founding-note a{margin-left:auto}
+}
