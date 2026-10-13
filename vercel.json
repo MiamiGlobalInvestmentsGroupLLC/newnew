@@ -29,7 +29,7 @@
       ]
     },
     {
-      "source": "/ai-voice/:path*",
+      "source": "/ai-voice(.*)",
       "headers": [
         {
           "key": "Permissions-Policy",
