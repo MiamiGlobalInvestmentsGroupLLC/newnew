@@ -46,3 +46,24 @@
  .topbar .nav-dropdown a{display:block;padding:10px;color:#dce8fa;font-size:.92rem;line-height:1.35}
  .topbar .nav-group-toggle span{font-size:1.1rem}
 }
+
+
+/* Screenshot-driven polish: registration strip and technology roadmap */
+@media(min-width:1025px){
+ .home-v6 .v6-founding-note .v6-shell{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:26px;row-gap:8px;padding-block:20px}
+ .home-v6 .v6-founding-note strong{font-size:clamp(.75rem,.9vw,.9rem);letter-spacing:.09em;line-height:1.5}
+ .home-v6 .v6-founding-note span{font-size:clamp(.78rem,.86vw,.94rem);line-height:1.5;text-align:right}
+ .home-v6 .v6-founding-note a{grid-column:1/-1;justify-self:start;font-size:.85rem}
+ .home-v6 #technology-development{padding-top:clamp(64px,6vw,98px);padding-bottom:clamp(65px,6vw,100px)}
+ .home-v6 #technology-development .v6-services-head{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);align-items:center;gap:clamp(32px,5vw,90px)}
+ .home-v6 #technology-development .v6-services-head>div{min-width:0}
+ .home-v6 #technology-development .v6-title{font-size:clamp(2.45rem,3.6vw,4.4rem);line-height:1.1;letter-spacing:-.045em;max-width:17ch;overflow-wrap:normal;word-break:normal}
+ .home-v6 #technology-development .v6-copy{font-size:clamp(1rem,1.1vw,1.15rem);line-height:1.75;max-width:540px}
+ .home-v6 #technology-development .v6-process-grid{margin-top:44px!important}
+}
+@media(min-width:1025px) and (max-width:1240px){
+ .home-v6 #technology-development .v6-services-head{grid-template-columns:1fr;gap:24px}
+ .home-v6 #technology-development .v6-title{max-width:21ch}
+ .home-v6 .v6-founding-note .v6-shell{grid-template-columns:1fr}
+ .home-v6 .v6-founding-note span{text-align:left}
+}
